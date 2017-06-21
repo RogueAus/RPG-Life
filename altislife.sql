@@ -1,5 +1,5 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+-- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+10:00";
 --
 -- Compatible with newer MySQL versions. (After MySQL-5.5)
 -- This SQL uses utf8mb4 and has CURRENT_TIMESTAMP function.
@@ -15,8 +15,8 @@ SET time_zone = "+00:00";
 -- Database: `altislife`
 -- Default Schema
 --
-CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
-USE `altislife`;
+-- CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
+-- USE `altislife`;
 
 --
 -- Drop procedures to ensure no conflicts
@@ -34,33 +34,38 @@ DELIMITER $$
 -- Edit arma3 to match a user in MySQL
 -- For external databases: Edit localhost to match arma3server IP
 --
+-- Example in case we ever move to dedi
+-- CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+-- BEGIN
+--   UPDATE `vehicles` SET `active`= 0;
+-- END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE PROCEDURE `resetLifeVehicles`()
 BEGIN
   UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE PROCEDURE `deleteDeadVehicles`()
 BEGIN
   DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldContainers`()
+CREATE PROCEDURE `deleteOldContainers`()
 BEGIN
   DELETE FROM `containers` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldWanted`()
+CREATE PROCEDURE `deleteOldWanted`()
 BEGIN
   DELETE FROM `wanted` WHERE `active` = 0;
 END$$
