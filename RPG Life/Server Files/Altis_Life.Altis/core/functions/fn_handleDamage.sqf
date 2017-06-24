@@ -46,9 +46,6 @@ if (!isNull _source) then {
     };
 };
 
-[] spawn life_fnc_hudUpdate;
-_damage;
-
 //VDM Report And ADD
 if ((isPlayer _source) && (vehicle _source != _source)) then {
 if(_part == "body" && (player getVariable["limit",true]) && (side _source == civilian)) then {
@@ -62,3 +59,6 @@ player setVariable ["limit",true];
 };
 _damage = getDammage player;
 };
+
+[] spawn life_fnc_hudUpdate;
+_damage;
