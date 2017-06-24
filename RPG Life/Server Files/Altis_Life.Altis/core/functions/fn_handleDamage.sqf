@@ -48,3 +48,17 @@ if (!isNull _source) then {
 
 [] spawn life_fnc_hudUpdate;
 _damage;
+
+//VDM Report And ADD
+if ((isPlayer _source) && (vehicle _source != _source)) then {
+if(_part == "body" && (player getVariable["limit",true]) && (side _source == civilian)) then {
+player setVariable ["limit",false];
+[_source] spawn {
+_driver = _this select 0;
+[0,format["%1 just ran over %2!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
+sleep(10);
+player setVariable ["limit",true];
+    };
+};
+_damage = getDammage player;
+};
