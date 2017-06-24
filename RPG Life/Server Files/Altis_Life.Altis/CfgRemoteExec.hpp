@@ -60,7 +60,7 @@ class CfgRemoteExec {
         F(life_fnc_wireTransfer,CLIENT)
         F(life_fnc_tieing,CLIENT)
         F(life_fnc_tieingb,CLIENT)
-        F(life_fnc_gagged,CLIENT)/
+        F(life_fnc_gagged,CLIENT)
         F(SOCK_fnc_dataQuery,CLIENT)
         F(SOCK_fnc_insertPlayerInfo,CLIENT)
         F(SOCK_fnc_requestReceived,CLIENT)
