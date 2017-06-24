@@ -46,5 +46,15 @@ if (!isNull _source) then {
     };
 };
 
+//ANTI VDM by Rogue <3
+private["_vehicle"];
+_vehicle = vehicle _source;
+if((vehicle _source isKindOf "LandVehicle") && ((driver _vehicle) == _source)) then {
+     if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+     _damage = 0;
+    };
+};
+
+
 [] spawn life_fnc_hudUpdate;
 _damage;
