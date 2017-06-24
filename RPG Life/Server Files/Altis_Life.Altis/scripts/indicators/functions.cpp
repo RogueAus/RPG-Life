@@ -1,7 +1,7 @@
 class Maverick_Indicators {
 	tag = "mav_indicator";
 	class functions {
-		file = "maverick\indicators";
+		file = "scripts\indicators";
 		class getVehicleIndicatorOffsets {};
 		class enableIndicator {};
 		class disableIndicator {};
