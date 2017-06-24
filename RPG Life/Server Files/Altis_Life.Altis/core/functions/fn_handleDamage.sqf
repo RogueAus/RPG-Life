@@ -46,16 +46,12 @@ if (!isNull _source) then {
     };
 };
 
-//ANTI VDM
-private["_vehicle"]
-_vehicle = vehicle _source
-if({vehicle _source isKindOf "LandVehicle"} && {_source in (driver _vehicle)}) then {
+//ANTI VDM by Rogue <3
+private["_vehicle"];
+_vehicle = vehicle _source;
+if((vehicle _source isKindOf "LandVehicle") && ((driver _vehicle) == _source)) then {
      if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
      _damage = 0;
-    };
-    [_source] spawn {
-    _driver = _this select 0;
-    [0,format["%1 just ran over %2!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
     };
 };
 
