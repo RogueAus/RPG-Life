@@ -9,8 +9,7 @@
 
     Will also become a standalone system which is why it's setup like this.
 */
-exitWith{};
-private ["_binConfigPatches","_cfgPatches","_endM"];
+exitWith {};
 if (isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
 #define CONST(var1,var2) var1 = compileFinal (if (var2 isEqualType "") then {var2} else {str(var2)})
 #define RCLIENT -2
