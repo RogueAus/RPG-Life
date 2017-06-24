@@ -5,6 +5,7 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "scripts\indicators\config.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -24,6 +25,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
+    #include "scripts\indicators\functions.cpp"
 };
 
 class CfgSounds {
