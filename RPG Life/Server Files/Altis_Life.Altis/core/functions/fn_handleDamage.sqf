@@ -46,19 +46,19 @@ if (!isNull _source) then {
     };
 };
 
-//VDM Report And ADD
-if ((isPlayer _source) && (vehicle _source != _source)) then {
-if(_part == "body" && (player getVariable["limit",true]) && (side _source == civilian)) then {
-player setVariable ["limit",false];
-[_source] spawn {
-_driver = _this select 0;
-[0,format["%1 just ran over %2!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
-sleep(10);
-player setVariable ["limit",true];
+//ANTI VDM
+private["_vehicle"]
+_vehicle = vehicle _source
+if({vehicle _source isKindOf "LandVehicle"} && {_source in (driver _vehicle)}) then {
+     if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+     _damage = 0;
+    };
+    [_source] spawn {
+    _driver = _this select 0;
+    [0,format["%1 just ran over %2!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
     };
 };
-_damage = getDammage player;
-};
+
 
 [] spawn life_fnc_hudUpdate;
 _damage;
