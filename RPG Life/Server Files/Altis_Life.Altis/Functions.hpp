@@ -1,4 +1,4 @@
-/class Socket_Reciever {
+class Socket_Reciever {
     tag = "SOCK";
     class SQL_Socket {
         file = "core\session";
