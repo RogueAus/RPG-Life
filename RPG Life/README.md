@@ -1,4 +1,4 @@
-<b>ARA Altis Life</b> or <b>[Altis Life RPG] </b> is developed by <b>Australian Rebel Army</b>, originally created by <b>Tonic</b> AKA <b>[TAW_Tonic] (https://github.com/TAWTonic)</b>.<br/>
+<b>ARA RPG Life</b> or <b>[ARA RPG Life] </b> is developed by <b>Australian Rebel Army</b>, originally created by <b>Tonic</b> AKA <b>[TAW_Tonic] (https://github.com/TAWTonic)</b>.<br/>
 
 <p align="center">
        <a href="https://github.com/RogueDGA/ARA-Git-Repo">
