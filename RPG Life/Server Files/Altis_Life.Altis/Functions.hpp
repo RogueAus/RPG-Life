@@ -1,4 +1,4 @@
-class Socket_Reciever {
+/class Socket_Reciever {
     tag = "SOCK";
     class SQL_Socket {
         file = "core\session";
@@ -104,6 +104,15 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+        class gagAction {};
+        class gagged {};
+        class removeGagAction {};
+        class tieing {};
+        class tieingAction {};
+        class tieingActionb {};
+        class tieingb {};
+        class untie {};
+        class untieb {};
     };
 
     class Config {
