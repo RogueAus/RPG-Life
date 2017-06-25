@@ -4,7 +4,17 @@ class DeathScreen {
     movingEnable = 0;
     enableSimulation = 1;
 
-    class controlsBackground { };
+    class controlsBackground {
+		class Death_Screen: Life_RscPicture
+		{
+          idc = 1200;
+          text = "icons\ico_death.paa";
+          x = 0.357136 * safezoneW + safezoneX;
+          y = 0.225067 * safezoneH + safezoneY;
+          w = 0.280802 * safezoneW;
+          h = 0.527872 * safezoneH;
+		};	
+	};
 
     class Controls {
         class MedicsOnline: Life_RscText {
