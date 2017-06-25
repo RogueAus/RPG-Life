@@ -60,17 +60,26 @@ if (CASH < _purchasePrice) exitWith {hint format [localize "STR_Shop_Veh_NotEnou
 
 private _spawnPoints = life_veh_shop select 1;
 private _spawnPoint = "";
+private _kavSpawns =  ["civ_car_1","civ_car_1_1"];
 
 if ((life_veh_shop select 0) == "med_air_hs") then {
     if (nearestObjects[(getMarkerPos _spawnPoints),["Air"],35] isEqualTo []) exitWith {_spawnPoint = _spawnPoints};
 } else {
     //Check if there is multiple spawn points and find a suitable spawnpoint.
     if (_spawnPoints isEqualType []) then {
-        //Find an available spawn point.
-        {
-            if ((nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) isEqualTo []) exitWith {_spawnPoint = _x};
-            true
-        } count _spawnPoints;
+        //Kavala Car Spawn Points, needed a fix without changing the others
+        if (_spawnPoints isEqualTo _kavSpawns) then {
+            {
+                if ((nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],2]) isEqualTo []) exitWith {_spawnPoint = _x};
+                true
+            } count _spawnPoints;
+        } else {
+            //Find an available spawn point.
+            {
+                if ((nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) isEqualTo []) exitWith {_spawnPoint = _x};
+                true
+            } count _spawnPoints;
+        };
     } else {
         if (nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5] isEqualTo []) exitWith {_spawnPoint = _spawnPoints};
     };
