@@ -275,5 +275,16 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
+
+        class ButtonCrafting: Life_RscButtonMenu {
+            idc = -1;
+            //shortcuts[] = {0x00050000 + 2};
+            text = "Craft";
+            onButtonClick = "closeDialog 0; [""craftingItems""] spawn cat_crafting_fnc_craft;";
+            x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+            y = 0.805;
+            w = (6.25 / 40);
+            h = (1 / 25);
+        };
     };
 };
