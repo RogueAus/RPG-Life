@@ -11,8 +11,9 @@ class CfgRemoteExec {
     class Functions {
         mode = 1;
         jip = 1;
-		
+
 		#include "scripts\indicators\remoteExec.cpp"
+        #include "ara\ara_remoteExec.cpp"
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)
