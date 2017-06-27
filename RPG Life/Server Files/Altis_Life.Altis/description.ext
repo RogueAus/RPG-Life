@@ -7,6 +7,7 @@ enableDebugConsole = 1;
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "scripts\indicators\config.cpp"
+#include "ara\ara_master.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -27,6 +28,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
+    #include "ara\ara_functions.cpp"
 };
 
 class CfgSounds {
