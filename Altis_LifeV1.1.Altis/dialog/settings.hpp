@@ -5,14 +5,14 @@ class SettingsMenu {
     enableSimulation = 1;
 
     class controlsBackground {
-        class RscTitleBackground: Life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-            idc = -1;
-            x = 0.3;
-            y = 0.2;
-            w = 0.5;
-            h = (1 / 25);
-        };
+        class RscTitleBackground: Life_RscPicture {
+			idc = -1;
+			text = "textures\menu.paa";
+			x = 0;
+			y = -0.12;
+			w = 1;
+			h = 1.28;
+		};
 
         class RscMainBackground: Life_RscText {
             colorBackground[] = {0,0,0,0.7};
