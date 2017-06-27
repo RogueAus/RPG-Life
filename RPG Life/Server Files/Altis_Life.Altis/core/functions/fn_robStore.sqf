@@ -30,6 +30,7 @@ if(_chance >= 50) then {[1,format["ALARM! - Gas Station: %1 is being robbed!", _
 
 _cops = (west countSide playableUnits);
 if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};
+
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
@@ -39,38 +40,37 @@ _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (1%1)...","%"]
 _progress progressSetPosition 0.01;
 _cP = 0.0001;
 
-if(_rip) then
-{
-while{true} do
-{
-sleep 3;
-_cP = _cP + 0.01;
-_progress progressSetPosition _cP;
-_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
-_Pos = position player; // by ehno: get player pos
-				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
-				                "Marker200" setMarkerColor "ColorRed";
-				                "Marker200" setMarkerText "!ATTENTION! robbery !ATTENTION!";
-				                "Marker200" setMarkerType "mil_warning";
-if(_cP >= 1) exitWith {};
-if(_robber distance _shop > 10.5) exitWith { };
-if!(alive _robber) exitWith {};
-};
-if!(alive _robber) exitWith { _rip = false; };
-if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
-5 cutText ["","PLAIN"];
+if(_rip) then {
+	while{true} do {
+		sleep 3;
+		_cP = _cP + 0.01;
+		_progress progressSetPosition _cP;
+		_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
+		_Pos = position player; // by ehno: get player pos
+						                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
+						                "Marker200" setMarkerColor "ColorRed";
+						                "Marker200" setMarkerText "!ATTENTION! robbery !ATTENTION!";
+						                "Marker200" setMarkerType "mil_warning";
+		if(_cP >= 1) exitWith {};
+		if(_robber distance _shop > 10.5) exitWith { };
+		if!(alive _robber) exitWith {};
+	};
+	if!(alive _robber) exitWith { _rip = false; };
+	if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
+	5 cutText ["","PLAIN"];
 
-titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
-deleteMarker "Marker200"; // by ehno delete maker
-life_cash = life_cash + _kassa;
+	titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
+	deleteMarker "Marker200"; // by ehno delete maker
+	life_cash = life_cash + _kassa;
 
-_rip = false;
-life_use_atm = false;
-sleep (30 + random(180));
-life_use_atm = true;
-if!(alive _robber) exitWith {};
-[getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
+	_rip = false;
+	life_use_atm = false;
+	sleep (30 + random(180));
+	life_use_atm = true;
+	if!(alive _robber) exitWith {};
+	[getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
 };
+
 sleep 300;
 _action = _shop addAction["Rob the Gas Station",life_fnc_robstore];
 _shop switchMove "";
