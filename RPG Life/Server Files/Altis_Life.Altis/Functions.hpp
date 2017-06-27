@@ -227,6 +227,8 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+        //ARA
+        class robstore {};
     };
 
     class Gangs {
