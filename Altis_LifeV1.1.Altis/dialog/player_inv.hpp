@@ -277,7 +277,7 @@ class playerSettings {
         };
 
         class ButtonCrafting: Life_RscButtonMenu {
-            idc = -1;
+            idc = 7001;
             //shortcuts[] = {0x00050000 + 2};
             text = "Craft";
             onButtonClick = "closeDialog 0; [""craftingItems""] spawn cat_crafting_fnc_craft;";
