@@ -129,6 +129,15 @@ class Licenses {
         side = "civ";
     };
 
+    //Rogue Legal
+    class bounty {
+        variable = "bounty";
+        displayName = "STR_License_Bounty";
+        price = 15000;
+        illegal = false;
+        side = "civ";
+    };
+
     //Illegal Licenses
     class cocaine {
         variable = "cocaine";

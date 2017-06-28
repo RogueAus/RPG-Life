@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Altis Life RPG">
+    <Package name="Rogue">
+        <key ID="STR_License_Bounty">
+            <Original>Bounty Hunting License</Original>
+        </key>
+    </Package>
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
             <Original>Setting up client, please wait...</Original>

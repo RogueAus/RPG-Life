@@ -9,7 +9,11 @@
 disableSerialization;
 
 if !(playerSide isEqualTo civilian) exitWith {}; // Only for civs open this menu
-
+if (license_civ_rebel) exitWith {hint "You have an Illegal License! You can't be a Bounty Hunter!"};
+if (license_civ_marijuana) exitWith {hint "You have an Illegal License! You can't be a Bounty Hunter!"};
+if (license_civ_heroin) exitWith {hint "You have an Illegal License! You can't be a Bounty Hunter!"};
+if (license_civ_cocaine) exitWith {hint "You have an Illegal License! You can't be a Bounty Hunter!"};
+//if (!license_civ_bounty) exitWith {hint "You must have a Bounty Hunting License to do this."};
 createDialog "life_bounty_menu";
 
 private _display = findDisplay 7400;
