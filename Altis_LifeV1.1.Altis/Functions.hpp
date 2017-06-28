@@ -113,6 +113,8 @@ class Life_Client_Core {
         class tieingb {};
         class untie {};
         class untieb {};
+        //Rogue
+        class bountyGrab {};
     };
 
     class Config {
@@ -332,6 +334,11 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+        //Rogue
+        class bountyInfo {};
+        class bountyList {};
+        class bountyMenu {};
+
     };
 
     class Shops {

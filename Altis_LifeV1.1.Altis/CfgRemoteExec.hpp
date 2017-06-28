@@ -74,6 +74,8 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
+        /*Rogue*/
+        F(life_fnc_bountyList,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -116,6 +118,9 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+        //Rogue
+        F(life_fnc_bountyFetch,SERVER)
+        F(life_fnc_bountyCrimes,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -150,6 +155,8 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+        //Rogue
+        F(HC_fnc_bountyFetch,HC)
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)

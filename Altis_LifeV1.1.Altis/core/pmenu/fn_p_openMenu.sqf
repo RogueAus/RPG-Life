@@ -14,6 +14,7 @@ switch (playerSide) do {
     case west: {
         ctrlShow[2011,false];
         ctrlShow[7001,false];//Disable Crafting
+        ctrlShow[7002,false];//Disable Bounty
     };
 
     case civilian: {
@@ -23,6 +24,8 @@ switch (playerSide) do {
     case independent: {
         ctrlShow[2012,false];
         ctrlShow[2011,false];
+        ctrlShow[7001,false];//Disable Crafting
+        ctrlShow[7002,false];//Disable Bounty
     };
 };
 

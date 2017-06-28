@@ -93,6 +93,8 @@ class CfgFunctions
             class wantedAdd {};
             class wantedCrimes {};
             class wantedProfUpdate {};
+            //Rogue
+            class bountyFetch {};
         };
 
         class Jail
