@@ -8,7 +8,7 @@ class playerSettings {
     class controlsBackground {
         class Life_RscTitleBackground: Life_RscPicture {
             idc = -1;
-            text = "player_inv.paa";
+            text = "textures\YMenu.paa";
             x = 0;
             y = -0.12;
             w = 1;
