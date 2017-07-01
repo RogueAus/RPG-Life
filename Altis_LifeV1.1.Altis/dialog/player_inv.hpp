@@ -9,10 +9,10 @@ class playerSettings {
         class Life_RscTitleBackground: Life_RscPicture {
             idc = -1;
             text = "textures\YMenu.paa";
-            x = 0;
-            y = -0.12;
-            w = 1;
-            h = 1.28;
+            x = 0.293784 * safezoneW + safezoneX;
+            y = 0.159126 * safezoneH + safezoneY;
+            w = 0.412431 * safezoneW;
+            h = 0.70374 * safezoneH;
         };
 
         class Title: Life_RscTitle {
@@ -165,7 +165,7 @@ class playerSettings {
         };
 
         class ButtonClose: Life_RscPictureButtonMenu {
-            idc = -1;
+            idc = 7002;
             //shortcuts[] = {0x00050000 + 2};
             onButtonClick = "closeDialog 0;";
             x = 0.683532 * safezoneW + safezoneX;
@@ -176,7 +176,7 @@ class playerSettings {
         };
 
         class ButtonSettings: Life_RscPictureButtonMenu {
-            idc = -1;
+            idc = 7003;
             onButtonClick = "[] call life_fnc_settingsMenu;";
             x = 0.340183 * safezoneW + safezoneX;
             y = 0.626453 * safezoneH + safezoneY;
@@ -256,7 +256,7 @@ class playerSettings {
         };
 
         class ButtonSyncData: Life_RscPictureButtonMenu {
-            idc = -1;
+            idc = 7004;
             //shortcuts[] = {0x00050000 + 2};
             onButtonClick = "[] call SOCK_fnc_syncData;";
             x = 0.388644 * safezoneW + safezoneX;

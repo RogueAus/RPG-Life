@@ -68,3 +68,23 @@ _lic ctrlSetStructuredText parseText format ["
 %1
 </t>
 ",_struct];
+
+/*
+_btnSetting = CONTROL(7003);
+_btnSync = CONTROL(7004);
+_btnGang = CONTROL(2011);
+_btnWanted = CONTROL(2012);
+_btnKey = CONTROL(2013);
+_btnCell = CONTROL(2014);
+_btnAdmin = CONTROL(2021);
+_btnClose = CONTROL(7002);
+
+_btnSetting ctrlSetTooltip "Settings";
+_btnSync ctrlSetTooltip "Sync Data";
+_btnGang ctrlSetTooltip "My Gang";
+_btnWanted ctrlSetTooltip "Wanted List";
+_btnKey ctrlSetTooltip "Keychain";
+_btnCell ctrlSetTooltip "Messages";
+_btnAdmin ctrlSetTooltip "Admin Menu";
+_btnClose ctrlSetTooltip "Close";
+*/
