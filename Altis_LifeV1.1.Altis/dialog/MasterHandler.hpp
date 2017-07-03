@@ -28,3 +28,5 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"
