@@ -18,20 +18,20 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
-    save_playerStats = true; //Save food, water and damage (all sides)?
+    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    save_playerStats = false; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
-    save_civilian_position = false; //Save civilian location?
+    save_civilian_position = true; //Save civilian location?
     save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
     save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = false; //Save Arma inventory of vehicle to the database
-    save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
-    save_vehicle_damage = true; //Save vehicle damage to the database.
+    save_vehicle_fuel = false; //Save vehicle fuel level to the database (Impounded/Garaged).
+    save_vehicle_damage = false; //Save vehicle damage to the database.
     save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 
@@ -65,7 +65,7 @@ class Life_Settings {
     /* Escape Menu Configuration */
     escapeMenu_timer = 10; //Time required to pass before you can click the abort button in the escape menu.
     escapeMenu_displayExtras = true; //Display the players UID & serverName specified below in the escape menu.
-    escapeMenu_displayText = "Altis Life by ARA"; //Text displayed in the escape menu. Make it short.. around 20 characters.
+    escapeMenu_displayText = "Altis Life by Rogue"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
