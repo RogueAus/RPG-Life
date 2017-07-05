@@ -15,6 +15,15 @@ civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
 civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", _spawnBuildings,350];
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", _spawnBuildings,350];
 
+for "_i" from 51 to 100 do {
+    if (!(str(player) in ["civ_%1",_i])) then {
+        if ((FETCH_CONST(life_donorlevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
+            ["NotWhitelisted",false,true] call BIS_fnc_endMission;
+            sleep 35;
+        };
+    };
+};
+
 waitUntil {!(isNull (findDisplay 46))};
 if (life_is_alive && !life_is_arrested) then {
     /* Spawn at our last position */
