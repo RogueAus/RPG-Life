@@ -15,14 +15,13 @@ civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
 civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", _spawnBuildings,350];
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", _spawnBuildings,350];
 
-for "_i" from 51 to 100 do {
-    if (!(str(player) in ["civ_%1",_i])) then {
-        if ((FETCH_CONST(life_donorlevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
-            ["NotWhitelisted",false,true] call BIS_fnc_endMission;
-            sleep 35;
-        };
+if (!(str(player) in ["civ_1","civ_2","civ_3","civ_4","civ_5","civ_6","civ_7","civ_8","civ_9","civ_10","civ_11","civ_12","civ_13","civ_14","civ_15","civ_16","civ_17","civ_18","civ_19","civ_20","civ_21","civ_22","civ_23","civ_24","civ_25","civ_26","civ_27","civ_28","civ_29","civ_30","civ_31","civ_32","civ_33","civ_34","civ_35","civ_36","civ_37","civ_38","civ_39","civ_40","civ_41","civ_42","civ_43","civ_44","civ_45","civ_46","civ_47","civ_48","civ_49","civ_50"])) then {
+    if ((FETCH_CONST(life_donorlevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
+        ["NotWhitelisted",false,true] call BIS_fnc_endMission;
+        sleep 35;
     };
 };
+
 
 waitUntil {!(isNull (findDisplay 46))};
 if (life_is_alive && !life_is_arrested) then {
