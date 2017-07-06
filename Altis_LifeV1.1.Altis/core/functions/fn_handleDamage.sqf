@@ -15,6 +15,8 @@ params [
     ["_index",0,[0]]
 ];
 
+private _originalDamage = if(_part isEqualTo "")then{damage _unit}else{_unit getHit _part};
+
 //Handle the tazer first (Top-Priority).
 if (!isNull _source) then {
     if (_source != _unit) then {
@@ -45,6 +47,9 @@ if (!isNull _source) then {
         };
     };
 };
+
+if(player inArea "safezone_kav")exitWith{_originalDamage};
+if(player inArea "safezone_kos")exitWith{_originalDamage};
 
 //ANTI VDM by Rogue <3
 private["_vehicle"];

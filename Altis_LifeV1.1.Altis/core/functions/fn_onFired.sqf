@@ -20,3 +20,18 @@ if (_ammoType isEqualTo "GrenadeHand_stone") then {
         [_position] remoteExec ["life_fnc_flashbang",RCLIENT];
     };
 };
+
+if((!(playerSide isEqualTo west))&&(player inArea "safezone"))then {
+    deleteVehicle _projectile;
+
+    if(ARA_shot_safezone > 4)exitWith {
+        ARA_shot_safezone = 0;
+        removeAllWeapons player;
+
+        titleText ["You have just lost your weapons for shooting in a safezone","PLAIN DOWN"];
+        hint "You have just lost your weapons for shooting in a safezone";
+    };
+
+    ARA_shot_safezone = ARA_shot_safezone + 1;
+    hint format ["Do not shoot in a safezone! \n(Warning %1 / 5)",ARA_shot_safezone];
+};

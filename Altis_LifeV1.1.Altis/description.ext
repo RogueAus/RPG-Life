@@ -29,6 +29,7 @@ class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
     #include "ara\ara_functions.cpp"
+    #include "ara\crafting\functions.cpp"
 };
 
 class CfgSounds {
