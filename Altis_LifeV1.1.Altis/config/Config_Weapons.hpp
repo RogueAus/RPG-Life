@@ -51,25 +51,42 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
-            { "arifle_TRG20_F", "", 25000, 12500, "" },
-            { "arifle_Katiba_F", "", 30000, 15000, "" },
-            { "srifle_DMR_01_F", "", 50000, 25000, "" },
-            { "arifle_SDAR_F", "", 20000, 10000, "" },
-            { "arifle_AK12_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_AKS_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_AKM_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //Apex DLC
-            { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, //Apex DLC
-            { "arifle_CTAR_blk_F", "", 30000, 15000, "" } //Apex DLC
+			{ "hgun_Rook40_F", "", 5000, 1500, "" }, // Rook-40 9mm
+			{ "hgun_Pistol_01_F", "", 5000, 1500, "" }, // PM 9mm
+			{ "hgun_ACPC2_F", "", 6500, 3000, "" }, // ACP-C2 45.
+			{ "hgun_Pistol_heavy_01_F", "", 7000, 3500, "" }, // 4-Five
+			{ "hgun_Pistol_heavy_02_F", "", 9000, 4500, "" }, // Zubr
+            { "arifle_TRG20_F", "", 30000, 12500, "" }, // TRG
+			{ "arifle_MK20_plain_F", "", 40000, 14000, "" }, // Mk20
+			{ "arifle_CTAR_blk_F", "", 55000, 22500, "" }, // Car-95
+            { "arifle_Katiba_F", "", 60000, 22500, "" }, // Katiba
+			{ "arifle_ARX_blk_F", "", 85000, 25000, "" }, // Type-115
+            { "arifle_AK12_F", "", 90000, 32500, "" }, // AK-12
+			{ "arifle_MX_SW_F", "", 120000, 60000, "" }, // MX-SW
+			{ "LMG_03_F", "", 145000, 80000, "" }, // LIM - 85
+			{ "srifle_DMR_01_F", "", 80000, 35000, "" }, // Rahim
+			{ "srifle_DMR_07_blk_F", "", 85000, 40000, "" }, // CMR-76
+			{ "srifle_DMR_03_F", "", 145000, 80000, "" }, // Mk1 EMR
+			{ "srifle_EBR_F", "", 145000, 80000, "" } // Mk 18
+
+				
         };
         mags[] = {
-            { "30Rnd_556x45_Stanag", "", 300, 150, "" },
-            { "30Rnd_762x39_Mag_F", "", 300, 150, "" }, //Apex DLC
-            { "30Rnd_545x39_Mag_F", "", 300, 150, "" }, //Apex DLC
-            { "30Rnd_65x39_caseless_green", "", 275, 140, "" },
-            { "10Rnd_762x54_Mag", "", 500, 250, "" },
-            { "20Rnd_556x45_UW_mag", "", 125, 60, "" },
-            { "30Rnd_580x42_Mag_F", "", 125, 60, "" } //Apex DLC
+			{"30Rnd_556x45_Stanag", "", 350, 150, "" }, // TRG/Mk20 Ammo - 5.56
+			{"30Rnd_65x39_caseless_mag", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm
+			{"30Rnd_580x42_Mag_F", "", 400, 150, "" }, // Car-95 Ammo - 5.8mm
+			{"30Rnd_762x39_Mag_F", "", 500, 250, "" }, // AK-12 Ammo - 7.62
+			{"30Rnd_65x39_caseless_green", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm green trasers
+			{"100Rnd_65x39_caseless_mag", "", 1200, 350, "" }, // MX-SW Ammo - 6.5mm 100rnd
+			{"200Rnd_556x45_Box_F", "", 2000, 1000, "" }, // LIM-85 Ammo - 5.56 200rnd
+			{"10Rnd_762x54_Mag", "", 600, 250, "" }, // Rahim Ammo - 7.62
+			{"20Rnd_650x39_Cased_Mag_F", "", 850, 465, "" }, // CMR-76 - 6.5mm
+			{"20Rnd_762x51_Mag", "", 1100, 600, "" }, // Mk1 EMR/ Mk 18 Ammo - 7.62
+			{"11Rnd_45ACP_Mag", "", 200, 100, "" }, // 4-Five Ammo - 45. ACP
+			{"6Rnd_45ACP_Cylinder", "", 250, 200, "" }, // Zubr Ammo - 45. ACP
+			{"10Rnd_9x21_Mag", "", 150, 75, "" }, // PM Ammo - 9mm
+			{"16Rnd_9x21_Mag", "", 150, 75, "" }, // Rook-40 Ammo - 9mm
+			{"9Rnd_45ACP_Mag", "", 175, 100, "" } // ACP-C2 Ammo - 45. ACP
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500, 1750, "" },
