@@ -301,12 +301,24 @@ class Clothing {
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-            { "H_Bandanna_camo", "", 650, "" },
-            { "H_ShemagOpen_khk", "", 800, "" },
-            { "H_ShemagOpen_tan", "", 850, "" },
-            { "H_Shemag_olive", "", 850, "" },
-            { "H_HelmetO_ocamo", "", 2500, "" }
-        };
+			{ "H_Bandanna_khk", "", , "" },
+			{ "H_Cap_blk_Raven", "", , "" },
+			{ "H_Cap_brn_SPECOPS", "", , "" },
+			{ "H_Hat_camo", "", , "" },
+			{ "H_Hat_checker", "Sex Offender Fedora", , "" },
+			{ "H_Watchcap_cbr", "", , "" },
+			{ "H_Watchcap_camo", "", , "" },
+			{ "H_MilCap_ocamo", "", , "" },
+			{ "H_MilCap_dgtl", "", , "" },
+            { "H_Booniehat_khk", "", 175, "" },
+            { "H_Booniehat_oli", "", 175, "" },
+            { "H_Booniehat_tan", "", 175, "" },
+            { "H_Shemag_olive", "", 1250, "" },
+			{ "H_ShemagOpen_tan", "", 1250, "" },
+			{ "H_ShemagOpen_khk", "", 1250, "" }
+            { "H_HelmetB", "", 2350, "" },
+			{ "H_HelmetB_sand", "", 2350, "" }
+			};
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
             { "G_Shades_Black", "", 20, "" },
@@ -333,38 +345,43 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_BandollierB_cbr", "", 4500, "" },
-            { "V_HarnessO_brn", "", 7500, "" },
-            { "V_TacVest_khk", "", 12500, "" },
-            { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC
+            { "V_BandolierB_cbr", "", 2500, "" },
+			{ "V_BandolierB_khk", "", 2500, "" },
+			{ "V_BandolierB_oli", "", 2500, "" },
+            { "V_HarnessOGL_brn", "", 3500, "" },
+			{ "V_HarnessOGL_gry", "", 3500, "" },
+			{ "V_Chestrig_khk", "", 5000, "" },
+			{ "V_Chestrig_rgr", "", 5000, "" },
+			{ "V_TacChestrig_cbr_F", "", 5250, "" },
+			{ "V_TacChestrig_grn_F", "", 5250, "" },
+			{ "V_TacChestrig_oli_F", "", 5250, "" },
+			{ "V_HarnessO_brn", "", 6500, "" },
+			{ "V_HarnessO_gry", "", 6500, "" },
+            { "V_TacVest_brn", "", 13500, "" },
+            { "V_TacVest_khk", "", 13500, "" },
+			{ "V_TacVest_camo", "", 13500, "" },
+			{ "V_PlateCarrierL_CTRG", "", 25000, "" },
+			{ "V_PlateCarrier1_rgr", "", 25000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
-            { "B_OutdoorPack_blk", "", 500, "" },
-            { "B_AssaultPack_khk", "", 2000, "" },
-            { "B_AssaultPack_dgtl", "", 2000, "" },
-            { "B_AssaultPack_rgr", "", 2000, "" },
-            { "B_AssaultPack_sgg", "", 2000, "" },
-            { "B_AssaultPack_blk", "", 2000, "" },
-            { "B_AssaultPack_cbr", "", 2000, "" },
-            { "B_AssaultPack_mcamo", "", 2000, "" },
-            { "B_TacticalPack_oli", "", 2500, "" },
-            { "B_Kitbag_mcamo", "", 3500, "" },
-            { "B_Kitbag_sgg", "", 3500, "" },
-            { "B_Kitbag_cbr", "", 3500, "" },
-            { "B_FieldPack_blk", "", 5000, "" },
-            { "B_FieldPack_ocamo", "", 5000, "" },
-            { "B_FieldPack_oucamo", "", 5000, "" },
-            { "B_Bergen_sgg", "", 6500, "" },
-            { "B_Bergen_mcamo", "", 6500, "" },
-            { "B_Bergen_rgr", "", 6500, "" },
-            { "B_Bergen_blk", "", 6500, "" },
-            { "B_Carryall_ocamo", "", 7500, "" },
-            { "B_Carryall_oucamo", "", 7500, "" },
-            { "B_Carryall_mcamo", "", 7500, "" },
-            { "B_Carryall_oli", "", 7500, "" },
-            { "B_Carryall_khk", "", 7500, "" },
-            { "B_Carryall_cbr", "", 7500, "" }
+			{ "B_FieldPack_cbr", "", 1500, "" },
+			{ "B_FieldPack_khk", "", 1500, "" },
+			{ "B_Kitbag_cbr", "", 2000, "" },
+			{ "B_Kitbag_mcamo", "", 2000, "" },
+			{ "B_Kitbag_sgg", "", 2000, "" },
+			{ "B_TacticalPack_rgr", "", 2650, "" },
+			{ "B_TacticalPack_mcamo", "", 2650, "" },
+			{ "B_TacticalPack_oli", "", 2650, "" },
+			{ "B_ViperLightHarness_blk_F", "", 3500, "" },
+			{ "B_ViperLightHarness_khk_F", "", 3500, "" },
+			{ "B_ViperLightHarness_oli_F", "", 3500, "" },
+			{ "B_ViperHarness_blk_F", "", 4500, "" },
+			{ "B_ViperHarness_khk_F", "", 4500, "" },
+			{ "B_ViperHarness_oli_F", "", 4500, "" },
+			{ "B_Carryall_cbr", "", 5000, "" },
+			{ "B_Carryall_mcamo", "", 5000, "" },
+			{ "B_Carryall_oli", "", 5000, "" }		
         };
     };
 
