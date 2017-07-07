@@ -116,6 +116,24 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+
+    class NotDonor {
+        title = "$STR_NotDonor_Title";
+        subtitle = "$STR_NotDonor_SubTitle";
+        description = "$STR_NotDonor_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class NotFree {
+        title = "$STR_NotFree_Title";
+        subtitle = "$STR_NotFree_SubTitle";
+        description = "$STR_NotFree_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
 };
 
 class CfgNotifications {
