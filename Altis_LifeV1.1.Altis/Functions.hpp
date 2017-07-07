@@ -393,5 +393,8 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+        //Rogue
+        class getInVehicle {};
+        class getOutVehicle {};
     };
 };
