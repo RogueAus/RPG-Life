@@ -86,14 +86,32 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" },
-            { "B_G_Offroad_01_F", "" },
-            { "O_MRAP_02_F", "" },
-            { "B_Heli_Light_01_stripped_F", "" },
-            { "B_G_Offroad_01_armed_F", "" },
-            { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+            { "C_Hatchback_01_F", "" },
+			{ "C_Hatchback_01_sport_F", "" },
+			{ "C_SUV_01_F", "" },
+			{ "O_T_LSV_02_unarmed_F", "" },
+			{ "O_MRAP_02_F", "" },
+			{ "I_MRAP_03_F", "" },
+			{ "I_G_Offroad_01_armed_F", "" },
+			{ "B_Heli_Light_01_stripped_F", "" },
+			{ "O_Heli_Transport_04_F", "" },
+			{ "I_Heli_Transport_02_F", "" },
+			{ "B_Heli_Light_01_dynamicLoadout_F", "" },
+			{ "I_Heli_light_03_dynamicLoadout_F", "" }
         };
     };
+	
+    class  reb_air {
+		side = "civ";
+		conditions = "";
+	    vehicles[] = {
+			{ "", "" },
+			{ "", "" },
+			{ "", "" },
+			{ "", "" }
+	    };
+	};
+			
 
     class med_shop {
         side = "med";
@@ -317,12 +335,20 @@ class LifeCfgVehicles {
             }, "" }
         };
     };
+	
+	// Apex DLC
+	class I_MRAP_03_F {
+		vItemSpace = 100;
+		conditions = "";
+		price = 250000;
+		textures[] = {};
+	};
 
     // Apex DLC
     class O_T_LSV_02_unarmed_F {
         vItemSpace = 100;
         conditions = "";
-        price = 100000;
+        price = 250000;
         textures[] = {
             { "Arid", "civ", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
@@ -376,7 +402,7 @@ class LifeCfgVehicles {
         price = 200000;
         textures[] = {};
     };
-
+// Armed Cop HMG
     class B_MRAP_01_hmg_F {
         vItemSpace = 100;
         conditions = "";
@@ -390,13 +416,46 @@ class LifeCfgVehicles {
         };
     };
 
+// Armed Police Boat
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = 175;
         conditions = "license_cop_cg || {!(playerSide isEqualTo west)}";
         price = 75000;
         textures[] = { };
     };
+	
+// Armed Pawnee
+	class B_Heli_Light_01_dynamicLoadout_F {
+		vItemSpace = 65;
+		conditions = "";
+		price = 3000000;
+		textures[] = {};
+	};
+	
+// Armed Hellcat
+    class I_Heli_light_03_dynamicLoadout_F {
+		vItemSpace =  75;
+		conditions = "";
+		price = 5000000;
+		textures[] = {};
+	};
 
+// Taru Crane	
+	    class O_Heli_Transport_04_F {
+		vItemSpace =  225;
+		conditions = "";
+		price = 1100000;
+		textures[] = {};
+	};
+	
+// Taru Mowhawk
+	    class I_Heli_Transport_02_F {
+		vItemSpace =  355;
+		conditions = "";
+		price = 2120000;
+		textures[] = {};
+	};
+	
     class B_Boat_Transport_01_F {
         vItemSpace = 45;
         conditions = "license_cop_cg || {!(playerSide isEqualTo west)}";
@@ -484,7 +543,7 @@ class LifeCfgVehicles {
     class O_MRAP_02_F {
         vItemSpace = 60;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 150000;
+        price = 425000;
         textures[] = { };
     };
 
