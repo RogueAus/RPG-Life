@@ -284,32 +284,34 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_IG_Guerilla1_1", "", 5000, "" },
-            { "U_I_G_Story_Protagonist_F", "", 7500, "" },
-            { "U_I_G_resistanceLeader_F", "", 11500, "" },
-            { "U_IG_leader", "", 15340, "" },
-            { "U_O_PilotCoveralls", "", 15610, "" },
-            { "U_O_SpecopsUniform_ocamo", "", 17500, "" },
-            { "U_O_GhillieSuit", "", 50000, "" },
-            { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_2_F", "", 51000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_3_F", "", 50032, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, "" } //Apex DLC
+            { "U_BG_Guerilla2_1", "", 3500, "" },
+            { "U_BG_Guerilla2_3", "", 3500, "" },
+            { "U_BG_Guerilla1_1", "", 4500, "" },
+            { "U_BG_Guerrilla_6_1", "", 5000, "" },
+            { "U_BG_leader", "", 6500, "" },
+            { "U_O_CombatUniform_ocamo", "", 7250, "" },
+			{ "U_O_SpecopsUniform_ocamo", "", 7250, "" },
+            { "U_O_CombatUniform_oucamo", "", 7250, "" },
+            { "U_B_CombatUniform_mcam", "", 7250, "" },
+            { "U_I_CombatUniform", "", 7250, "" },
+            { "U_B_GhillieSuit", "", 15000, "" },
+            { "U_O_GhillieSuit", "", 15000, "" },
+            { "U_I_GhillieSuit", "", 15000, "" },
+            { "U_I_FullGhillie_lsh", "", 25000, "" },
+            { "U_I_FullGhillie_ard", "", 25000, "" },
+			{ "U_I_FullGhillie_sard", "", 25000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-			{ "H_Bandanna_khk", "", , "" },
-			{ "H_Cap_blk_Raven", "", , "" },
-			{ "H_Cap_brn_SPECOPS", "", , "" },
-			{ "H_Hat_camo", "", , "" },
-			{ "H_Hat_checker", "Sex Offender Fedora", , "" },
-			{ "H_Watchcap_cbr", "", , "" },
-			{ "H_Watchcap_camo", "", , "" },
-			{ "H_MilCap_ocamo", "", , "" },
-			{ "H_MilCap_dgtl", "", , "" },
+			{ "H_Bandanna_khk", "", 50, "" },
+			{ "H_Cap_blk_Raven", "", 75, "" },
+			{ "H_Cap_brn_SPECOPS", "", 75, "" },
+			{ "H_Hat_camo", "", 100, "" },
+			{ "H_Hat_checker", "Sex Offender Fedora", 100, "" },
+			{ "H_Watchcap_cbr", "", 125, "" },
+			{ "H_Watchcap_camo", "", 125, "" },
+			{ "H_MilCap_ocamo", "", 150, "" },
+			{ "H_MilCap_dgtl", "", 150, "" },
             { "H_Booniehat_khk", "", 175, "" },
             { "H_Booniehat_oli", "", 175, "" },
             { "H_Booniehat_tan", "", 175, "" },
@@ -317,7 +319,10 @@ class Clothing {
 			{ "H_ShemagOpen_tan", "", 1250, "" },
 			{ "H_ShemagOpen_khk", "", 1250, "" }
             { "H_HelmetB", "", 2350, "" },
-			{ "H_HelmetB_sand", "", 2350, "" }
+			{ "H_HelmetB_sand", "", 2350, "" },
+			{ "H_HelmetB_camo", "", 2500, "" },
+			{ "H_HelmetO_ocamo", "", 2750, "" },
+			{ "H_HelmetO_oucamo", "", 2750, "" }
 			};
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -330,18 +335,18 @@ class Clothing {
             { "G_Lowprofile", "", 30, "" },
             { "G_Squares", "", 50, "" },
             { "G_Combat", "", 125, "" },
-            { "G_Balaclava_blk", "", 150, "" },
-            { "G_Balaclava_combat", "", 150, "" },
-            { "G_Balaclava_lowprofile", "", 150, "" },
-            { "G_Balaclava_oli", "", 150, "" },
-            { "G_Bandanna_aviator", "", 150, "" },
-            { "G_Bandanna_beast", "", 150, "" },
-            { "G_Bandanna_blk", "", 150, "" },
-            { "G_Bandanna_khk", "", 150, "" },
-            { "G_Bandanna_oli", "", 150, "" },
-            { "G_Bandanna_shades", "", 150, "" },
-            { "G_Bandanna_sport", "", 150, "" },
-            { "G_Bandanna_tan", "", 150, "" }
+			{ "G_Balaclava_oli", "", 1200, "" },
+            { "G_Balaclava_blk", "", 1200, "" },
+			{ "G_Balaclava_lowprofile", "", 1250, "" },
+            { "G_Balaclava_combat", "", 1250, "" },
+            { "G_Bandanna_beast", "", 1500, "" },
+            { "G_Bandanna_blk", "", 1500, "" },
+            { "G_Bandanna_khk", "", 1500, "" },
+			{ "G_Bandanna_tan", "", 1500, "" }
+            { "G_Bandanna_oli", "", 1500, "" },
+            { "G_Bandanna_shades", "", 1500, "" },
+            { "G_Bandanna_sport", "", 1500, "" },
+			{ "G_Bandanna_aviator", "", 1500, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
