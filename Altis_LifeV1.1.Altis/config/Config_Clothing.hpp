@@ -284,22 +284,22 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_BG_Guerilla2_1", "", 3500, "" },
-            { "U_BG_Guerilla2_3", "", 3500, "" },
-            { "U_BG_Guerilla1_1", "", 4500, "" },
-            { "U_BG_Guerrilla_6_1", "", 5000, "" },
-            { "U_BG_leader", "", 6500, "" },
-            { "U_O_CombatUniform_ocamo", "", 7250, "" },
-			{ "U_O_SpecopsUniform_ocamo", "", 7250, "" },
-            { "U_O_CombatUniform_oucamo", "", 7250, "" },
-            { "U_B_CombatUniform_mcam", "", 7250, "" },
-            { "U_I_CombatUniform", "", 7250, "" },
-            { "U_B_GhillieSuit", "", 15000, "" },
-            { "U_O_GhillieSuit", "", 15000, "" },
-            { "U_I_GhillieSuit", "", 15000, "" },
-            { "U_I_FullGhillie_lsh", "", 25000, "" },
-            { "U_I_FullGhillie_ard", "", 25000, "" },
-			{ "U_I_FullGhillie_sard", "", 25000, "" }
+            { "U_BG_Guerilla2_1", "", 9500, "" },
+            { "U_BG_Guerilla2_3", "", 9500, "" },
+            { "U_BG_Guerilla1_1", "", 9500, "" },
+            { "U_BG_Guerrilla_6_1", "", 15000, "" },
+            { "U_BG_leader", "", 16500, "" },
+            { "U_O_CombatUniform_ocamo", "", 27250, "" },
+			{ "U_O_SpecopsUniform_ocamo", "", 27250, "" },
+            { "U_O_CombatUniform_oucamo", "", 27250, "" },
+            { "U_B_CombatUniform_mcam", "", 27250, "" },
+            { "U_I_CombatUniform", "", 27250, "" },
+            { "U_B_GhillieSuit", "", 115000, "" },
+            { "U_O_GhillieSuit", "", 115000, "" },
+            { "U_I_GhillieSuit", "", 115000, "" },
+            { "U_I_FullGhillie_lsh", "", 150000, "" },
+            { "U_I_FullGhillie_ard", "", 150000, "" },
+			{ "U_I_FullGhillie_sard", "", 150000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -319,10 +319,10 @@ class Clothing {
 			{ "H_ShemagOpen_tan", "", 1250, "" },
 			{ "H_ShemagOpen_khk", "", 1250, "" },
             { "H_HelmetB", "", 2350, "" },
-			{ "H_HelmetB_sand", "", 2350, "" },
-			{ "H_HelmetB_camo", "", 2500, "" },
-			{ "H_HelmetO_ocamo", "", 2750, "" },
-			{ "H_HelmetO_oucamo", "", 2750, "" }
+			{ "H_HelmetB_sand", "", 5350, "" },
+			{ "H_HelmetB_camo", "", 5500, "" },
+			{ "H_HelmetO_ocamo", "", 5750, "" },
+			{ "H_HelmetO_oucamo", "", 5750, "" }
 			};
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
