@@ -96,8 +96,8 @@ class CarShops {
 			{ "B_Heli_Light_01_stripped_F", "" },
 			{ "O_Heli_Transport_04_F", "" },
 			{ "I_Heli_Transport_02_F", "" },
-			{ "B_Heli_Light_01_dynamicLoadout_F", "" },
-			{ "I_Heli_light_03_dynamicLoadout_F", "" }
+			{ "B_Heli_Light_01_armed_F", "" },
+			{ "I_Heli_light_03_F", "" }
         };
     };
 	
@@ -424,7 +424,7 @@ class LifeCfgVehicles {
     };
 		
 // Armed Pawnee
-	class B_Heli_Light_01_dynamicLoadout_F {
+	class B_Heli_Light_01_armed_F {
 		vItemSpace = 65;
 		conditions = "";
 		price = 3000000;
@@ -432,7 +432,7 @@ class LifeCfgVehicles {
 	};
 	
 // Armed Hellcat
-    class I_Heli_light_03_dynamicLoadout_F {
+    class I_Heli_light_03_F {
 		vItemSpace =  75;
 		conditions = "";
 		price = 5000000;
