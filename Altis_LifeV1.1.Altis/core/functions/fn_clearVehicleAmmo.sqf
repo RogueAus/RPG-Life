@@ -35,13 +35,13 @@ if (_veh isEqualTo "B_Heli_Transport_01_F") then {
 };
 
 if (_veh isEqualTo "B_Heli_Light_01_dynamicLoadout_F") then {
-   _vehicle removeMagazineTurret ["5000Rnd_762x51_Belt", [0]];
-   _vehicle removeMagazineTurret ["24Rnd_missiles", [0]];
+   _vehicle removeMagazineTurret ["5000Rnd_762x51_Belt", [-1]];
+   _vehicle removeMagazineTurret ["24Rnd_missiles", [-1]];
 };
 
 if (_veh isEqualTo "I_Heli_light_03_dynamicLoadout_F") then {
-    _vehicle removeMagazineTurret ["5000Rnd_762x51_Yellow_Belt", [0]];
-	_vehicle removeMagazineTurret ["24Rnd_missiles", [0]];
+    _vehicle removeMagazineTurret ["5000Rnd_762x51_Yellow_Belt", [-1]];
+	_vehicle removeMagazineTurret ["24Rnd_missiles", [-1]];
 };
 
 clearWeaponCargoGlobal _vehicle;

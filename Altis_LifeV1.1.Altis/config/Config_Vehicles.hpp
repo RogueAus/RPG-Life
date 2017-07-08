@@ -92,7 +92,7 @@ class CarShops {
 			{ "O_T_LSV_02_unarmed_F", "" },
 			{ "O_MRAP_02_F", "" },
 			{ "I_MRAP_03_F", "" },
-			{ "I_G_Offroad_01_armed_F", "" },
+			{ "B_G_Offroad_01_armed_F", "" },
 			{ "B_Heli_Light_01_stripped_F", "" },
 			{ "O_Heli_Transport_04_F", "" },
 			{ "I_Heli_Transport_02_F", "" },
@@ -336,11 +336,10 @@ class LifeCfgVehicles {
         };
     };
 	
-	// Apex DLC
 	class I_MRAP_03_F {
 		vItemSpace = 100;
 		conditions = "";
-		price = 250000;
+		price = 650000;
 		textures[] = {};
 	};
 
@@ -423,7 +422,7 @@ class LifeCfgVehicles {
         price = 75000;
         textures[] = { };
     };
-	
+		
 // Armed Pawnee
 	class B_Heli_Light_01_dynamicLoadout_F {
 		vItemSpace = 65;
