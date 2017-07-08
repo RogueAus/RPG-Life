@@ -32,6 +32,7 @@ if(isNull _civ) exitWith {};
 
 hint format ["%1 has tied you up.",name _civ];
 if((player getVariable["playerSurrender", false])) then { player setVariable ["playerSurrender",false,true]; };
+if((player getVariable["knockedOut", false])) then { player setVariable ["knockedOut",false,true]; };
 
 player switchMove "";
 
