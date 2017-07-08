@@ -42179,7 +42179,7 @@ class Mission
 			position[]={3533.875,8.1002026,13018.295};
 			class Attributes
 			{
-				condition="player in thisList";
+				condition="vehicle player in thisList";
 				onActivation="hintSilent ""You have entered Kavala Safe Zone, please refrain from firing your weapon as this may result in a kick"";" \n "";
 				onDeactivation="hintSilent ""You have left Kavala Safe Zone"";" \n "";
 				sizeA=750;
