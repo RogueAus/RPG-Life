@@ -317,7 +317,7 @@ class Clothing {
             { "H_Booniehat_tan", "", 175, "" },
             { "H_Shemag_olive", "", 1250, "" },
 			{ "H_ShemagOpen_tan", "", 1250, "" },
-			{ "H_ShemagOpen_khk", "", 1250, "" }
+			{ "H_ShemagOpen_khk", "", 1250, "" },
             { "H_HelmetB", "", 2350, "" },
 			{ "H_HelmetB_sand", "", 2350, "" },
 			{ "H_HelmetB_camo", "", 2500, "" },
