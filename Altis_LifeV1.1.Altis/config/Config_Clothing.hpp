@@ -342,7 +342,7 @@ class Clothing {
             { "G_Bandanna_beast", "", 1500, "" },
             { "G_Bandanna_blk", "", 1500, "" },
             { "G_Bandanna_khk", "", 1500, "" },
-			{ "G_Bandanna_tan", "", 1500, "" }
+			{ "G_Bandanna_tan", "", 1500, "" },
             { "G_Bandanna_oli", "", 1500, "" },
             { "G_Bandanna_shades", "", 1500, "" },
             { "G_Bandanna_sport", "", 1500, "" },
@@ -386,7 +386,7 @@ class Clothing {
 			{ "B_ViperHarness_oli_F", "", 4500, "" },
 			{ "B_Carryall_cbr", "", 5000, "" },
 			{ "B_Carryall_mcamo", "", 5000, "" },
-			{ "B_Carryall_oli", "", 5000, "" }		
+			{ "B_Carryall_oli", "", 5000, "" }
         };
     };
 
