@@ -55,7 +55,7 @@ class RscText_1002: Life_RscText
 {
 	idc = -1;
 
-	text = "Amout of Items sold by You"; //--- ToDo: Localize;
+	text = "Amount of Items sold by You"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;
