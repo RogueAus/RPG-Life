@@ -52,20 +52,20 @@ class WeaponShops {
         conditions = "license_civ_rebel";
         items[] = {
 			{ "hgun_Rook40_F", "", 5000, 1500, "" }, // Rook-40 9mm
-			{ "hgun_Pistol_01_F", "", 5000, 1500, "" }, // PM 9mm
+			{ "hgun_Pistol_01_F", "", 5000, 1500, "" }, // PM 9mm // APEX DLC
 			{ "hgun_ACPC2_F", "", 6500, 3000, "" }, // ACP-C2 45.
 			{ "hgun_Pistol_heavy_01_F", "", 7000, 3500, "" }, // 4-Five
 			{ "hgun_Pistol_heavy_02_F", "", 9000, 4500, "" }, // Zubr
             { "arifle_TRG20_F", "", 30000, 12500, "" }, // TRG
 			{ "arifle_MK20_plain_F", "", 40000, 14000, "" }, // Mk20
-			{ "arifle_CTAR_blk_F", "", 55000, 22500, "" }, // Car-95
+			{ "arifle_CTAR_blk_F", "", 55000, 22500, "" }, // Car-95 // APEX DLC
             { "arifle_Katiba_F", "", 60000, 22500, "" }, // Katiba
-			{ "arifle_ARX_blk_F", "", 85000, 25000, "" }, // Type-115
-            { "arifle_AK12_F", "", 90000, 32500, "" }, // AK-12
+			{ "arifle_ARX_blk_F", "", 85000, 25000, "" }, // Type-115 // APEX DLC
+            { "arifle_AK12_F", "", 90000, 32500, "" }, // AK-12 // APEX DLC
 			{ "arifle_MX_SW_F", "", 120000, 60000, "" }, // MX-SW
-			{ "LMG_03_F", "", 145000, 80000, "" }, // LIM - 85
+			{ "LMG_03_F", "", 145000, 80000, "" }, // LIM - 85 // APEX DLC
 			{ "srifle_DMR_01_F", "", 80000, 35000, "" }, // Rahim
-			{ "srifle_DMR_07_blk_F", "", 85000, 40000, "" }, // CMR-76
+			{ "srifle_DMR_07_blk_F", "", 85000, 40000, "" }, // CMR-76 // APEX DLC
 			{ "srifle_DMR_03_F", "", 145000, 80000, "" }, // Mk1 EMR
 			{ "srifle_EBR_F", "", 145000, 80000, "" } // Mk 18
 
@@ -78,21 +78,35 @@ class WeaponShops {
 			{"30Rnd_762x39_Mag_F", "", 500, 250, "" }, // AK-12 Ammo - 7.62
 			{"30Rnd_65x39_caseless_green", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm green trasers
 			{"100Rnd_65x39_caseless_mag", "", 1200, 350, "" }, // MX-SW Ammo - 6.5mm 100rnd
-			{"200Rnd_556x45_Box_F", "", 2000, 1000, "" }, // LIM-85 Ammo - 5.56 200rnd
+			{"200Rnd_556x45_Box_F", "", 2000, 1000, "" }, // LIM-85 Ammo - 5.56 200rnd // APEX DLC
 			{"10Rnd_762x54_Mag", "", 600, 250, "" }, // Rahim Ammo - 7.62
-			{"20Rnd_650x39_Cased_Mag_F", "", 850, 465, "" }, // CMR-76 - 6.5mm
+			{"20Rnd_650x39_Cased_Mag_F", "", 850, 465, "" }, // CMR-76 - 6.5mm // APEX DLC
 			{"20Rnd_762x51_Mag", "", 1100, 600, "" }, // Mk1 EMR/ Mk 18 Ammo - 7.62
 			{"11Rnd_45ACP_Mag", "", 200, 100, "" }, // 4-Five Ammo - 45. ACP
 			{"6Rnd_45ACP_Cylinder", "", 250, 200, "" }, // Zubr Ammo - 45. ACP
-			{"10Rnd_9x21_Mag", "", 150, 75, "" }, // PM Ammo - 9mm
+			{"10Rnd_9x21_Mag", "", 150, 75, "" }, // PM Ammo - 9mm // APEX DLC
 			{"16Rnd_9x21_Mag", "", 150, 75, "" }, // Rook-40 Ammo - 9mm
 			{"9Rnd_45ACP_Mag", "", 175, 100, "" } // ACP-C2 Ammo - 45. ACP
         };
         accs[] = {
-            { "optic_ACO_grn", "", 3500, 1750, "" },
-            { "optic_Holosight", "", 3600, 1800, "" },
-            { "optic_Hamr", "", 7500, 3750, "" },
-            { "acc_flashlight", "", 1000, 500, "" }
+            { "optic_Holosight", "", 250, 50, "" },
+            { "optic_Holosight_blk_F", "", 250, 50, "" },
+            { "optic_ACO_grn", "", 500, 150, "" },
+            { "optic_Aco", "", 500, 150, "" },
+			{ "optic_Arco", "", 1500, 250, "" },
+			{ "optic_Arco_blk_F", "", 1500, 250, "" },
+			{ "optic_Hamr", "", 2250, 350, "" },
+			{ "optic_ERCO_blk_F", "", 2250, 350, "" },
+			{ "optic_ERCO_snd_F", "", 2250, 350, "" },
+			{ "optic_SOS", "", 4235, 550, "" },
+			{ "optic_DMS", "", 5000, 620, "" },
+			{ "optic_KHS_tan", "", 7320, 1250, "" },
+			{ "optic_KHS_blk", "", 7320, 1250, "" },
+			{ "optic_AMS_snd", "", 8750, 1500, "" },
+			{ "optic_AMS", "", 8750, 1500, "" },
+			{ "optic_NVS", "", 12500, 2200, "" },
+			{ "bipod_01_F_snd", "", 1500, 350, "" },
+			{ "bipod_01_F_blk", "", 1500, 350, "" }
         };
     };
 
