@@ -12,3 +12,6 @@ player addEventHandler["Take",{_this call life_fnc_onTakeItem}]; //Prevent peopl
 player addEventHandler["Fired",{_this call life_fnc_onFired}];
 player addEventHandler["InventoryClosed", {_this call life_fnc_inventoryClosed}];
 player addEventHandler["InventoryOpened", {_this call life_fnc_inventoryOpened}];
+player addEventHandler["GetOutMan", {_this call life_fnc_getOutVehicle}];
+player addEventHandler["GetInMan", {_this call life_fnc_getInVehicle}];
+

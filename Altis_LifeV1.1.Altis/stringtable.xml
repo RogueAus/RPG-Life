@@ -11619,6 +11619,28 @@
             <German>>Du wurdest wegen Betrug erkannt und an den Server gemeldet. Genieße deinen Tag.</German>
         </Key>
     </Package>
+    <Package name="NotDonor">
+        <Key ID="STR_NotDonor_Title">
+            <Original>Mission Failed</Original>
+        </Key>
+        <Key ID="STR_NotDonor_SubTitle">
+            <Original>You are not white-listed to use this slot.</Original>
+        </Key>
+        <Key ID="STR_NotDonor_Descript">
+            <Original>You are not allowed to use this slot because you are not a donor. Try another slot.</Original>
+        </Key>
+    </Package>
+    <Package name="NotFree">
+        <Key ID="STR_NotFree_Title">
+            <Original>Mission Failed</Original>
+        </Key>
+        <Key ID="STR_NotFree_SubTitle">
+            <Original>You are not allowed to use this slot.</Original>
+        </Key>
+        <Key ID="STR_NotFree_Descript">
+            <Original>You are a donor, please use the donor slots.</Original>
+        </Key>
+    </Package>
     <Package name="TextNotifications">
         <Key ID="STR_MedicalRequestEmerg_Title">
             <Original>EMS Requested</Original>

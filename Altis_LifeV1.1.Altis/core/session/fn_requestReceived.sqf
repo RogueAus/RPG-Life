@@ -57,6 +57,12 @@ switch (playerSide) do {
             life_thirst = ((_this select 10) select 1);
             player setDamage ((_this select 10) select 2);
         };
+
+        //Playtime
+        life_copTime = ((_this select 11) select 0);
+        life_indTime = ((_this select 11) select 1);
+        life_civTime = ((_this select 11) select 2);
+        life_playTime = life_copTime + life_civTime + life_indTime;
     };
 
     case civilian: {
@@ -69,6 +75,12 @@ switch (playerSide) do {
             life_thirst = ((_this select 9) select 1);
             player setDamage ((_this select 9) select 2);
         };
+
+        //Playtime
+        life_copTime = ((_this select 12) select 0);
+        life_indTime = ((_this select 12) select 1);
+        life_civTime = ((_this select 12) select 2);
+        life_playTime = life_copTime + life_civTime + life_indTime;
 
         //Position
         if (LIFE_SETTINGS(getNumber,"save_civilian_position") isEqualTo 1) then {
@@ -100,6 +112,12 @@ switch (playerSide) do {
             life_thirst = ((_this select 9) select 1);
             player setDamage ((_this select 9) select 2);
         };
+
+        //Playtime
+        life_copTime = ((_this select 10) select 0);
+        life_indTime = ((_this select 10) select 1);
+        life_civTime = ((_this select 10) select 2);
+        life_playTime = life_copTime + life_civTime + life_indTime;
     };
 };
 

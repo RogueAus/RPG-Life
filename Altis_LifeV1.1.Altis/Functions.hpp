@@ -8,6 +8,9 @@ class Socket_Reciever {
         class syncData {};
         class updatePartial {};
         class updateRequest {};
+        //Rogue
+        class playTimeQuery {};
+        class playTimeReceived {};
     };
 };
 
@@ -71,6 +74,17 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+    };
+
+    class DynMarket
+    {
+        file = "core\DynMarket";
+        class bought {};
+        class update {};
+        class DisplayPrices {};
+        class LoadIntoListbox {};
+        class ForcePrice {};
+        class DYNMARKET_getPrice {};
     };
 
     class Admin {
@@ -389,5 +403,8 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+        //Rogue
+        class getInVehicle {};
+        class getOutVehicle {};
     };
 };

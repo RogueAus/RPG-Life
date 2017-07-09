@@ -6,9 +6,11 @@
     Description:
     Pulls civilians out of a car if it's stopped.
 */
-private ["_crew"];
+private ["_crew","_vehicle"];
 _crew = crew cursorObject;
+_vehicle = cursorObject;
 
+if(player distance _vehicle > 5) exitWith {hint "You're not near the vehicle"};
 {
     if !(side _x isEqualTo west) then {
         _x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];

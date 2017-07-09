@@ -30,3 +30,5 @@
 #include "newsStation.hpp"
 //Rogue
 #include "bounty_list.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

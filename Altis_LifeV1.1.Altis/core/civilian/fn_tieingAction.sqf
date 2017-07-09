@@ -17,8 +17,10 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 	hintSilent "You can not do that.";
 };
 
-if(!(_unit getVariable ["playerSurrender",false]) || animationState cursorObject == "Incapacitated") exitWith {
-	hintSilent "Your target has to surrender or be knocked outfirst!";
+if(!(_unit getVariable ["playerSurrender",false])) then {
+    if(!(animationState _unit == "Incapacitated")) exitWith {
+	    hintSilent "Your target has to surrender or be knocked out first!";
+	};
 };
 
 if(isNull _unit) exitWith {}; //Not valid
@@ -26,6 +28,8 @@ if((_unit getVariable ["tied", false])) exitWith {};
 
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
+if (player inArea "safezone_kav") exitWith {hint "You can't do that in a Safe Zone!"};
+if (player inArea "safezone_kos") exitWith {hint "You can't do that in a Safe Zone!"};
 //Broadcast!
 
 life_inv_zipties = life_inv_zipties - 1;

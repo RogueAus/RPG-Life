@@ -29,6 +29,7 @@ class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
     #include "ara\ara_functions.cpp"
+    #include "ara\crafting\functions.cpp"
 };
 
 class CfgSounds {
@@ -80,6 +81,12 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
+
+    class wasted {
+        name = "wasted";
+        sound[] = {"\sounds\wasted.ogg", 1.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {
@@ -105,6 +112,24 @@ class CfgDebriefing {
         title = "$STR_SpyDetect_Title";
         subTitle = "$STR_SpyDetect_SubTitle";
         description = "$STR_SpyDetect_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class NotDonor {
+        title = "$STR_NotDonor_Title";
+        subtitle = "$STR_NotDonor_SubTitle";
+        description = "$STR_NotDonor_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class NotFree {
+        title = "$STR_NotFree_Title";
+        subtitle = "$STR_NotFree_SubTitle";
+        description = "$STR_NotFree_Descript";
         pictureBackground = "";
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};

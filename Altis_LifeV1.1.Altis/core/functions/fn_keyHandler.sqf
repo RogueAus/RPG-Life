@@ -192,6 +192,7 @@ switch (_code) do {
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
+            [] call SOCK_fnc_playTimeQuery;
             [] call life_fnc_p_openMenu;
         };
     };
@@ -224,14 +225,8 @@ switch (_code) do {
 
     //O Key
     case 24: {
-        if (_shift) then {
-            if !(soundVolume isEqualTo 1) then {
-                1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
-            } else {
-                1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
-            };
+        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+            [] call ara_fnc_copOpener;
         };
     };
 

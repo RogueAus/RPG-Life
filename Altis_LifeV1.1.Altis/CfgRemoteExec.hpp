@@ -75,6 +75,9 @@ class CfgRemoteExec {
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
         /*Rogue*/
+        F(life_fnc_update,CLIENT) /*DynMarket*/
+        F(SOCK_fnc_playTimeQuery,CLIENT)
+        F(SOCK_fnc_playTimeReceived,CLIENT)
         F(life_fnc_bountyList,CLIENT)
 
         /* Server only functions */
@@ -118,9 +121,13 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
-        //Rogue
+        /*Rogue*/
         F(life_fnc_bountyFetch,SERVER)
         F(life_fnc_bountyCrimes,SERVER)
+        F(TON_fnc_playerLogged,SERVER) /*DynMarket*/
+        F(TON_fnc_getUpdate,SERVER) /*DynMarket*/
+        F(TON_fnc_changePrice, SERVER) /*DynMarket*/
+        F(DB_fnc_playTimeRequest,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -174,6 +181,7 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+        F(BIS_fnc_debugConsoleExec,ANYONE)
     };
 
     class Commands {
@@ -185,5 +193,6 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
+        F(call,ANYONE)
     };
 };

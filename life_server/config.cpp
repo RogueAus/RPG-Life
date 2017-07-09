@@ -26,6 +26,7 @@ class CfgFunctions {
             class bool {};
             class mresString {};
             class updatePartial {};
+            class playTimeRequest {};
         };
     };
 
@@ -115,8 +116,20 @@ class CfgFunctions {
             class setPlayTime {};
             class getPlayTime {};
         };
+
+        class DynMarket {
+            file = "\life_server\Functions\DynMarket";
+            class calculatePrices {};
+            class config {};
+            class getUpdate {};
+            class HandleDB {};
+            class playerLogged {};
+            class sleeper {};
+        };
     };
 };
+
+
 
 class CfgVehicles {
     class Car_F;

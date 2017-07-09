@@ -13,6 +13,9 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
+if (player inArea "safezone_kav") exitWith {hint "You can't do that in a Safe Zone!"};
+if (player inArea "safezone_kos") exitWith {hint "You can't do that in a Safe Zone!"};
+
 //Broadcast!
 
 if(life_inv_blindfold < 1) exitWith {
