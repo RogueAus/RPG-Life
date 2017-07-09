@@ -8,6 +8,9 @@ class Socket_Reciever {
         class syncData {};
         class updatePartial {};
         class updateRequest {};
+        //Rogue
+        class playTimeQuery {};
+        class playTimeReceived {};
     };
 };
 

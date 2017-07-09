@@ -74,7 +74,10 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
+        /*Rogue*/
         F(life_fnc_update,CLIENT) /*DynMarket*/
+        F(SOCK_fnc_playTimeQuery,CLIENT)
+        F(SOCK_fnc_playTimeReceived,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -117,9 +120,11 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+        /*Rogue*/
         F(TON_fnc_playerLogged,SERVER) /*DynMarket*/
         F(TON_fnc_getUpdate,SERVER) /*DynMarket*/
         F(TON_fnc_changePrice, SERVER) /*DynMarket*/
+        F(DB_fnc_playTimeRequest,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
