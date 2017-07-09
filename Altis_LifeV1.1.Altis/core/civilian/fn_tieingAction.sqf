@@ -28,6 +28,8 @@ if((_unit getVariable ["tied", false])) exitWith {};
 
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
+if (player inArea "safezone_kav") exitWith {hint "You can't do that in a Safe Zone!"};
+if (player inArea "safezone_kos") exitWith {hint "You can't do that in a Safe Zone!"};
 //Broadcast!
 
 life_inv_zipties = life_inv_zipties - 1;

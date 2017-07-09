@@ -7,6 +7,8 @@ private["_unit"];
 _unit = cursorTarget;
 if(isNull _unit) exitWith {};
 if((player distance _unit > 3)) exitWith {};
+if (_robber inArea "safezone_kav") exitWith {hint "You can't do that in a Safe Zone!"};
+if (_robber inArea "safezone_kos") exitWith {hint "You can't do that in a Safe Zone!"};
 if((_unit getVariable "gagged")) exitWith {};
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};

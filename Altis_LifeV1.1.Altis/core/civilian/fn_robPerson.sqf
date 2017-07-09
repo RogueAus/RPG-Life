@@ -10,6 +10,8 @@ params [
     ["_robber",objNull,[objNull]]
 ];
 if (isNull _robber) exitWith {}; //No one to return it to?
+if (_robber inArea "safezone_kav") exitWith {hint "You can't do that in a Safe Zone!"};
+if (_robber inArea "safezone_kos") exitWith {hint "You can't do that in a Safe Zone!"};
 
 if (CASH > 0) then {
     [CASH,player,_robber] remoteExecCall ["life_fnc_robReceive",_robber];
