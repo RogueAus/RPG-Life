@@ -458,7 +458,7 @@ class VirtualItems {
     class cement {
         variable = "cement";
         displayName = "STR_Item_CementBag";
-        weight = 6/;
+        weight = 6;
         buyPrice = -1;
         sellPrice = 2350;
         illegal = false;
@@ -470,7 +470,7 @@ class VirtualItems {
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
-        weight = 8/;
+        weight = 8;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
