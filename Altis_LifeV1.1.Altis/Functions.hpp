@@ -8,6 +8,8 @@ class Socket_Reciever {
         class syncData {};
         class updatePartial {};
         class updateRequest {};
+        class playTimeQuery {};
+        class playTimeReceived {};
     };
 };
 
