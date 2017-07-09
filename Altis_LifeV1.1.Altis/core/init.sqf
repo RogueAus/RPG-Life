@@ -91,7 +91,7 @@ switch (playerSide) do {
 };
 
 //Playtime
-private _playTime = life_playTime
+private _playTime = life_playTime;
 switch (playerSide) do {
     case west: {
         life_sideTime = life_copTime;
