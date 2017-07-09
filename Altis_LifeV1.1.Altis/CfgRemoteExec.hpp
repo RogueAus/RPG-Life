@@ -65,10 +65,8 @@ class CfgRemoteExec {
         F(life_fnc_tieingb,CLIENT)
         F(life_fnc_gagged,CLIENT)
         F(SOCK_fnc_dataQuery,CLIENT)
-        F(SOCK_fnc_playTimeQuery,CLIENT)
         F(SOCK_fnc_insertPlayerInfo,CLIENT)
         F(SOCK_fnc_requestReceived,CLIENT)
-        F(SOCK_fnc_playTimeReceived,CLIENT)
         F(SOCK_fnc_updateRequest,CLIENT)
         F(TON_fnc_clientGangKick,CLIENT)
         F(TON_fnc_clientGangLeader,CLIENT)
@@ -76,13 +74,15 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
+        /*Rogue*/
         F(life_fnc_update,CLIENT) /*DynMarket*/
+        F(SOCK_fnc_playTimeQuery,CLIENT)
+        F(SOCK_fnc_playTimeReceived,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
         F(DB_fnc_insertRequest,SERVER)
         F(DB_fnc_queryRequest,SERVER)
-        F(DB_fnc_playTimeRequest,SERVER)
         F(DB_fnc_updatePartial,SERVER)
         F(DB_fnc_updateRequest,SERVER)
         F(life_fnc_jailSys,SERVER)
@@ -120,9 +120,11 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+        /*Rogue*/
         F(TON_fnc_playerLogged,SERVER) /*DynMarket*/
         F(TON_fnc_getUpdate,SERVER) /*DynMarket*/
         F(TON_fnc_changePrice, SERVER) /*DynMarket*/
+        F(DB_fnc_playTimeRequest,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
