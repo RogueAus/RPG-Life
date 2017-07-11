@@ -33,10 +33,10 @@ if (!isServer) then {
 				{
 					if (LB_SETTINGS(getNumber,"lockManuelSync") isEqualTo 1) then 
 					{
-						systemChat format["Your data has been saved automatically. Manual storage has been blocked for %1 min.", (LB_SETTINGS(getNumber,"lockManuelSync"))];
+						systemChat format["Your data has been synced automatically. Manual Sync has been blocked for %1 min.", (LB_SETTINGS(getNumber,"lockManuelSync"))];
 					};
 				} else {
-					systemChat "Your data has been saved automatically.";
+					systemChat "Your data has been synced automatically.";
 				};
 			};
 

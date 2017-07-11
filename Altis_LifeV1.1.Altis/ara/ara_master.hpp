@@ -17,8 +17,8 @@ class Leonbeeser_Settings {
 	autosaveInterval = 15; // Automatic saving intervall in minutes default [15]
 	lockManuelSync = true; // locks manuel sync [true]
 	lockSyncTime = 1; // Time in minutes [1] for locking manuel sync after automatic saving; ONLY ACTIVE IF lockManuelSync is set to true!
-	chatInfo = false; // Turn to false if you don´t like to see a saving message, [true] to got a message in system chat
-	advancedChatInfo = false; // Turn to false, if you don´t like to see extra informations, eg. Manual Saving is now blocked for 1 Minute; ONLY ACTIVE IF chatInfo is set to true!
+	chatInfo = true; // Turn to false if you don´t like to see a saving message, [true] to got a message in system chat
+	advancedChatInfo = true; // Turn to false, if you don´t like to see extra informations, eg. Manual Saving is now blocked for 1 Minute; ONLY ACTIVE IF chatInfo is set to true!
 	waitforManSave = true; // [True] for waiting until manuel saves has been completed; (recommended, saves server traffic)
 };
 
