@@ -8654,7 +8654,7 @@
             <Polish>Otrzymano żądanie serwera ... sprawdzam</Polish>
         </Key>
         <Key ID="STR_Session_SyncdAlready">
-            <Original>You have already used the sync option, you can only use this feature once every 5 minutes.</Original>
+            <Original>You can only sync once every 5 minutes. If there has just been an Autosync wait 1 minute.</Original>
             <Czech>Již jste použili možnosti synchronizace, můžete použít pouze tuto funkci jednou za 5 minut.</Czech>
             <Spanish>Ya has usado la función de sincronización, solo la puedes usar una vez cada 5 minutos.</Spanish>
             <Russian></Russian>
