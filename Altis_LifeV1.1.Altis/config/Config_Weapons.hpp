@@ -190,11 +190,20 @@ class WeaponShops {
             { "hgun_P07_F", "", 7500, 3750, "" },
             { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
+	    { "arifle_SPAR_01_blk_F","", 5000, 5000, "call life_coplevel >= 2" },
+	    { "arifle_Mk20_plain_F", "", 5000, 5000, "call life_coplevel >= 2"},
+	    { "arifle_CTAR_blk_F", "", 5000,5000, "call life_coplevel >= 2"},
             { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
+            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 3" },
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
             { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "arifle_MXM_Black_F", "", 30000, 15000, "call life_coplevel >= 4"},
+	    { "arifle_ARX_blk_F", "", 25000, 12500, "call life_coplevel >= 4"},
+            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 4" }, //Apex DLC Sniper
+	    { "arifle_MX_SW_Black_F", "", 60000, 30000, "call life_coplevel >= 5"},
+	    { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7"},
+	    { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7"},
+	    { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7"}
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
