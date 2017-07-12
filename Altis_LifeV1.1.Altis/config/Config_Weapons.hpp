@@ -63,22 +63,23 @@ class WeaponShops {
 			{ "arifle_ARX_blk_F", "", 85000, 25000, "" }, // Type-115 // APEX DLC
             { "arifle_AK12_F", "", 90000, 32500, "" }, // AK-12 // APEX DLC
 			{ "arifle_MX_SW_F", "", 120000, 60000, "" }, // MX-SW
-			{ "LMG_03_F", "", 145000, 80000, "" }, // LIM - 85 // APEX DLC
+			{ "LMG_03_F", "", 215000, 90000, "" }, // LIM - 85 // APEX DLC
 			{ "srifle_DMR_01_F", "", 80000, 35000, "" }, // Rahim
-			{ "srifle_DMR_07_blk_F", "", 85000, 40000, "" }, // CMR-76 // APEX DLC
-			{ "srifle_DMR_03_F", "", 145000, 80000, "" }, // Mk1 EMR
-			{ "srifle_EBR_F", "", 145000, 80000, "" } // Mk 18
+			{ "srifle_DMR_07_blk_F", "", 95000, 40000, "" }, // CMR-76 // APEX DLC
+			{ "srifle_DMR_03_F", "", 175000, 80000, "" }, // Mk1 EMR
+			{ "srifle_EBR_F", "", 175000, 80000, "" } // Mk 18
 
 				
         };
         mags[] = {
+			{"30Rnd_9x21_Mag", "", 500, 150, "" }, // Pistol/PDW Ammo - 9mm
 			{"30Rnd_556x45_Stanag", "", 350, 150, "" }, // TRG/Mk20 Ammo - 5.56
 			{"30Rnd_65x39_caseless_mag", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm
 			{"30Rnd_580x42_Mag_F", "", 400, 150, "" }, // Car-95 Ammo - 5.8mm
 			{"30Rnd_762x39_Mag_F", "", 500, 250, "" }, // AK-12 Ammo - 7.62
 			{"30Rnd_65x39_caseless_green", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm green trasers
 			{"100Rnd_65x39_caseless_mag", "", 1200, 350, "" }, // MX-SW Ammo - 6.5mm 100rnd
-			{"200Rnd_556x45_Box_F", "", 2000, 1000, "" }, // LIM-85 Ammo - 5.56 200rnd // APEX DLC
+			{"200Rnd_556x45_Box_F", "", 3500, 2000, "" }, // LIM-85 Ammo - 5.56 200rnd // APEX DLC
 			{"10Rnd_762x54_Mag", "", 600, 250, "" }, // Rahim Ammo - 7.62
 			{"20Rnd_650x39_Cased_Mag_F", "", 850, 465, "" }, // CMR-76 - 6.5mm // APEX DLC
 			{"20Rnd_762x51_Mag", "", 1100, 600, "" }, // Mk1 EMR/ Mk 18 Ammo - 7.62
@@ -96,8 +97,8 @@ class WeaponShops {
 			{ "optic_Arco", "", 1500, 250, "" },
 			{ "optic_Arco_blk_F", "", 1500, 250, "" },
 			{ "optic_Hamr", "", 2250, 350, "" },
-			{ "optic_ERCO_blk_F", "", 2250, 350, "" },
-			{ "optic_ERCO_snd_F", "", 2250, 350, "" },
+			{ "optic_ERCO_blk_F", "", 2250, 350, "" }, // APEX DLC
+			{ "optic_ERCO_snd_F", "", 2250, 350, "" }, // APEX DLC
 			{ "optic_SOS", "", 4235, 550, "" },
 			{ "optic_DMS", "", 5000, 620, "" },
 			{ "optic_KHS_tan", "", 7320, 1250, "" },
