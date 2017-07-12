@@ -15,7 +15,7 @@
 sleep 1;
 if (!airdrop_enable) exitWith {};
 if (airdrop_goingon) exitWith {};
-if({side _x == civilian} count playableUnits < 10) exitWith {};
+//if({side _x == civilian} count playableUnits < 10) exitWith {};
 
 _chance = floor(random 100);
 if (_chance>airdrop_chance) exitWith {};
@@ -26,7 +26,7 @@ if (airdrop_goingon) exitWith {};
 airdrop_goingon=true;
 
 // AIRDROP STARTEN
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>A helicopter is going to drop a Supplycrate in 15 minutes! The drop-location will be transmitted soon!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>A helicopter is going to drop a Supply Crate in 15 minutes! The drop location will be transmitted soon!</t>"] remoteExec ["life_fnc_broadcast",0];
 _poses = count airdrop_positions;
 _inArr = floor(random _poses);
 _dest = airdrop_positions select _inArr;

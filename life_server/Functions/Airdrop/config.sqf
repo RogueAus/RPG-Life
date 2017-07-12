@@ -10,13 +10,13 @@ airdrop_helicopter_scnd = "B_Heli_Attack_01_F";
 airdrop_chance = 100;
 //Cords Of Were To Do The Drops
 airdrop_positions = [[5228.49,12576.7,0],[5560.94,14875.2,0],[7138.13,13083,0],[5863.29,10692.5,0]];
-_airdrop_time_interval = [1,4]; //Half Hours - 1=30min 2=60min
+_airdrop_time_interval = [1,4]; //Hour Intervals 1=60min
 
 // Do not modify the following code
 airdrop_time_min = _airdrop_time_interval select 0;
 airdrop_time_max = _airdrop_time_interval select 1;
-airdrop_time_min = airdrop_time_min*1800;
-airdrop_time_max = airdrop_time_max*1800;
+airdrop_time_min = airdrop_time_min*3600;
+airdrop_time_max = airdrop_time_max*3600;
 
 if (airdrop_time_min>=airdrop_time_max) exitWith {airdrop_enable=false;};
 airdrop_enable=true;
