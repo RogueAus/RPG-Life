@@ -123,6 +123,11 @@ class CfgFunctions {
             class playerLogged {};
             class sleeper {};
         };
+
+        class Airdrop {
+        	file = "\life_server\Functions\Airdrop";
+        	class generateAirdrop {};
+        };
     };
 };
 
