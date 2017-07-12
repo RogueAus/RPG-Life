@@ -26,7 +26,7 @@ if (airdrop_goingon) exitWith {};
 airdrop_goingon=true;
 
 // AIRDROP STARTEN
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>A helicopter is going to drop a Supply Crate in 15 minutes! The drop location will be transmitted soon!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>A helicopter is going to drop a Supply Crate in 15 minutes! The drop location will be transmitted soon!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 _poses = count airdrop_positions;
 _inArr = floor(random _poses);
 _dest = airdrop_positions select _inArr;
@@ -43,17 +43,17 @@ _markerText = createMarker ["Airdropmarkertext", _dest];
 "Airdropmarkertext" setMarkerText "Airdrop-Mission";
 "Airdropmarkertext" setMarkerType "mil_warning";
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 minutes until the helicopter will drop the supplies! Check your map for the drop-location!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 minutes until the helicopter will drop the supplies! Check your map for the drop-location!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 300;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 60;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>4 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>4 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 60;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>3 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>3 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 60;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>2 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>2 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 60;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 
 heli1 = CreateVehicle [airdrop_helicopter_main, [7950, 9667, 0], [], 0, "FLY"];
 heli2 = CreateVehicle [airdrop_helicopter_scnd, [7950, 9700, 0], [], 0, "FLY"];
@@ -71,7 +71,7 @@ _mygroup3 = [[7950, 9667, 0], CIVILIAN, ["O_G_Soldier_SL_F"],[],[],[],[],[],180]
 {_x moveInDriver heli2} forEach units _mygroup2;
 {_x moveInDriver heli3} forEach units _mygroup3;
 
-_mygroup1 addWaypoint [_dest, 0];
+_mygroup1 addWaypoint [_dest, 0];//
 _mygroup1 addWaypoint [[2380.47,22267.8,0], 0];
 _mygroup2 addWaypoint [_dest, 0];
 _mygroup2 addWaypoint [[2380.47,22267.8,0], 0];
@@ -92,7 +92,7 @@ while { _dest distance heli1 > 250 } do {
     sleep 1;
 };
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>The supplies have been dropped! 20 minutes until self destruction!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>The supplies have been dropped! 20 minutes until self destruction!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 
 // Drop the container
 deleteVehicle _containerdummy;
@@ -213,13 +213,13 @@ deleteVehicle heli1;
 deleteVehicle heli2;
 deleteVehicle heli3;
 sleep 600;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until self destruction</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 240;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until self destruction</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 50;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 seconds until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 seconds until self destruction</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 sleep 10;
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission beendet!</t></t><br/><br/><t size='1'>The AirDrop-Mission has ended!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission beendet!</t></t><br/><br/><t size='1'>The AirDrop-Mission has ended!</t>"] remoteExec ["life_fnc_broadcast",RCLIENT];
 deleteVehicle _box;
 
 _bmb = "BO_GBU12_LGB" createVehicle [(getPos _box select 0)-21,(getPos _box select 1)+21,0];
