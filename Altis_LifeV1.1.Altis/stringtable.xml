@@ -7053,6 +7053,9 @@
             <Portuguese>Licença de Porte de Armas</Portuguese>
             <Polish>Pozwolenie na broń</Polish>
         </Key>
+		<Key ID="STR_License_ACW">
+		     <Original>ACW License</Original>
+		</Key>
         <Key ID="STR_License_CG">
             <Original>Coast Guard License</Original>
             <Czech>Pobřežní stráž licence</Czech>

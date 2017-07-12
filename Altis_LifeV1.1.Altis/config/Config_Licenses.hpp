@@ -47,6 +47,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class ACW {
+		variable = "ACW";
+		displayName = "STR_License_ACW";
+		price = 21000;
+		illegal = false;
+		side = "civ";
+	};
 
     class dive {
         variable = "dive";
