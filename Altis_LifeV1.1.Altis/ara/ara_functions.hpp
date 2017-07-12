@@ -9,5 +9,6 @@ class AusRebelArmy {
     class functions {
         file = "ara\functions";
 		class copOpener {};
+		class autoSaveInv {};
     };
 };
