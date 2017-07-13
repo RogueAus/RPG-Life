@@ -243,6 +243,7 @@ class Life_Client_Core {
         class whereAmI {};
         //ARA
         class robstore {};
+        class seatbelt {};
     };
 
     class Gangs {

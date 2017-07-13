@@ -88,6 +88,18 @@ class CfgSounds {
         sound[] = {"\sounds\wasted.ogg", 1.0, 1};
         titles[] = {};
     };
+
+    class beltClick {
+        name = "beltClick";
+        sound[] = {"\sounds\beltUnClick.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class beltunClick {
+        name = "beltunClick";
+        sound[] = {"\sounds\beltUnClick.ogg", 1.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {

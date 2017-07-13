@@ -7047,14 +7047,14 @@
             <Czech>zbrojní průkaz</Czech>
             <Spanish>Licencia de Armas</Spanish>
             <Russian></Russian>
-            <German>Waffenschein</German>
+            <German>Waffenlizenz</German>
             <French>Permis de Port d'Arme</French>
             <Italian>Porto d'Armi</Italian>
             <Portuguese>Licença de Porte de Armas</Portuguese>
             <Polish>Pozwolenie na broń</Polish>
         </Key>
 		<Key ID="STR_License_ACW">
-		     <Original>ACW License</Original>
+            <Original>Advanced Firearm License</Original>
 		</Key>
         <Key ID="STR_License_CG">
             <Original>Coast Guard License</Original>

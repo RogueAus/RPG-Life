@@ -52,6 +52,7 @@ life_canpay_bail = true;
 ARA_shot_safezone = 0;
 life_perkLevel = 0;
 life_sideTime = 0;
+life_seatbelt = false;
 
 
 //Settings
