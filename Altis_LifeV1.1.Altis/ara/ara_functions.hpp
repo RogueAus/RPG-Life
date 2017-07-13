@@ -12,3 +12,5 @@ class AusRebelArmy {
 		class autoSaveInv {};
     };
 };
+
+#include "convoy-sidemission\functions.cpp"

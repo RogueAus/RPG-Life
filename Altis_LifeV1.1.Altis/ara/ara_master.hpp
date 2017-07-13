@@ -23,3 +23,4 @@ class Leonbeeser_Settings {
 };
 
 #include "crafting\config.cpp"
+#include "convoy-sidemission\config.cpp"
