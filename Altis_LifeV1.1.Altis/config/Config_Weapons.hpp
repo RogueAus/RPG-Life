@@ -226,12 +226,10 @@ class WeaponShops {
 	    { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7"},
 	    { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7"},
 	    { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7"},
-	    { "LMG_Mk200_pointer_F", "", 300000, 15000, "call life_coplevel >= 7"},
-	    { "M320 LRR .408", "", 40000, 20000, "call life_coplevel >= 5"}
+	    { "LMG_Mk200_pointer_F", "", 300000, 15000, "call life_coplevel >= 7"}
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
             { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
             { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
             { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
