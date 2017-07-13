@@ -56,22 +56,22 @@ class Maverick_ConvoySidemission
 
 				// Mission started announcement
 				startAnnouncementHeader			= "Gold Transport";
-				startAnnouncementDescription	= "Der bewachte Transporter der Zentralbank bewegt derzeit größere Mengen an Gold.";
+				startAnnouncementDescription	= "A guarded convoy is currently moving large amounts of Federal Gold.";
 
 				// Mission objective completed
-				stoppedAnnouncementHeader		= "Gold Transporter ausgeschaltet";
-				stoppedAnnouncementDescription	= "Der Goldtransporter wurde ausgeschaltet.";
+				stoppedAnnouncementHeader		= "Gold Transport Stopped";
+				stoppedAnnouncementDescription	= "The Gold Transport has been stopped!";
 
 				// Mission completed announcement
-				endAnnouncementHeader			= "Gold Transport beendet";
-				endAnnouncementDescription  	= "Die Mission wurde beendet.";
+				endAnnouncementHeader			= "Gold Transport Complete";
+				endAnnouncementDescription  	= "Gold Transport has completed.";
 			};
 
 			class Vehicles
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"B_MRAP_01_F","O_Truck_03_ammo_F","B_MRAP_01_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3"};
+				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
 				maxSpeed						= 60;
@@ -82,7 +82,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"fritzi_convoy_waypoint1","fritzi_convoy_waypoint2","fritzi_convoy_waypoint3","fritzi_convoy_waypoint4","fritzi_convoy_waypoint5","fritzi_convoy_waypoint6","fritzi_convoy_waypoint7","fritzi_convoy_waypoint8","fritzi_convoy_waypoint10","fritzi_convoy_waypoint11","fritzi_convoy_waypoint12","fritzi_convoy_waypoint13"};
+				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
 			};
 
 			class Loot
@@ -124,23 +124,23 @@ class Maverick_ConvoySidemission
 				enabled							= 1;
 
 				// Mission started announcement
-				startAnnouncementHeader			= "Waffentransport";
-				startAnnouncementDescription	= "Die Armee transportiert derzeit größere Mengen an Waffen durch Altis.";
+				startAnnouncementHeader			= "Weapon Transport";
+				startAnnouncementDescription	= "Local Armed Forces are currently shipping large amounts of weapons around Altis.";
 
 				// Mission objective completed
-				stoppedAnnouncementHeader		= "Waffentransporter ausgeschaltet";
-				stoppedAnnouncementDescription	= "Der Waffentransporter wurde ausgeschaltet.";
+				stoppedAnnouncementHeader		= "Weapon Transport Stopped";
+				stoppedAnnouncementDescription	= "The Weapon Transport has been stopped!.";
 
 				// Mission completed announcement
-				endAnnouncementHeader			= "Waffentransport beendet";
-				endAnnouncementDescription  	= "Die Mission wurde beendet.";
+				endAnnouncementHeader			= "Weapon Transport Complete";
+				endAnnouncementDescription  	= "Weapon Transport has completed.";
 			};
 
 			class Vehicles
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_MRAP_02_F","O_Truck_02_Ammo_F","O_MRAP_02_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3","fritzi_convoy_spawn4"};
+				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3","ara_convoy_spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
 				maxSpeed						= 60;
@@ -151,7 +151,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"fritzi_convoy_waypoint1","fritzi_convoy_waypoint2","fritzi_convoy_waypoint3","fritzi_convoy_waypoint4","fritzi_convoy_waypoint5","fritzi_convoy_waypoint6","fritzi_convoy_waypoint7","fritzi_convoy_waypoint8","fritzi_convoy_waypoint10","fritzi_convoy_waypoint11","fritzi_convoy_waypoint12","fritzi_convoy_waypoint13"};
+				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
 			};
 
 			class Loot
