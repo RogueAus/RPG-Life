@@ -223,6 +223,7 @@ class WeaponShops {
             { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 4" }, //Apex DLC Sniper
 	    { "arifle_MX_SW_Black_F", "", 60000, 30000, "call life_coplevel >= 5"},
 	    { "M320 LRR .408", "", 40000, 20000, "call life_coplevel >= 5"},
+	    { "srifle_DMR_03_F", "", 325000, 8000, "" }, // Mk1 EMR
 	    { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7"},
 	    { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7"},
 	    { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7"},
