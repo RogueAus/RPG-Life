@@ -262,6 +262,18 @@ class WeaponShops {
 	    { "optic_LRPS", "", 100, 50, "call life_coplevel >= 6"}
         };
     };
+	
+	//SERT Shops
+	class sert_basic {
+	name = "STR_Shops_W_SERT";
+	side = "cop";
+	conditions = "license_cop_SERT";
+	items[] = {
+	{ "hgun_P07_F", "", 7500, 3750, "" }	
+	};
+	mags[] = {};
+	accs[] = {};
+};
 
     //Medic Shops
     class med_basic {
