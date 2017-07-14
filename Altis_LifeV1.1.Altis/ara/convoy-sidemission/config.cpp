@@ -9,21 +9,21 @@ class Maverick_ConvoySidemission
 	{
 		ConfigPool[] 							= {"GoldBarTransport","WeaponTransport"};
 		ForceConfigAtIndex 						= -1;
-		SleepTime								= 990;
-		MakePlayersHostileFor					= 120;
-		TimeoutBetweenMarkers					= 150;
+		SleepTime								= 30;
+		MakePlayersHostileFor					= 60;
+		TimeoutBetweenMarkers					= 450;
 		SidesNotAttackable[]					= {"WEST"};
 		AIDifficulty[] = {
-												{"aimingAccuracy", 0.7},
-												{"aimingShake", 0.7},
-												{"aimingSpeed", 0.7},
-												{"endurance", 0.7},
-												{"spotDistance", 0.7},
-												{"spotTime", 0.7},
-												{"courage", 0.7},
-												{"reloadSpeed", 0.7},
-												{"commanding", 0.7},
-												{"general", 0.7}
+												{"aimingAccuracy", 0.6},
+												{"aimingShake", 0.6},
+												{"aimingSpeed", 0.6},
+												{"endurance", 0.6},
+												{"spotDistance", 0.6},
+												{"spotTime", 0.6},
+												{"courage", 0.6},
+												{"reloadSpeed", 0.6},
+												{"commanding", 0.6},
+												{"general", 0.6}
 		};
 	};
 	class ConvoyConfigurationsPool
@@ -83,7 +83,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
+				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint9","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
 			};
 
 			class Loot
@@ -140,10 +140,10 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3","ara_convoy_spawn4"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
+				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
-				mainVehicleAtIndex				= 2;
+				mainVehicleAtIndex				= 1;
 				maxSpeed						= 60;
 				removeVehiclesAfterSeconds		= 600;
 				additionalUnitsAmount			= 10;
@@ -152,7 +152,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
+				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint9","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
 			};
 
 			class Loot

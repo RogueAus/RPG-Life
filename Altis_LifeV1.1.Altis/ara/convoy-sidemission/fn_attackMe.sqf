@@ -19,7 +19,7 @@ mav_convoy_attackme_scriptthread = _time spawn {
 	while {rating player < 1000000} do {
 		player addRating 50000000000;
 	};
-	hint "You are not not hostile anymore.";
+	hint "You are not hostile anymore.";
 	mav_convoy_attackme_scriptthread = nil;
 };
 

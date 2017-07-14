@@ -895,6 +895,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 
+    class O_T_Truck_03_ammo_ghex_F { //CONVOY TRUCK
+        vItemSpace = 300;
+        vFuelSpace = 19500;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 120000;
+        textures[] = {};
+    };
+
     class C_Van_01_fuel_F {
         vItemSpace = 20;
         vFuelSpace = 19500;
