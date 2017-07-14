@@ -10,19 +10,20 @@ class Maverick_ConvoySidemission
 		ConfigPool[] 							= {"GoldBarTransport","WeaponTransport"};
 		ForceConfigAtIndex 						= -1;
 		SleepTime								= 990;
-		MakePlayersHostileFor					= 180;
+		MakePlayersHostileFor					= 120;
+		TimeoutBetweenMarkers					= 150;
 		SidesNotAttackable[]					= {"WEST"};
 		AIDifficulty[] = {
-												{"aimingAccuracy", 1},
-												{"aimingShake", 1},
-												{"aimingSpeed", 1},
-												{"endurance", 1},
-												{"spotDistance", 1},
-												{"spotTime", 1},
-												{"courage", 1},
-												{"reloadSpeed", 1},
-												{"commanding", 1},
-												{"general", 1}
+												{"aimingAccuracy", 0.7},
+												{"aimingShake", 0.7},
+												{"aimingSpeed", 0.7},
+												{"endurance", 0.7},
+												{"spotDistance", 0.7},
+												{"spotTime", 0.7},
+												{"courage", 0.7},
+												{"reloadSpeed", 0.7},
+												{"commanding", 0.7},
+												{"general", 0.7}
 		};
 	};
 	class ConvoyConfigurationsPool
@@ -39,13 +40,13 @@ class Maverick_ConvoySidemission
 			class AIUnits
 			{
 				gear[] = {
-												"H_HelmetB_light_grass", // Headgear
+												"H_MilCap_gen_F", // Headgear
 												"", // Glasses
-												"U_B_CombatUniform_mcam_tshirt", // Uniform
-												"V_PlateCarrierL_CTRG", // Vest
+												"U_B_GEN_Soldier_F", // Uniform
+												"V_TacVest_gen_F", // Vest
 												"", // Backpack
-												{"srifle_EBR_MRCO_pointer_F", "20Rnd_762x51_Mag", 5}, // Primary weapon, ammo and how many magazines
-												{"", "", 5}, // Secondary weapon, ammo and how many magazines
+												{"arifle_SPAR_01_blk_F", "30Rnd_556x45_Stanag", 5}, // Primary weapon, ammo and how many magazines
+												{"", "", 5} // Secondary weapon, ammo and how many magazines
 				};
 			};
 
@@ -59,7 +60,7 @@ class Maverick_ConvoySidemission
 				startAnnouncementDescription	= "A guarded convoy is currently moving large amounts of Federal Gold.";
 
 				// Mission objective completed
-				stoppedAnnouncementHeader		= "Gold Transport Stopped";
+				stoppedAnnouncementHeader		= "Gold Transport stopped";
 				stoppedAnnouncementDescription	= "The Gold Transport has been stopped!";
 
 				// Mission completed announcement
@@ -70,7 +71,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"B_MRAP_01_F","O_Truck_03_ammo_F","B_MRAP_01_F"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
@@ -114,7 +115,7 @@ class Maverick_ConvoySidemission
 												"V_TacVest_gen_F", // Vest
 												"", // Backpack
 												{"arifle_SPAR_01_blk_F", "30Rnd_556x45_Stanag", 5}, // Primary weapon, ammo and how many magazines
-												{"", "", 5}, // Secondary weapon, ammo and how many magazines
+												{"", "", 5} // Secondary weapon, ammo and how many magazines
 				};
 			};
 
@@ -139,7 +140,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_MRAP_02_F","O_Truck_02_Ammo_F","O_MRAP_02_F"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3","ara_convoy_spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
@@ -157,7 +158,7 @@ class Maverick_ConvoySidemission
 			class Loot
 			{
 				type 							= "real";
-				container						= "B_supplyCrate_F";
+				container						= "B_CargoNet_01_ammo_F";
 				data[] = {
 												{"srifle_DMR_01_F", 1, "WEAPON"},
 												{"optic_SOS", 1, "ITEM"},
