@@ -14,5 +14,7 @@ class Maverick_Convoy {
 		class addTriggerHandlers {};
 		class giveUnitLoadout {};
 		class checkUnit {};
+		class followTrack {};
+		class proximityCheck {};
 	};
 };

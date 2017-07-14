@@ -12,6 +12,7 @@ scriptName "fn_checkUnit";
 _unitThatDealtDamage = param[0,objNull,[objNull]];
 
 if (_unitThatDealtDamage == player OR _unitThatDealtDamage == (vehicle player)) then {
+	if ((str playerSide) in (getArray(missionConfigFile >> "Maverick_ConvoySidemission" >> "Config" >> "SidesNotAttackable"))) exitWith {};
 	if (isNil "mav_convoy_attackme_scriptthread") then {
 		[] spawn mav_convoy_fnc_attackMe;
 	};

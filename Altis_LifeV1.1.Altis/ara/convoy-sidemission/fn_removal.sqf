@@ -22,6 +22,9 @@ mav_convoy_currentsessiondone = true;
 	deleteVehicle _x;
 } forEach mav_convoy_allMissionObjects;
 
+// Clean vehicle array
+mav_convoy_vehicles = [];
+
 // Display messages?
 if ((getNumber(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Messages" >> "enabled")) == 1) then {
 	_header = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Messages" >> "endAnnouncementHeader");

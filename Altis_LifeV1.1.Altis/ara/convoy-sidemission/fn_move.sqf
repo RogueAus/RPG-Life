@@ -21,8 +21,9 @@ _attack = false;
 
 // Loop until the convoy is being attacked
 while {!_attack} do {
-	{
+	{;
 		if (!alive _x || !canMove _x || !isNull (_x findNearestEnemy (getPos _x)) || isNull driver _x) then {
+			diag_log format ["alive %1 | canMove %2 | enemy %3 | nodriver %4", alive _x, canMove _x, !isNull (_x findNearestEnemy (getPos _x)), isNull driver _x];
 			_attack = true
 		};
 	} forEach mav_convoy_vehicles;

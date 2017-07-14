@@ -9,8 +9,11 @@ scriptName "fn_dropLoot";
 --------------------------------------------------------------------*/
 #define __filename "fn_dropLoot.sqf"
 
-// Fetch container name from config
-_containerClass = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "container");
+// Fetch container name from config // Deprecated
+//_containerClass = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "container");
+
+mav_convoy_mainVehicle setVehicleLock "UNLOCKED";
+[mav_convoy_mainVehicle,{life_vehicles pushBack _this}] remoteExec ["BIS_fnc_spawn"];
 
 // Fetch loot type from config
 _lootType = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "type");
@@ -18,37 +21,24 @@ _lootType = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "Convoy
 // Fetch loot from config
 _loot = getArray(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "data");
 
-// Create container (only if this is a real items convoy)
-_container = objNull;
-if (_lootType == "real") then {
-	_container = _containerClass createVehicle (getPos mav_convoy_mainVehicle);
-	mav_convoy_allMissionObjects pushBack _container;
-
-	// Clear container
-	clearWeaponCargoGlobal _container;
-	clearMagazineCargoGlobal _container;
-	clearItemCargoGlobal _container;
-	clearBackpackCargoGlobal _container;
-};
-
 // Fill container with loot
 if (_lootType == "virtual") exitWith {
 	mav_convoy_mainVehicle setVariable ["Trunk",[_loot,5000],true];
-	[mav_convoy_mainVehicle,{life_vehicles pushBack _this}] remoteExec ["BIS_fnc_spawn"];
 };
 if (_lootType == "real") exitWith {
 	{
+		diag_log "droploot";
 		if ((_x select 2) == "WEAPON") then {
-			_container addWeaponCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addWeaponCargoGlobal [_x select 0, _x select 1];
 		};
 		if ((_x select 2) == "MAGAZINE") then {
-			_container addMagazineCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addMagazineCargoGlobal [_x select 0, _x select 1];
 		};
-		if ((_x select 2) == "WEAPON") then {
-			_container addItemCargoGlobal [_x select 0, _x select 1];
+		if ((_x select 2) == "ITEM") then {
+			mav_convoy_mainVehicle addItemCargoGlobal [_x select 0, _x select 1];
 		};
 		if ((_x select 2) == "BACKPACK") then {
-			_container addBackpackCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addBackpackCargoGlobal [_x select 0, _x select 1];
 		};
 	} forEach _loot;
 };

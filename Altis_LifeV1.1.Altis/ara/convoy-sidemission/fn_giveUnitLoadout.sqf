@@ -24,11 +24,25 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit addHeadgear (_gear select 0);
-_unit addGoggles (_gear select 1);
-_unit forceAddUniform (_gear select 2);
-_unit addVest (_gear select 3);
-_unit addBackpackGlobal (_gear select 4);
+if ((_gear select 0) != "") then {
+	_unit addHeadgear (_gear select 0);
+};
+
+if ((_gear select 1) != "") then {
+	_unit addGoggles (_gear select 1);
+};
+
+if ((_gear select 2) != "") then {
+	_unit forceAddUniform (_gear select 2);
+};
+
+if ((_gear select 3) != "") then {
+	_unit addVest (_gear select 3);
+};
+
+if ((_gear select 4) != "") then {
+	_unit addBackpackGlobal (_gear select 4);
+};
 
 // Assign weapons and ammunition
 for "_i" from 1 to (_gear select 5 select 2) do {_unit addItemToUniform (_gear select 5 select 1);};

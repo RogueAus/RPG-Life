@@ -20,6 +20,9 @@ mav_convoy_markersleft = (getArray(missionConfigFile >> "Maverick_ConvoySidemiss
 // Make current class public
 mav_convoy_class = _class;
 
+// Basic var
+mav_convoy_inAttack = false;
+
 // Get vehicles
 mav_convoy_vehicles = [];
 mav_convoy_vehiclesArray = getArray(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> _class >> "Vehicles" >> "vehiclesInOrder");
@@ -31,13 +34,13 @@ mav_convoy_vehiclesArray = getArray(missionConfigFile >> "Maverick_ConvoySidemis
 		0
 	};
 	_v = ([getMarkerPos _marker, _dir, _x, WEST] call BIS_fnc_spawnVehicle) select 0;
-	mav_convoy_vehicles pushBack _v;
-
-	// Clear vehicles from unwanted items
-	clearWeaponCargoGlobal _v;
+	
 	clearItemCargoGlobal _v;
-	clearBackpackCargoGlobal _v;
+	clearWeaponCargoGlobal _v;
 	clearMagazineCargoGlobal _v;
+	clearBackpackCargoGlobal _v;
+	
+	mav_convoy_vehicles pushBack _v;
 } forEach mav_convoy_vehiclesArray;
 
 // Clear vehicle inventories
@@ -94,6 +97,18 @@ _skillArray = getArray(missionConfigFile >> "Maverick_ConvoySidemission" >> "Con
 
 		// Give unit loadout
 		[_man] call mav_convoy_fnc_giveUnitLoadout;
+		
+		// Make all units not road-kill-able
+		_man addEventHandler ["HandleDamage", {
+			_source = _this select 3;
+			_damage = _this select 2;
+			
+			if ((vehicle _source) != _source && _source isKindOf "Man") then {
+				_damage = 0;
+			};
+			
+			_damage
+		}];
 	};
 } forEach mav_convoy_allMissionObjects;
 
@@ -103,19 +118,75 @@ if (isClass (missionConfigFile >> "Maverick_Indicators")) then {
 		[_x, "warn"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 	} forEach mav_convoy_vehicles;
 };
-// TODO Give units their equipment
 
 // Enable handlers for all players that make the AI go attack them
-//[mav_convoy_allMissionObjects] remoteExec ["mav_convoy_fnc_addTriggerHandlers", 0, mav_convoy_mainVehicle];
 {
 	_x addMPEventHandler ["MPHit",{[_this select 1] spawn mav_convoy_fnc_checkUnit;}];
 } forEach mav_convoy_allMissionObjects;
 
+// JIP proximity check
+[mav_convoy_mainVehicle] remoteExec ["mav_convoy_fnc_proximityCheck", 0, mav_convoy_mainVehicle];
+
+// If this convoy holds more than one vehicle, make all groups join the group of the leading vehicle
+if (count mav_convoy_vehicles > 1) then {
+	_leaderFirstVehicle = leader (group (mav_convoy_vehicles select 0));
+	(group _leaderFirstVehicle) setFormation "FILE";
+	for "_i" from 1 to (count mav_convoy_vehicles - 1) step 1 do
+	{
+		(crew (mav_convoy_vehicles select _i)) join _leaderFirstVehicle;
+	};
+
+	// Make driver of first vehicle the leader
+	_firstVehicle = mav_convoy_vehicles select 0;
+	(group _firstVehicle) selectLeader (driver _firstVehicle);
+
+	while {behaviour (leader (group _firstVehicle)) != "CARELESS"} do {
+		(group _firstVehicle) setBehaviour "CARELESS";
+	};
+};
+
+// Thread that handles waypoints
+[] spawn {
+	_timeout = getNumber(missionConfigFile >> "Maverick_ConvoySidemission" >> "Config" >> "TimeoutBetweenMarkers");
+	_timeRemaining = _timeout;
+
+	while {!isNull mav_convoy_mainVehicle && (count mav_convoy_vehicles > 0) && (count mav_convoy_markersleft > 0)} do {
+		sleep 1;
+
+		if (!mav_convoy_inAttack) then {
+			_timeRemaining = _timeRemaining - 1;
+		};
+
+		// Timeout
+		if (_timeRemaining <= 0) exitWith {};
+
+		_leadingVehicle = mav_convoy_vehicles select 0;
+		
+		if (isNil "_leadingvehicle") then {
+			diag_log format ["Convoy: Cannot find leading vehicle in array %1", mav_convoy_vehicles];
+		};
+		
+		if (_leadingVehicle distance (getMarkerPos (mav_convoy_markersleft select 0)) < 25) then {
+			mav_convoy_markersleft deleteAt 0;
+			systemChat "Marker reached";
+
+			// Time remaining
+			_timeRemaining = _timeout;
+		};
+	};
+
+	// Mission over
+	[0] spawn mav_convoy_fnc_removal;
+};
+
+// Make leading vehicle follow the waypoints
+[mav_convoy_vehicles select 0] spawn mav_convoy_fnc_followTrack;
 
 // Init follow script
-_vehicleBeforeMe = objNull;
+/*_vehicleBeforeMe = objNull;
 _firstVeh = true;
 {
+	diag_log "mejm";
 	if (_firstVeh) then {
 		_thread = [_x,objNull] spawn mav_convoy_fnc_follow;
 		_x setVariable ["mav_convoy_vehiclethread",_thread];
@@ -126,7 +197,7 @@ _firstVeh = true;
 		_x setVariable ["mav_convoy_vehiclethread",_thread];
 		_vehicleBeforeMe = _x;
 	};
-} forEach mav_convoy_vehicles;
+} forEach mav_convoy_vehicles;*/
 
 // Init main script
 mav_convoy_currentscriptthread = [mav_convoy_vehicles, mav_convoy_markersleft] spawn mav_convoy_fnc_move;
