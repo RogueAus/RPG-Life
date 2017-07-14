@@ -171,6 +171,14 @@ class Licenses {
     };
 
     //Cop Licenses
+	class SERT {
+		variable = "SERT";
+		displayName = "STR_License_SERT";
+		price = -1;
+		illegal = false;
+		side = "cop";
+	};
+	
     class cAir {
         variable = "cAir";
         displayName = "STR_License_Pilot";

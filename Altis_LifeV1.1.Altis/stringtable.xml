@@ -124,6 +124,9 @@
             <Portuguese>Loja de equipamentos para Kart</Portuguese>
             <Polish>Sklep Kartingowy</Polish>
         </Key>
+		<Key ID="STR_Shops_W_SERT">
+		    <Original>SERT Weapons</Original>
+		</Key>
         <Key ID="STR_Shops_Market">
             <Original>Altis Market</Original>
             <Czech>Altis Market</Czech>
@@ -6987,6 +6990,9 @@
             <Portuguese>Licença de Motorista</Portuguese>
             <Polish>Prawo jazdy</Polish>
         </Key>
+		<Key ID="STR_License_SERT">
+		    <Original>SERT Certified</Original>
+		</Key>
         <Key ID="STR_License_Pilot">
             <Original>Pilot License</Original>
             <Czech>pilotní licence</Czech>
