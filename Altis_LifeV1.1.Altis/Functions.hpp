@@ -11,6 +11,7 @@ class Socket_Reciever {
         //Rogue
         class playTimeQuery {};
         class playTimeReceived {};
+        class tazeRagdoll {};
     };
 };
 
