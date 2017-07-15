@@ -17,7 +17,7 @@ if(_shooter isKindOf "Man" && alive player) then {
 	if(!life_istazed) then {
 		life_istazed = true;
 		"DynamicBlur" ppEffectEnable true;
-		"DynamicBlur" ppEffectAdjust [20];
+		"DynamicBlur" ppEffectAdjust [5];
 		"DynamicBlur" ppEffectCommit 1;
 		player allowDamage false;
 		if(isNull objectParent player) then {
