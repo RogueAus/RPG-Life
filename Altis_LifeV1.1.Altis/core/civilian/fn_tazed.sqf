@@ -23,13 +23,13 @@ if(_shooter isKindOf "Man" && alive player) then {
 		if(isNull objectParent player) then {
 			for [{_x=1},{_x<=10},{_x=_x+1}] do { call SOCK_fnc_tazeRagdoll; sleep 0.1; if(animationState player == "unconscious") exitWith{}};
 		};
-		//[_unit] remoteExecCall ["life_fnc_tazeSound",RCLIENT];
-		[0,"STR_NOTF_Tazed",true,[profileName, _shooter getVariable["realname",name _shooter]]] remoteExecCall ["life_client_fnc_broadcast",-2];
+		[_unit] remoteExecCall ["life_fnc_tazeSound",RCLIENT];
+		[0,"STR_NOTF_Tazed",true,[profileName, _shooter getVariable["realname",name _shooter]]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		disableUserInput true;
 		player setDamage 0;
 		waitUntil{animationState player != "unconscious"};
 		_anim = if(isNull objectParent player) then {"Incapacitated"} else {"kia_driver_mid01"};
-		[player,_anim] remoteExec ["life_client_fnc_animSync",0];
+		[player,_anim] remoteExec ["life_fnc_animSync",RCLIENT];
 		waitUntil{time - _time >= 15};
 		player allowDamage true;
 		if(!(player getVariable["Escorting",false])) then {
