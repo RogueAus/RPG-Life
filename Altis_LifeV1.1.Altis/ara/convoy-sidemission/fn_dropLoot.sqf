@@ -13,7 +13,8 @@ scriptName "fn_dropLoot";
 //_containerClass = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "container");
 
 mav_convoy_mainVehicle setVehicleLock "UNLOCKED";
-[mav_convoy_mainVehicle,{life_vehicles pushBack _this}] remoteExec ["BIS_fnc_spawn"];
+//[mav_convoy_mainVehicle,{life_vehicles pushBack _this}] remoteExec ["BIS_fnc_spawn"];
+[mav_convoy_mainVehicle] remoteExec ["mav_convoy_fnc_addVehicleToChain", -2];
 
 // Fetch loot type from config
 _lootType = getText(missionConfigFile >> "Maverick_ConvoySidemission" >> "ConvoyConfigurationsPool" >> mav_convoy_class >> "Loot" >> "type");

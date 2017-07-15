@@ -16,5 +16,6 @@ class Maverick_Convoy {
 		class checkUnit {};
 		class followTrack {};
 		class proximityCheck {};
+		class addVehicleToChain {};
 	};
 };
