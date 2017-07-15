@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14072.89,114.23981,18527.738};
-		dir[]={0.43312204,-0.42038733,-0.79735917};
-		up[]={0.20068072,0.90732497,-0.36944342};
-		aside[]={-0.87876773,1.7217826e-007,-0.47734451};
+		pos[]={21559.377,39.138649,7898.8403};
+		dir[]={0.24574563,-0.54509842,-0.80158108};
+		up[]={0.15977709,0.83836484,-0.52116406};
+		aside[]={-0.95610392,-1.7457933e-007,-0.29311869};
 	};
 };
 binarizationWanted=0;
@@ -285,24 +285,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -317,6 +299,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -34906,42 +34906,42 @@ class Mission
 		class Item874
 		{
 			dataType="Marker";
-			position[]={20735.625,0,7226.9663};
+			position[]={21570.805,0,7851.4326};
 			name="ara_convoy_spawn1";
 			type="Empty";
-			angle=235.33763;
+			angle=344.3808;
 			id=1886;
-			atlOffset=-30.393553;
+			atlOffset=-13.921408;
 		};
 		class Item875
 		{
 			dataType="Marker";
-			position[]={20743.936,13.84668,7232.3599};
+			position[]={21573.193,13.84668,7841.8174};
 			name="ara_convoy_spawn2";
 			type="Empty";
-			angle=236.59578;
+			angle=345.63895;
 			id=2070;
-			atlOffset=-15.915447;
+			atlOffset=-0.16430664;
 		};
 		class Item876
 		{
 			dataType="Marker";
-			position[]={20751.285,0,7237.5713};
+			position[]={21575.721,0,7833.1694};
 			name="ara_convoy_spawn3";
 			type="Empty";
-			angle=235.71446;
+			angle=344.75763;
 			id=2071;
-			atlOffset=-29.238066;
+			atlOffset=-14.063711;
 		};
 		class Item877
 		{
 			dataType="Marker";
-			position[]={20758.527,0,7242.7324};
+			position[]={21578.236,0,7824.6396};
 			name="ara_convoy_spawn4";
 			type="Empty";
-			angle=235.64261;
+			angle=344.68579;
 			id=2073;
-			atlOffset=-28.815561;
+			atlOffset=-14.06;
 		};
 		class Item878
 		{
@@ -35241,7 +35241,7 @@ class Mission
 			};
 			id=2093;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.63250923;
+			atlOffset=0.63500023;
 		};
 		class Item886
 		{
@@ -43099,7 +43099,7 @@ class Mission
 			};
 			id=6602;
 			type="Land_Atm_01_F";
-			atlOffset=0.0047950745;
+			atlOffset=0.004794836;
 		};
 		class Item1119
 		{
@@ -44565,41 +44565,42 @@ class Mission
 		class Item1168
 		{
 			dataType="Marker";
-			position[]={20477.932,38.759644,7101.2495};
+			position[]={20768.387,38.759644,8931.0771};
 			name="ara_convoy_waypoint1";
 			type="Empty";
 			angle=300.98187;
 			id=6661;
+			atlOffset=2.1550598;
 		};
 		class Item1169
 		{
 			dataType="Marker";
-			position[]={17019.74,0,9487.416};
+			position[]={20203.039,0,11166.728};
 			name="ara_convoy_waypoint2";
 			type="Empty";
 			angle=343.85382;
 			id=6662;
-			atlOffset=-32.021038;
+			atlOffset=-59.199528;
 		};
 		class Item1170
 		{
 			dataType="Marker";
-			position[]={16813.924,0,11950.047};
+			position[]={19142.521,0,13059.213};
 			name="ara_convoy_waypoint3";
 			type="Empty";
 			angle=3.0479994;
 			id=6663;
-			atlOffset=-5.816555;
+			atlOffset=-42.763218;
 		};
 		class Item1171
 		{
 			dataType="Marker";
-			position[]={17257.9,0,13384.792};
+			position[]={17301.479,0,13511.576};
 			name="ara_convoy_waypoint4";
 			type="Empty";
 			angle=18.721991;
 			id=6664;
-			atlOffset=-12.602192;
+			atlOffset=-9.8779097;
 		};
 		class Item1172
 		{
@@ -44607,7 +44608,7 @@ class Mission
 			position[]={16952.469,0,15279.55};
 			name="ara_convoy_waypoint5";
 			type="Empty";
-			angle=346.19382;
+			angle=346.19379;
 			id=6665;
 			atlOffset=-19.42565;
 		};
@@ -44637,7 +44638,7 @@ class Mission
 			position[]={14636.147,0,17039.43};
 			name="ara_convoy_waypoint8";
 			type="Empty";
-			angle=223.88191;
+			angle=223.8819;
 			id=6668;
 			atlOffset=-15.325711;
 		};
