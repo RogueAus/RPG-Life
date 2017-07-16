@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=138;
 	class ItemIDProvider
 	{
-		nextID=6693;
+		nextID=6695;
 	};
 	class MarkerIDProvider
 	{
-		nextID=235;
+		nextID=237;
 	};
 	class Camera
 	{
@@ -285,6 +285,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -299,24 +317,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1188;
+		items=1189;
 		class Item0
 		{
 			dataType="Marker";
@@ -34909,7 +34909,7 @@ class Mission
 			position[]={21570.805,0,7851.4326};
 			name="ara_convoy_spawn1";
 			type="Empty";
-			angle=344.3808;
+			angle=344.38077;
 			id=1886;
 			atlOffset=-13.921408;
 		};
@@ -34919,7 +34919,7 @@ class Mission
 			position[]={21573.193,13.84668,7841.8174};
 			name="ara_convoy_spawn2";
 			type="Empty";
-			angle=345.63895;
+			angle=345.63892;
 			id=2070;
 			atlOffset=-0.16430664;
 		};
@@ -34929,7 +34929,7 @@ class Mission
 			position[]={21575.721,0,7833.1694};
 			name="ara_convoy_spawn3";
 			type="Empty";
-			angle=344.75763;
+			angle=344.7576;
 			id=2071;
 			atlOffset=-14.063711;
 		};
@@ -44638,7 +44638,7 @@ class Mission
 			position[]={14636.147,0,17039.43};
 			name="ara_convoy_waypoint8";
 			type="Empty";
-			angle=223.8819;
+			angle=223.88188;
 			id=6668;
 			atlOffset=-15.325711;
 		};
@@ -44813,6 +44813,15 @@ class Mission
 			id=6690;
 			type="Land_PedestrianCrossing_01_6m_4str_F";
 			atlOffset=0.00051593781;
+		};
+		class Item1188
+		{
+			dataType="Marker";
+			position[]={15512.7,0,16082.698};
+			name="global_textures";
+			type="Empty";
+			id=6693;
+			atlOffset=-13.229572;
 		};
 	};
 };
