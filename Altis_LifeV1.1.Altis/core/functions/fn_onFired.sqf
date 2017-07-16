@@ -6,7 +6,8 @@
     Description:
     Handles various different ammo types being fired.
 */
-private ["_weapon","_ammoType","_magType","_projectile"];
+private ["_unit","_weapon","_ammoType","_magType","_projectile"];
+_unit = _this select 0;
 _weapon = _this select 1;
 _ammoType = _this select 4;
 _magType = _this select 5;
@@ -24,8 +25,8 @@ if (_ammoType isEqualTo "GrenadeHand_stone") then {
 };
 
 if(playerSide isEqualTo west) then {
-   if(currentWeapon player in ["hgun_P07_snds_F","arifle_SDAR_F"] && _projectile in ["B_9x21_Ball","B_556x45_dual"]) then {
-       [] spawn {
+   if(_weapon in ["hgun_P07_snds_F","arifle_SDAR_F"] && _projectile in ["B_9x21_Ball","B_556x45_dual"]) then {
+       _unit spawn {
             player setAmmo [currentWeapon player, 0];
             sleep 2;
             player setAmmo [currentWeapon player, 1];

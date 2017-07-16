@@ -14,16 +14,16 @@ class Maverick_ConvoySidemission
 		TimeoutBetweenMarkers					= 450;
 		SidesNotAttackable[]					= {"WEST"};
 		AIDifficulty[] = {
-												{"aimingAccuracy", 0.6},
-												{"aimingShake", 0.6},
-												{"aimingSpeed", 0.6},
-												{"endurance", 0.6},
-												{"spotDistance", 0.6},
-												{"spotTime", 0.6},
-												{"courage", 0.6},
-												{"reloadSpeed", 0.6},
-												{"commanding", 0.6},
-												{"general", 0.6}
+												{"aimingAccuracy", 0.8},
+												{"aimingShake", 0.9},
+												{"aimingSpeed", 0.9},
+												{"endurance", 1},
+												{"spotDistance", 1},
+												{"spotTime", 1},
+												{"courage", 1},
+												{"reloadSpeed", 1},
+												{"commanding", 1},
+												{"general", 1}
 		};
 	};
 	class ConvoyConfigurationsPool
