@@ -217,6 +217,7 @@ publicVariable "life_attachment_point";
 [] execVM "\life_server\Functions\Airdrop\config.sqf";
 [] execVM "\life_server\Functions\Airdrop\fn_generateAirdropAuto.sqf";
 [] execVM "\life_server\Functions\Systems\fn_globalTextures.sqf";
+[] execVM "\life_server\Functions\ARA\fn_setupGates.sqf";
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
