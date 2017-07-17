@@ -14,14 +14,14 @@
 
 DYNMARKET_Serveruptime         = 05;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
-DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
+DYNMARKET_PriceUpdateInterval  = 05;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
 DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
-DYNMARKET_UserNotification     = true; // Should the user be informed with a hint whenever the prices got updated?
+DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
 
-DYNMARKET_UserNotification_Text = 
+DYNMARKET_UserNotification_Text =
 [
 	"Your prices have been updated!",
 	"The new prices are being calculated by the server..."
@@ -34,13 +34,22 @@ DYNMARKET_Items_Groups =
 	["Legal",
 		[
 			["apple",-1,10,50],
-			["peach",-1,30,100]
+			["peach",-1,30,100],
+			["oil_processed",-1,3500,4500],
+			["copper_refined",-1,1200,2200],
+			["iron_refined",-1,1150,2150],
+			["salt_refined",-1,1350,2350],
+			["glass",-1,950,1950],
+			["diamond_cut",-1,2030,3030],
+			["cement",-1,1850,2850]
 		],
 		0.5
 	],
-	["Illegal", 
+	["Illegal",
 		[
-			/*["peach",-1,30,100]*/
+			["heroin_processed",-1,4000,6000],
+			["marijuana",-1,4250,6250],
+			["cocaine_processed",-1,4300,6300]
 		],
 		0.5
 	]
@@ -48,47 +57,48 @@ DYNMARKET_Items_Groups =
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████
 
-DYNMARKET_Items_ToTrack        = 
+DYNMARKET_Items_ToTrack        =
 [
 
-	["apple",25],
-	["peach",50],
-	["tbacon",125],
-	["donuts",130],
-	["rabbit_raw",150],
-	["rabbit",170],
-	["ornate_raw",190],
-	["ornate",190],
-	["mackerel_raw",190],
-	["mackerel",190],
-	["tuna_raw",190],
-	["tuna",190],
-	["mullet_raw",190],
-	["mullet",200],
-	["catshark_raw",200],
-	["catshark",200],
-	["turtle_soup",200],
-	["hen_raw",200],
-	["hen",200],
-	["rooster_raw",210],
-	["sheep_raw",210],
-	["sheep",155],
-	["goat_raw",155],
-	["goat",300],
-	["redgull",1500],
-	["coffee",10],
-	["waterBottle",10],
-	["pickaxe",350],
-	["fuelFull",500],
-	["spikeStrip",1200],
-	["lockpick",75],
-	["goldbar",95000],
-	["blastingcharge",35000],
-	["boltcutter",7500],
-	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",15000],
-	["oil_processed",1200],
+	["apple",50],
+	["peach",55],
+	//["tbacon",125],
+	//["donuts",130],
+	//["rabbit_raw",150],
+	//["rabbit",170],
+	//["ornate_raw",190],
+	//["ornate",190],
+	//["mackerel_raw",190],
+	//["mackerel",190],
+	//["tuna_raw",190],
+	//["tuna",190],
+	//["mullet_raw",190],
+	//["mullet",200],
+	//["catshark_raw",200],
+	//["catshark",200],
+	//["turtleRaw",200],
+	//["turtle_soup",200],
+	//["hen_raw",200],
+	//["hen",200],
+	//["rooster_raw",210],
+	//["sheep_raw",210],
+	//["sheep",155],
+	//["goat_raw",155],
+	//["goat",300],
+	//["redgull",1500],
+	//["coffee",10],
+	//["waterBottle",10],
+	//["pickaxe",350],
+	//["fuelFull",500],
+	//["spikeStrip",1200],
+	//["lockpick",75],
+	//["goldbar",95000],
+	//["blastingcharge",35000],
+	//["boltcutter",7500],
+	//["defusekit",2500],
+	//["storagesmall",75000],
+	//["storagebig",15000],
+	["oil_processed",4000],
 	["copper_refined",1700],
 	["iron_refined",1650],
 	["salt_refined",1850],
