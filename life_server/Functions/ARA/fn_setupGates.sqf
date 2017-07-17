@@ -7,7 +7,7 @@
     Initialize gates for Jail & Cop Locations.
 */
 //Police Gates
-private _police = [];//Array of gate positions
+private _police = [[3357.32,12965.7,0],[3221.68,12935.1,0]];//Array of gate positions
 {
     _gate = nearestObject [_x,"Land_ConcreteWall_01_l_gate_F"];
     _gate setVariable ["bis_disabled_Door_1",1,true];
