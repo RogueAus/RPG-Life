@@ -6,3 +6,11 @@
     Description:
     Initialize gates for Jail & Cop Locations.
 */
+//Police Gates
+private _police = [];//Array of gate positions
+{
+    _gate = nearestObject [_x,"Land_ConcreteWall_01_l_gate_F"];
+    _gate setVariable ["bis_disabled_Door_1",1,true];
+    _gate animateSource ["Door_1_source",0];
+    _gate setVariable ["locked",true,true];
+} forEach _police;
