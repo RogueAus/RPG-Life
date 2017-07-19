@@ -16,7 +16,7 @@ private _police = [[3357.32,12965.7,0],[3221.68,12935.1,0]];//Array of locked do
 } forEach _police;
 
 //Jail Gates & Doors
-private _jail = [];
+private _jail = [[15938.8,20815.7,0]];
 {
     private _gate = nearestObject [_x,"Land_ConcreteWall_01_l_gate_F"];
     _gate setVariable ["bis_disabled_Door_1",1,true];
