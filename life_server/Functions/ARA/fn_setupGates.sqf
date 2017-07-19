@@ -16,9 +16,9 @@ private _police = [[3357.32,12965.7,0],[3221.68,12935.1,0]];//Array of gate posi
 } forEach _police;
 
 //Jail Gates & Doors
-private _jail = [[15938.8,20815.7,0],[15956,20815.1,0.00091362],[15945.4,20788.8,0.454655]];
+private _jail = [[15938.8,20815.7,0]];
 {
-    private _gate = nearestObject [_x,["Land_ConcreteWall_01_l_gate_F","Land_BackAlley_01_l_gate_F"]];
+    private _gate = nearestObject [_x,"Land_ConcreteWall_01_l_gate_F"];
     _gate setVariable ["bis_disabled_Door_1",1,true];
     _gate animateSource ["Door_1_source",0];
     _gate setVariable ["locked",true,true];
