@@ -3,6 +3,7 @@ file: fn_robShops.sqf
 Author: MrKraken
 Description:
 Executes the rob shob action!
+//TODO Redo this script
 */
 private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_pos"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
