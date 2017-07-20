@@ -8,8 +8,7 @@
     Spawns animals around the marker when a player
     is near. Very basic WIP
 
-    TODO:
-    Change it up so animals repopulate over time.
+    TODO: Change it up so animals repopulate over time.
 */
 private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
 params [
