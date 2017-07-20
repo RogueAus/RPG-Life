@@ -15,11 +15,11 @@
     };
 } forEach nearestObjects [player,["Land_BarGate_F","Land_BackAlley_01_l_gate_F"],30];//TODO Remove BackAlley gate from here
 
-/*
+
 if (life_inv_copRemote < 1) exitWith {
-    hintSilent "You must have a remote to open the gate!
+    hintSilent "You must have a remote to open the gate!";
 };
-*/
+
 
 {
     _phase = _x animationPhase "Door_1_move";

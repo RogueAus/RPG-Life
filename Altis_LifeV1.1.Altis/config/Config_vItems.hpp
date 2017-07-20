@@ -167,6 +167,17 @@ class VirtualItems {
         icon = "icons\ico_blindfold.paa";
     };
 
+    class copRemote {
+        variable = "copRemote";
+        displayName = "Police Gate Remote";//ToDo Localize
+        weight = 0;
+        buyPrice = 500;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_remote.paa";
+    };
+
     //Misc
     class pickaxe {
         variable = "pickaxe";
