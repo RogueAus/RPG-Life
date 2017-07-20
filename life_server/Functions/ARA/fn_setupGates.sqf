@@ -26,8 +26,8 @@ private _jail = [[15938.8,20815.7,0],[15960.6,20837.8,-1.90735e-006],[15956,2081
     _door setVariable ["bis_disabled_Door_1",1,true];
     _door animateSource ["Door_1_source",0];
     _door setVariable ["locked",true,true];
-    private _cell = nearestObject [_x,""];
+    /*private _cell = nearestObject [_x,""];
     _cell setVariable ["bis_disabled_Door_1",1,true];
     _cell animateSource ["Door_1_source",0];
-    _cell setVariable ["locked",true,true];
+    _cell setVariable ["locked",true,true];*/
 } forEach _jail;
