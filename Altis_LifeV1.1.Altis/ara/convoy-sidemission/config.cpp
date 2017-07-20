@@ -1,6 +1,7 @@
 /*
 	Author: Maverick Applications
 	Convoy sidemission for Altis Life servers
+	TODO Add proper configs and redo paths
 */
 
 class Maverick_ConvoySidemission
