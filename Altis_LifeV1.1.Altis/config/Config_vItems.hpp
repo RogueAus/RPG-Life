@@ -169,7 +169,7 @@ class VirtualItems {
 
     class copRemote {
         variable = "copRemote";
-        displayName = "Police Gate Remote";//ToDo Localize
+        displayName = "STR_Item_CopRemote";//ToDo Localize
         weight = 0;
         buyPrice = 500;
         sellPrice = -1;

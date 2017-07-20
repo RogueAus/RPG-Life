@@ -6977,6 +6977,9 @@
         <Key ID="STR_Item_Blindfold">
             <Original>Blindfold</Original>
         </Key>
+        <Key ID="STR_Item_CopRemote">
+            <Original>Police Gate Remote</Original>
+        </Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
