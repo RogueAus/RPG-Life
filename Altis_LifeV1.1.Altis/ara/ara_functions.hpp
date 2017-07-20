@@ -8,9 +8,15 @@ class AusRebelArmy {
     tag = "ara";
     class functions {
         file = "ara\functions";
-		class copOpener {};
 		class autoSaveInv {};
     };
+
+    class actions {
+        file = "ara\actions";
+		class copOpener {};
+		class remoteHack {};
+    };
+
 };
 
 #include "convoy-sidemission\functions.cpp"
