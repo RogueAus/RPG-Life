@@ -20,8 +20,8 @@
 
 {
     if (life_inv_copRemote < 1) then {
-        exitWith {hintSilent "You must have a remote to open the gate!"};
-    } else{
+        exitWith {hintSilent "You must have a remote to open the gate!";};
+    } else {
         _phase = _x animationPhase "Door_1_move";
         if (_phase == 0) then {
             _x animate ["Door_1_move",1];

@@ -1,3 +1,4 @@
+#include "\life_server\script_macros.hpp"
 /*
 
 	@file Version: 1.0.0.0
