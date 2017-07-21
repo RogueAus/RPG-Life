@@ -1,5 +1,4 @@
-private _pos = getArray(configFile >> "CfgWorlds" >> worldName >> "centerPosition");
-
+_pos = [0,0,0];
 
 private _mapID = [1574798,1574800,
 
@@ -15,5 +14,5 @@ private _mapID = [1574798,1574800,
 ];
 
  {
-        ((getPos _pos) nearestObject _x) hideObjectGlobal true;
+   (_pos nearestObject _x) hideObjectGlobal true;
  } forEach _mapID;
