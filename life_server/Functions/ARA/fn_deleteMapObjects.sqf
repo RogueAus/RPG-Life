@@ -1,6 +1,6 @@
 private _pos = getArray(configFile >> "CfgWorlds" >> worldName >> "centerPosition");
 
-                                                                                                                                                                                     //Athira CarShop                                               // Sofia Garage
+
 private _mapID = [1574798,1574800,
 
 //Kavala HQ 
