@@ -11,6 +11,7 @@ class Socket_Reciever {
         //Rogue
         class playTimeQuery {};
         class playTimeReceived {};
+        class tazeRagdoll {};
     };
 };
 
@@ -245,6 +246,7 @@ class Life_Client_Core {
         class whereAmI {};
         //ARA
         class robstore {};
+        class seatbelt {};
     };
 
     class Gangs {

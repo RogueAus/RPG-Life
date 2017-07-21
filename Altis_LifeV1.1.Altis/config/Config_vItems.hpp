@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "copRemote", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
@@ -165,6 +165,17 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_blindfold.paa";
+    };
+
+    class copRemote {
+        variable = "copRemote";
+        displayName = "STR_Item_CopRemote";//ToDo Localize
+        weight = 0;
+        buyPrice = 500;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_remote.paa";
     };
 
     //Misc

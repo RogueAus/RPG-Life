@@ -7,7 +7,8 @@ enableDebugConsole = 1;
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "scripts\indicators\config.cpp"
-#include "ara\ara_master.cpp"
+#include "ara\ara_master.hpp"
+
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -28,7 +29,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
-    #include "ara\ara_functions.cpp"
+    #include "ara\ara_functions.hpp"
     #include "ara\crafting\functions.cpp"
 };
 
@@ -85,6 +86,18 @@ class CfgSounds {
     class wasted {
         name = "wasted";
         sound[] = {"\sounds\wasted.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class beltClick {
+        name = "beltClick";
+        sound[] = {"\sounds\beltClick.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class beltunClick {
+        name = "beltunClick";
+        sound[] = {"\sounds\beltUnClick.ogg", 1.0, 1};
         titles[] = {};
     };
 };

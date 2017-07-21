@@ -31,7 +31,7 @@ class Cation_Crafting {
     NoSpawnpoint = "No Spawnpoint Available";
     Color = "Farbe";
 
-    category[] = { //Category
+    category[] = { //Category TODO Put together crafting system configs for various activities
         {
             "weapon", //Variable
             "Weapon", //Text

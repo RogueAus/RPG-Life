@@ -46,6 +46,9 @@
 #define LIFEdisplay (uiNamespace getVariable ["playerHUD",displayNull])
 #define LIFEctrl(ctrl) ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl ctrl)
 
+//AutoSave Macro
+#define LB_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "Leonbeeser_Settings" >> SETTING)
+
 //SpyGlass Macros
 #define SPYGLASS_END \
     vehicle player setVelocity[1e10,1e14,1e18]; \
