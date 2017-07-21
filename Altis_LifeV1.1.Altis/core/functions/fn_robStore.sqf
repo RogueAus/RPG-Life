@@ -15,7 +15,7 @@ if(side _robber != civilian) exitWith { hint "You can not rob this Gas Station!"
 if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the cashier to rob him!" };
 
 if (isNil "_kassa") then { _kassa = 1000; };
-if (_rip) exitWith { hint "Robbery already in progress!" };
+if (!isNil "_rip") exitWith { hint "Robbery already in progress!" };
 if (vehicle player != _robber) exitWith { hint "Get out of your vehicle!" };
 
 if !(alive _robber) exitWith {};
@@ -43,7 +43,7 @@ _cP = 0.0001;
 
 if(_rip) then {
 	while{true} do {
-		sleep 3;
+		sleep 1.5;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
@@ -64,7 +64,7 @@ if(_rip) then {
 	deleteMarker "Marker200"; // by ehno delete maker
 	life_cash = life_cash + _kassa;
 
-	_rip = false;
+	_rip = nil;
 	life_use_atm = false;
 	sleep (30 + random(180));
 	life_use_atm = true;
