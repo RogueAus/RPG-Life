@@ -13,7 +13,7 @@ _uid = getPlayerUID _sender;
 _side = playerSide;
 
 if (life_HC_isActive) then {
-    [_uid,_side,_sender] remoteExec ["HC_fnc_queryRequest",HC_Life];
+    [_uid,_side,_sender] remoteExec ["HC_fnc_playTimeRequest",HC_Life];
 } else {
     [_uid,_side,_sender] remoteExec ["DB_fnc_playTimeRequest",RSERV];
 };

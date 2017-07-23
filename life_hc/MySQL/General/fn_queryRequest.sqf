@@ -77,6 +77,7 @@ switch (_side) do {
         //Playtime
         _new = [(_queryResult select 11)] call HC_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
+        _queryResult set[11,_new];
         _index = TON_fnc_playtime_values_request find [_uid, _new];
         if !(_index isEqualTo -1) then {
             TON_fnc_playtime_values_request set[_index,-1];
@@ -106,6 +107,7 @@ switch (_side) do {
         //Playtime
         _new = [(_queryResult select 12)] call HC_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
+        _queryResult set[12,_new];
         _index = TON_fnc_playtime_values_request find [_uid, _new];
         if !(_index isEqualTo -1) then {
             TON_fnc_playtime_values_request set[_index,-1];
@@ -134,6 +136,7 @@ switch (_side) do {
         //Playtime
         _new = [(_queryResult select 10)] call HC_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
+        _queryResult set[10,_new];
         _index = TON_fnc_playtime_values_request find [_uid, _new];
         if !(_index isEqualTo -1) then {
             TON_fnc_playtime_values_request set[_index,-1];

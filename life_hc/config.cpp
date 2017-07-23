@@ -44,6 +44,7 @@ class CfgFunctions
             file = "\life_hc\MySQL\PlayTime";
             class getPlayTime {};
             class setPlayTime {};
+            class playTimeRequest {};
         };
 
         class Housing
