@@ -211,23 +211,23 @@ class WeaponShops {
             { "hgun_P07_F", "", 7500, 3750, "" },
             { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-	    { "arifle_SPAR_01_blk_F","", 5000, 5000, "call life_coplevel >= 2" },
-	    { "arifle_Mk20_plain_F", "", 5000, 5000, "call life_coplevel >= 2"},
-	    { "arifle_CTAR_blk_F", "", 5000,5000, "call life_coplevel >= 2"},
+	        { "arifle_SPAR_01_blk_F","", 5000, 5000, "call life_coplevel >= 2" },
+	        { "arifle_Mk20_plain_F", "", 5000, 5000, "call life_coplevel >= 2"},
+	        { "arifle_CTAR_blk_F", "", 5000,5000, "call life_coplevel >= 2"},
             { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
             { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 3" },
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
             { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "arifle_MXM_Black_F", "", 30000, 15000, "call life_coplevel >= 4"},
-	    { "arifle_ARX_blk_F", "", 25000, 12500, "call life_coplevel >= 4"},
+            { "arifle_MXM_Black_F", "", 30000, 15000, "call life_coplevel >= 4" },
+	        { "arifle_ARX_blk_F", "", 25000, 12500, "call life_coplevel >= 4" },
             { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 4" }, //Apex DLC Sniper
-	    { "arifle_MX_SW_Black_F", "", 60000, 30000, "call life_coplevel >= 5"},
-	    { "M320 LRR .408", "", 40000, 20000, "call life_coplevel >= 5"},
-	    { "srifle_DMR_03_F", "", 325000, 8000, "" }, // Mk1 EMR
-	    { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7"},
-	    { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7"},
-	    { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7"},
-	    { "LMG_Mk200_pointer_F", "", 300000, 15000, "call life_coplevel >= 7"}
+	        { "arifle_MX_SW_Black_F", "", 60000, 30000, "call life_coplevel >= 5" },
+	        { "srifle_LRR_F", "", 40000, 20000, "call life_coplevel >= 5" },
+	        { "srifle_DMR_03_F", "", 25000, 8000, "call life_coplevel >= 7" }, // Mk1 EMR
+	        { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7" },
+	        { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7" },
+	        { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7" },
+	        { "LMG_Mk200_pointer_F", "", 300000, 15000, "call life_coplevel >= 7" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -236,16 +236,16 @@ class WeaponShops {
             { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
             { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" },  //Apex DLC
-	    { "30Rnd_556x45_Stanag", "", 250, 100, "call life_coplevel >= 2"},
-	    { "30Rnd_580x42_Mag_F", "", 250, 100, "call life_coplevel >= 2"},
-	    { "30Rnd_65x39_caseless_mag", "", 250, 100, "call life_coplevel >= 3"},
-	    { "30Rnd_65x39_caseless_green", "", 250, 100, "call life_coplevel >= 3"},
-	    { "100Rnd_65x39_caseless_mag", "", 250, 100, "call life_coplevel >= 5"},
-	    {"7Rnd_408_Mag", "", 250, 125, "call life_coplevel >= 5"},
-	    { "Titan_AA", "", 250, 100, "call life_coplevel >= 7"},
-	    { "20Rnd_762x51_Mag", "", 250, 100, "call life_coplevel >= 7"},
-	    { "20Rnd_762x51_Mag", "", 250, 100, "call life_coplevel >= 7"},
-	    { "200Rnd_65x39_cased_Box", "", 250, 100, "call life_coplevel >= 7"}
+	        { "30Rnd_556x45_Stanag", "", 250, 100, "call life_coplevel >= 2"},
+	        { "30Rnd_580x42_Mag_F", "", 250, 100, "call life_coplevel >= 2"},
+	        { "30Rnd_65x39_caseless_mag", "", 250, 100, "call life_coplevel >= 3"},
+	        { "30Rnd_65x39_caseless_green", "", 250, 100, "call life_coplevel >= 3"},
+	        { "100Rnd_65x39_caseless_mag", "", 250, 100, "call life_coplevel >= 5"},
+	        {"7Rnd_408_Mag", "", 250, 125, "call life_coplevel >= 5"},
+	        { "Titan_AA", "", 250, 100, "call life_coplevel >= 7"},
+	        { "20Rnd_762x51_Mag", "", 250, 100, "call life_coplevel >= 7"},
+	        { "20Rnd_762x51_Mag", "", 250, 100, "call life_coplevel >= 7"},
+	        { "200Rnd_65x39_cased_Box", "", 250, 100, "call life_coplevel >= 7"}
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
@@ -254,12 +254,12 @@ class WeaponShops {
             { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
             { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
             { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" },
-	    { "optic_MRCO", "", 100, 50, "call life_coplevel >= 3"},
-	    { "optic_Hamr", "", 100, 50, "call life_coplevel >= 3"},
-	    { "optic_DMS", "", 100, 50, "call life_coplevel >= 4"},
-	    { "optic_KHS_blk", "", 100, 50, "call life_coplevel >= 5"},
-	    { "optic_AMS", "", 100, 50, "call life_coplevel >= 6"},
-	    { "optic_LRPS", "", 100, 50, "call life_coplevel >= 6"}
+	        { "optic_MRCO", "", 100, 50, "call life_coplevel >= 3"},
+	        { "optic_Hamr", "", 100, 50, "call life_coplevel >= 3"},
+	        { "optic_DMS", "", 100, 50, "call life_coplevel >= 4"},
+	        { "optic_KHS_blk", "", 100, 50, "call life_coplevel >= 5"},
+	        { "optic_AMS", "", 100, 50, "call life_coplevel >= 6"},
+	        { "optic_LRPS", "", 100, 50, "call life_coplevel >= 6"}
         };
     };
 	
@@ -269,7 +269,7 @@ class WeaponShops {
 	side = "cop";
 	conditions = "license_cop_SERT";
 	items[] = {
-	{ "hgun_P07_F", "", 7500, 3750, "" }	
+	       { "hgun_P07_F", "", 7500, 3750, "" }
 	};
 	mags[] = {};
 	accs[] = {};
