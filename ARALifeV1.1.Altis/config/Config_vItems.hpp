@@ -156,6 +156,129 @@ class VirtualItems {
         icon = "icons\ico_ziptie.paa";
     };
 
+    //Crafting Components
+    class rifleBody {
+         variable = "rifleBody";
+         displayName = "STR_Item_RifleBody"; //Todo: Add string
+         weight = 6;
+         buyPrice = -1;
+         sellPrice = 7000;
+         edible = -1;
+         icon = "";
+    };
+
+    class rifleStock {
+         variable = "rifleStock";
+         displayName = "STR_Item_RifleStock"; //Todo: Add string
+         weight = 6;
+         buyPrice = -1;
+         sellPrice = 10000;
+         edible = -1;
+         icon = "";
+    };
+
+    class rifleBarrel {
+        variable = "rifleBarrel";
+        displayName = "STR_Item_rifleBarrel"; //Todo: Add string
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = 3500;
+        edible = -1;
+        icon = "";
+    };
+
+    class LmgBody {
+        variable = "LmgBody";
+        dispayName = "STR_Item_LmgBody"; //Todo: Add string
+        weight = 9;
+        buyPrice = -1;
+        sellPrice = 9000;
+        edible = -1;
+        icon = "";
+    };
+
+    class LmgStock {
+         variable = "LmgStock";
+         displayName = "STR_Item_LmgStock"; //Todo: Add string
+         weight = 9;
+         buyPrice = -1;
+         sellPrice = 13500;
+         edible = -1;
+         icon = "";
+    };
+
+    class LmgBarrel {
+         variable = "LmgBarrel";
+         displayName = "STR_Item_LmgBarrel"; //Todo: Add string
+         weight = 7;
+         buyPrice = -1;
+         sellPrice = 5000;
+         edible = -1;
+         icon = "";
+    };
+
+    class sniperBody {
+         variable = "sniperBody";
+         displayName = "STR_Item_SniperBody"; //Todo: Add string
+         weight = 8;
+         buyPrice = -1;
+         sellPrice = 8000;
+         edible = -1;
+         icon = "";
+    };
+
+    class sniperStock {
+         variable = "sniperStock";
+         displayName = "STR_Item_SniperStock"; //Todo: Add string
+         weight = 7;
+         buyPrice = -1;
+         sellPrice = 12500;
+         edible = -1;
+         icon = "";
+    };
+
+    class sniperBarrel {
+         variable = "sniperBarrel";
+         displayName = "STR_Item_SniperBarrel"; //Todo: Add string
+         weight = 6;
+         buyPrice = -1;
+         sellPrice = 4500;
+         edible = -1;
+         icon = "";
+    };
+
+    class steelIngot {
+        variable = "SteelIngot";
+        displayName = "STR_Item_SteelIngot"; //Todo: Add string
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 2350;
+        edible = -1;
+        icon = "";
+    };
+
+    //Mined Items
+    class coal {
+        variable = "coal";
+        displayName = "STR_Item_Coal"; //Todo: Add string
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = "";
+    };
+
+     class pureCoal {
+            variable = "pureCoal";
+            displayName = "STR_Item_pureCoal"; //Todo: Add string
+            weight = 4;
+            buyPrice = -1;
+            sellPrice = 1200;
+            edible = -1;
+            icon = "";
+     };
+    /////// Custom End ///////
+
     class blindfold {
         variable = "blindfold";
         displayName = "STR_Item_Blindfold";
