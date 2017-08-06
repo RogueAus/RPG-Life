@@ -296,5 +296,24 @@ class playerSettings {
             h = 0.0219919 * safezoneH;
             colorBackground[] = {0,0,0,0};
         };
+
+        class sideTime: Life_RscText {
+            idc = 7005;
+            text = "SIDE Playtime: 1234 Hours";
+            x = 0.333478 * safezoneW + safezoneX;
+            y = 0.543989 * safezoneH + safezoneY;
+            w = 0.103098 * safezoneW;
+            h = 0.0219946 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+        };
+        class totalTime: Life_RscText {
+            idc = 7006;
+            text = "Total Playtime: 1234 Hours";
+            x = 0.333478 * safezoneW + safezoneX;
+            y = 0.565984 * safezoneH + safezoneY;
+            w = 0.103098 * safezoneW;
+            h = 0.0219946 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+        };
     };
 };
