@@ -144,7 +144,7 @@ class VirtualShops {
 class VirtualItems {
     //Virtual Items
 
-    //Custom
+    /////// Custom ///////
     class zipties {
         variable = "zipties";
         displayName = "STR_Item_ZipTies";
@@ -159,7 +159,7 @@ class VirtualItems {
     //Crafting Components
     class rifleBody {
          variable = "rifleBody";
-         displayName = "STR_Item_RifleBody"; //Todo: Add string
+         displayName = "STR_Item_RifleBody"; //Todo: Localize
          weight = 6;
          buyPrice = -1;
          sellPrice = 7000;
@@ -169,7 +169,7 @@ class VirtualItems {
 
     class rifleStock {
          variable = "rifleStock";
-         displayName = "STR_Item_RifleStock"; //Todo: Add string
+         displayName = "STR_Item_RifleStock"; //Todo: Localize
          weight = 6;
          buyPrice = -1;
          sellPrice = 10000;
@@ -179,7 +179,7 @@ class VirtualItems {
 
     class rifleBarrel {
         variable = "rifleBarrel";
-        displayName = "STR_Item_rifleBarrel"; //Todo: Add string
+        displayName = "STR_Item_rifleBarrel"; //Todo: Localize
         weight = 6;
         buyPrice = -1;
         sellPrice = 3500;
@@ -189,7 +189,7 @@ class VirtualItems {
 
     class LmgBody {
         variable = "LmgBody";
-        dispayName = "STR_Item_LmgBody"; //Todo: Add string
+        dispayName = "STR_Item_LmgBody"; //Todo: Localize
         weight = 9;
         buyPrice = -1;
         sellPrice = 9000;
@@ -199,7 +199,7 @@ class VirtualItems {
 
     class LmgStock {
          variable = "LmgStock";
-         displayName = "STR_Item_LmgStock"; //Todo: Add string
+         displayName = "STR_Item_LmgStock"; //Todo: Localize
          weight = 9;
          buyPrice = -1;
          sellPrice = 13500;
@@ -209,7 +209,7 @@ class VirtualItems {
 
     class LmgBarrel {
          variable = "LmgBarrel";
-         displayName = "STR_Item_LmgBarrel"; //Todo: Add string
+         displayName = "STR_Item_LmgBarrel"; //Todo: Localize
          weight = 7;
          buyPrice = -1;
          sellPrice = 5000;
@@ -219,7 +219,7 @@ class VirtualItems {
 
     class sniperBody {
          variable = "sniperBody";
-         displayName = "STR_Item_SniperBody"; //Todo: Add string
+         displayName = "STR_Item_SniperBody"; //Todo: Localize
          weight = 8;
          buyPrice = -1;
          sellPrice = 8000;
@@ -229,7 +229,7 @@ class VirtualItems {
 
     class sniperStock {
          variable = "sniperStock";
-         displayName = "STR_Item_SniperStock"; //Todo: Add string
+         displayName = "STR_Item_SniperStock"; //Todo: Localize
          weight = 7;
          buyPrice = -1;
          sellPrice = 12500;
@@ -239,7 +239,7 @@ class VirtualItems {
 
     class sniperBarrel {
          variable = "sniperBarrel";
-         displayName = "STR_Item_SniperBarrel"; //Todo: Add string
+         displayName = "STR_Item_SniperBarrel"; //Todo: Localize
          weight = 6;
          buyPrice = -1;
          sellPrice = 4500;
@@ -249,7 +249,7 @@ class VirtualItems {
 
     class steelIngot {
         variable = "SteelIngot";
-        displayName = "STR_Item_SteelIngot"; //Todo: Add string
+        displayName = "STR_Item_SteelIngot"; //Todo: Localize
         weight = 4;
         buyPrice = -1;
         sellPrice = 2350;
@@ -257,10 +257,10 @@ class VirtualItems {
         icon = "";
     };
 
-    //Mined Items
+    // Mined Items
     class coal {
         variable = "coal";
-        displayName = "STR_Item_Coal"; //Todo: Add string
+        displayName = "STR_Item_Coal"; //Todo: Localize
         weight = 6;
         buyPrice = -1;
         sellPrice = -1;
@@ -270,7 +270,7 @@ class VirtualItems {
 
      class pureCoal {
             variable = "pureCoal";
-            displayName = "STR_Item_pureCoal"; //Todo: Add string
+            displayName = "STR_Item_pureCoal"; //Todo: Localize
             weight = 4;
             buyPrice = -1;
             sellPrice = 1200;
