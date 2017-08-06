@@ -24,9 +24,10 @@ _query = format ["SELECT playtime FROM players WHERE pid='%1'",_uid];
 _queryResult = [_query,2] call HC_fnc_asyncCall;
 
 
-        //Playtime
 _new = [(_queryResult select 0)] call HC_fnc_mresToArray;
 if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
 _queryResult set[0,_new];
 
-_queryResult remoteExec ["SOCK_fnc_playTimeReceived",_ownerID];
+_timeArray = (_queryResult select 0);
+
+_timeArray remoteExec ["SOCK_fnc_playTimeReceived",_ownerID];

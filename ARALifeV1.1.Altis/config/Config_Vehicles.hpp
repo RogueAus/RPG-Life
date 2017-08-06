@@ -622,7 +622,7 @@ class LifeCfgVehicles {
             }, "" },
             { "Police", "cop", {
                 "textures\police_offroad.jpg"
-            }, "" }cop_
+            }, "" }
         };
     };
 
@@ -668,7 +668,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-            { "Police", "cop" {
+            { "Police", "cop", {
                 "textures\Police_Hatchback.jpg"
             }, "" }
         };
@@ -775,7 +775,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Black", "civ", "reb", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             }, "" },
-            { "Police", "cop" {
+            { "Police", "cop", {
                 "textures\Police_Hatchback.jpg"
             }, "" }
         };

@@ -28,5 +28,6 @@ _new = [(_queryResult select 0)] call DB_fnc_mresToArray;
 if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
 _queryResult set[0,_new];
 
+_timeArray = (_queryResult select 0);
 
-_queryResult remoteExec ["SOCK_fnc_playTimeReceived",_ownerID];
+_timeArray remoteExec ["SOCK_fnc_playTimeReceived",_ownerID];
