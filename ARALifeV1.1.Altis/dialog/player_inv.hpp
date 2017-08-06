@@ -173,6 +173,7 @@ class playerSettings {
             w = 0.0103108 * safezoneW;
             h = 0.0219919 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_Global_Close";
         };
 
         class ButtonSettings: Life_RscPictureButtonMenu {
@@ -183,6 +184,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_Global_Settings";
         };
 
         class ButtonMyGang: Life_RscPictureButtonMenu {
@@ -193,6 +195,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_MyGang";
         };
 
         class Licenses_Menu : Life_RscControlsGroup {
@@ -223,6 +226,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_WantedList";
         };
 
         class ButtonKeys: Life_RscPictureButtonMenu {
@@ -233,6 +237,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_KeyChain";
         };
 
         class ButtonCell: Life_RscPictureButtonMenu {
@@ -243,6 +248,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_CellPhone";
         };
 
         class ButtonAdminMenu: Life_RscPictureButtonMenu {
@@ -253,6 +259,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_AdminMenu";
         };
 
         class ButtonSyncData: Life_RscPictureButtonMenu {
@@ -264,6 +271,7 @@ class playerSettings {
             w = 0.0288702 * safezoneW;
             h = 0.0494817 * safezoneH;
             colorBackground[] = {0,0,0,0};
+            tooltip = "$STR_PM_SyncData";
         };
 
         class ButtonCrafting: Life_RscButtonMenu {
