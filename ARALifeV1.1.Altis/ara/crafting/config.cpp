@@ -29,14 +29,14 @@ class Cation_Crafting {
     NoRoom = "You do not have the inventory space for the item.";
     Veh_Block = "A vehicle is currently blocking the spawn point";
     NoSpawnpoint = "No Spawnpoint Available";
-    Color = "Farbe";
+    Color = "Paint";
 
     category[] = { //Category TODO Put together crafting system configs for various activities
         {
             "weapon", //Variable
             "Weapon", //Text
             {"hgun_P07_F","",{"diamond_cut",2,"copper_refined",1},"","",0}, // {Item 1, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Skinname, Skin Page only | 1 for all other items)},
-            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0} // {Item 2, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Skinname, Skin Page only | 1 for all other items)} No comma at last!
+            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0} // {Item 2, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Texture Name, Texture Location, 1 for vItems|0 for all other items)} No comma at last!
         }, //Komma
         {
             "uniform",
