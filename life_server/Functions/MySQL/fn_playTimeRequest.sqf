@@ -19,7 +19,7 @@ _ownerID = [_this,2,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _ownerID) exitWith {};
 _ownerID = owner _ownerID;
 
-_query = format ["SELECT playtime FROM players WHERE pid='%1'",_uid];};
+_query = format ["SELECT playtime FROM players WHERE pid='%1'",_uid];
 
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
