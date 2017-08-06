@@ -621,8 +621,8 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
+                "textures\police_offroad.jpg"
+            }, "" }cop_
         };
     };
 
@@ -668,8 +668,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Police", "cop" {
+                "textures\Police_Hatchback.jpg"
             }, "" }
         };
     };
@@ -774,6 +774,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Black", "civ", "reb", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
+            }, "" },
+            { "Police", "cop" {
+                "textures\Police_Hatchback.jpg"
             }, "" }
         };
     };
@@ -793,7 +796,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+                "textures\Police_SUV.jpg"
             }, "" }
         };
     };
@@ -833,8 +836,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 30000;
         textures[] = {
             { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                "textures\Police_Hunter.jpg",
+                "textures\Police_Hunter_Canopy.jpg"
             }, "" }
         };
     };
@@ -856,7 +859,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 325000;
         textures[] = {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+                "textures\Police_Hummingbird.jpg"
             }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"

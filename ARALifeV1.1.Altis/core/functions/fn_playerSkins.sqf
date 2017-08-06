@@ -37,10 +37,10 @@ switch (playerSide) do {
 
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\cop_uniform.jpg";
+            _skinName = "textures\ara_copOutfit.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
+                    _skinName = ["textures\ara_copOutfit_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
