@@ -6212,6 +6212,45 @@
         </Key>
     </Package>
     <Package name="Life_Items">
+        <Key ID="STR_Item_RifleBody">
+            <Original>Rifle Body</Original>
+        </Key>
+        <Key ID="STR_Item_RifleStock">
+            <Original>Rifle Stock</Original>
+        </Key>
+        <Key ID="STR_Item_RifleBarrel">
+            <Original>Rifle Barrel</Original>
+        </Key>
+        <Key ID="STR_Item_LmgBody">
+            <Original>Lmg Body</Original>
+        </Key>
+        <Key ID="STR_Item_LmgStock">
+            <Original>Lmg Stock</Original>
+        </Key>
+        <Key ID="STR_Item_LmgBarrel">
+            <Original>Lmg Barrel</Original>
+        </Key>
+        <Key ID="STR_Item_SniperBody">
+            <Original>Sniper Body</Original>
+        </Key>
+        <Key ID="STR_Item_SniperStock">
+            <Original>Sniper Stock</Original>
+        </Key>
+        <Key ID="STR_Item_SnipeBarrel">
+            <Original>Sniper Barrel</Original>
+        </Key>
+        <Key ID="STR_Item_SteelIngot">
+            <Original>Steel Ingot</Original>
+        </Key>
+        <Key ID="STR_Item_Coal">
+            <Original>Coal</Original>
+        </Key>
+        <Key ID="STR_Item_pureCoal">
+            <Original>Purified Coal</Original>
+        </Key>
+        <Key ID="STR_Item_CopRemote">
+            <Original>Cop Remote</Original>
+        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>

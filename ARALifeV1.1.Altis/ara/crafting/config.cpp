@@ -36,7 +36,8 @@ class Cation_Crafting {
             "weapon", //Variable
             "Weapon", //Text
             {"hgun_P07_F","",{"diamond_cut",2,"copper_refined",1},"","",0}, // {Item 1, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Skinname, Skin Page only | 1 for all other items)},
-            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0} // {Item 2, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Texture Name, Texture Location, 1 for vItems|0 for all other items)} No comma at last!
+            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0}, // {Item 2, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Texture Name, Texture Location, 1 for vItems|0 for all other items)} No comma at last!
+            {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1},"","",0}
         }, //Komma
         {
             "uniform",
@@ -57,10 +58,24 @@ class Cation_Crafting {
             "item",
             "Items",
             {"iron_refined","",{"copper_refined",2},"","",1},
-            {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1}
+            {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1},
+            {"rifleBody","",{"steelIngot",10},"","",1},
+            {"rifleStock","",{"steelIngot",5,"wood_plank",10},"","",1},
+            {"rifleBarrel","",{"steelIngot",5},"","",1},
+            {"LmgBody","",{"steelIngot",10,"copper_refined",5},"","",1},
+            {"LmgStock","",{"steelIngot",7,"copper_refined",5,"wood_plank",15},"","",10},
+            {"LmgBarrel","",{"steelIngot",10,"copper_refined",5},"","",1},
+            {"sniperBody","",{"steelIngot",15,"copper_refined",10},"","",1},
+            {"sniperStock","",{"steelIngot",10,"copper_refined",5,"wood_plank",15},"","",1},
+            {"sniperBarrel","",{"steelIngot",15,"copper_refined",10},"","",1}
         } //No Comma at Last
     };
+/*
+    In order to create crafting stations the following must be added to the  desired objects init:
 
+    this addAction["Station Name",{["variableName"] spawn cat_crafting_fnc_craft}];
+
+*/
     craftingStations[] = { // available categories at different crafting stations
         {
             "craftingItems", //Variable name
