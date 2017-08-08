@@ -121,6 +121,22 @@ class Licenses {
         side = "civ";
     };
 
+    class steel {
+        variable = "steel";
+        displayName = "STR_License_Steel";
+        price = 11500;
+        illegal = false;
+        side = "civ";
+    };
+
+    class coal {
+        variable = "coal";
+        displayName = "STR_License_Coal";
+        price = 8500;
+        illegal = false;
+        side = "civ";
+    };
+
     class cement {
         variable = "cement";
         displayName = "STR_License_Cement";

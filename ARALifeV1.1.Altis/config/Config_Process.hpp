@@ -96,8 +96,8 @@ class ProcessAction {
     class steelIngot {
         MaterialsReq[] = {{"iron_refined",1},{"copper_refined",1}};
         MaterialsGive[] = {{"steelIngot"}};
-        Text = "STR_Process_steelIngot";// Todo: Localize
-        //ScrollText = "Forge Steel";
+        Text = "STR_Process_Steel";
+        //ScrollText = "Smelt Steel";
         NoLicenseCost = -1;
     };
 
@@ -105,8 +105,8 @@ class ProcessAction {
     class coal {
         MaterialsReq[] = {{"coal",1}};
         MaterialsGive[] = {{"pureCoal",1}};
-        Text = "STR_Process_purCoal";// Todo: Localize
-        //ScrollText = "Process Coal";
+        Text = "STR_Process_Coal";
+        //ScrollText = "Purify Coal";
         NoLicenseCost = 1000;
     };
 

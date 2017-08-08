@@ -7790,6 +7790,12 @@
             <Portuguese>Processando Cobre</Portuguese>
             <Polish>Wytop miedzi</Polish>
         </Key>
+        <Key ID="STR_Process_Coal">
+            <Original>Purifying Coal</Original>
+        </Key>
+        <Key ID="STR_Process_Steel">
+            <Original>Smelting Steel</Original>
+        </Key>
         <Key ID="STR_Process_Iron">
             <Original>Casting Iron Ingots</Original>
             <Czech>Litiny ingoty</Czech>
@@ -9549,6 +9555,15 @@
             <Portuguese>Mina de Ferro</Portuguese>
             <Polish>Kopalnia miedzi</Polish>
             <Italian>Miniera di ferro</Italian>
+        </Key>
+        <Key ID="STR_MAR_Coal_Mine">
+            <Original>Coal Mine</Original>
+        </Key>
+        <Key ID="STR_MAR_Coal_Processing">
+            <Original>Coal Processing</Original>
+        </Key>
+        <Key ID="STR_MAR_Steel_Processing">
+            <Original>Steel Processing</Original>
         </Key>
         <Key ID="STR_MAR_Salt_Mine">
             <Original>Salt Mine</Original>
