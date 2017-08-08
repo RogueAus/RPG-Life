@@ -9559,10 +9559,10 @@
         <Key ID="STR_MAR_Coal_Mine">
             <Original>Coal Mine</Original>
         </Key>
-        <Key ID="STR_MAR_Coal_Processing">
+        <Key ID="STR_MAR_Process_Coal">
             <Original>Coal Processing</Original>
         </Key>
-        <Key ID="STR_MAR_Steel_Processing">
+        <Key ID="STR_MAR_Process_Steel">
             <Original>Steel Processing</Original>
         </Key>
         <Key ID="STR_MAR_Salt_Mine">

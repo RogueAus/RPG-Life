@@ -93,7 +93,7 @@ class ProcessAction {
         NoLicenseCost = -1;
     };
 
-    class steelIngot {
+    class steel {
         MaterialsReq[] = {{"iron_refined",1},{"copper_refined",1}};
         MaterialsGive[] = {{"steelIngot"}};
         Text = "STR_Process_Steel";
