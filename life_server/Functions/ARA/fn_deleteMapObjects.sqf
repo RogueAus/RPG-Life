@@ -17,5 +17,8 @@ private _posID = [
 
 {
     private _pos = (_x select 0);
-    (_pos nearestObject (_x select 1)) hideObjectGlobal true;
+    private _objArray = (_x select 1);
+    {
+        (_pos nearestObject _x) hideObjectGlobal true;
+    } forEach _objArray;
 } forEach _posID;
