@@ -214,8 +214,8 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 publicVariable "life_attachment_point";
 
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
-[] execVM "\life_server\Functions\Airdrop\config.sqf";
-[] execVM "\life_server\Functions\Airdrop\fn_generateAirdropAuto.sqf";
+//[] execVM "\life_server\Functions\Airdrop\config.sqf";
+//[] execVM "\life_server\Functions\Airdrop\fn_generateAirdropAuto.sqf";
 [] execVM "\life_server\Functions\ARA\fn_globalTextures.sqf";
 [] execVM "\life_server\Functions\ARA\fn_setupGates.sqf";
 [] execVM "\life_server\Functions\ARA\fn_deleteMapObjects.sqf";
