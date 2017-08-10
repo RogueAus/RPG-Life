@@ -6248,9 +6248,6 @@
         <Key ID="STR_Item_pureCoal">
             <Original>Purified Coal</Original>
         </Key>
-        <Key ID="STR_Item_CopRemote">
-            <Original>Cop Remote</Original>
-        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>
