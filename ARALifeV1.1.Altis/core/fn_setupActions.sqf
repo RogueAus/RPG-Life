@@ -25,7 +25,7 @@ switch (playerSide) do {
 
     };
     //EMS / WL Civ
-    case independent {
+    case independent: {
 
     };
 };
