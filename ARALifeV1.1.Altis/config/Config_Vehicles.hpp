@@ -25,8 +25,7 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
-            { "C_Hatchback_01_sport_F", "" },
-            { "C_Van_01_transport_F", "" }
+            { "C_Hatchback_01_sport_F", "" }
         };
     };
 
@@ -49,6 +48,7 @@ class CarShops {
             { "I_Truck_02_fuel_F", "" },
             { "B_Truck_01_fuel_F", "" },
             { "O_Truck_03_fuel_F", "" },
+			{ "C_Van_01_transport_F", "" },
             { "C_Van_01_box_F", "" },
             { "I_Truck_02_transport_F", "" },
             { "I_Truck_02_covered_F", "" },
@@ -238,7 +238,7 @@ class LifeCfgVehicles {
 
     // Apex DLC
     class C_Offroad_02_unarmed_F {
-        vItemSpace = 75;
+        vItemSpace = 45;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 45000;
         textures[] = {
@@ -494,21 +494,6 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class O_Truck_03_transport_F {
-        vItemSpace = 275;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 300000;
-        textures[] = {};
-    };
-
-// Tempest Device
-    class O_Truck_03_device_F {
-        vItemSpace = 400;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 3500000;
-        textures[] = {};
-    };
-
     class Land_CargoBox_V1_F {
         vItemSpace = 5000;
         conditions = "";
@@ -558,6 +543,30 @@ class LifeCfgVehicles {
         price = 20000;
         textures[] = {};
     };
+	
+// Tempest Device
+    class O_Truck_03_device_F {
+        vItemSpace = 400;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 3500000;
+        textures[] = {};
+    };
+	
+// Tempest Transport(Covered)
+    class O_Truck_03_covered_F {
+        vItemSpace = 425;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 550000;
+        textures[] = {};
+    };
+	
+// Tempest Transport
+    class O_Truck_03_transport_F {
+        vItemSpace = 340;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 450000;
+        textures[] = {};
+    };
 
 // HEMTT Box
     class B_Truck_01_box_F {
@@ -569,9 +578,9 @@ class LifeCfgVehicles {
 
 // HEMTT Transport
     class B_Truck_01_transport_F {
-        vItemSpace = 325;
+        vItemSpace = 425;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 850000;
+        price = 750000;
         textures[] = {};
     };
 
@@ -582,18 +591,81 @@ class LifeCfgVehicles {
         price = 1350000;
         textures[] = {};
     };
+	
+// Zamak Transport(Covered)
+    class I_Truck_02_covered_F {
+        vItemSpace = 250;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 360000;
+        textures[] = {
+            { "Orange", "civ", {
+                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
+                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
+            }, "" },
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" }
+        };
+    };
+// Zamak Transport
+    class I_Truck_02_transport_F {
+        vItemSpace = 200;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 235000;
+        textures[] = {
+            { "Orange", "civ", {
+                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
+                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
+            }, "" },
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" }
+        };
+    };
 
+// Small Truck
+   class C_Van_01_transport_F {
+        vItemSpace = 100;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 150000;
+        textures[] = {
+            { "White", "civ", {
+                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
+            }, "" },
+            { "Red", "civ", {
+                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
+            }, "" }
+        };
+    };
+	
+// Small Truck(Box)
+    class C_Van_01_box_F {
+        vItemSpace = 150;
+        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+        price = 220000;
+        textures[] = {
+            { "White", "civ", {
+                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
+            }, "" },
+            { "Red", "civ", {
+                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
+            }, "" }
+        };
+    };
+	
+// Ifrit
     class O_MRAP_02_F {
-        vItemSpace = 60;
+        vItemSpace = 30;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 425000;
         textures[] = { };
     };
 
+// Offroad(Civ)
     class C_Offroad_01_F {
-        vItemSpace = 65;
+        vItemSpace = 50;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 17500;
+        price = 32500;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -648,7 +720,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
 
     class C_Hatchback_01_sport_F {
-        vItemSpace = 45;
+        vItemSpace = 25;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 75000;
         textures[] = {
@@ -711,45 +783,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class I_Truck_02_covered_F {
-        vItemSpace = 250;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 210000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
-        };
-    };
-
-    class I_Truck_02_transport_F {
-        vItemSpace = 200;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 180000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
-        };
-    };
-
-    class O_Truck_03_covered_F {
-        vItemSpace = 350;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 350000;
-        textures[] = {};
-    };
-
     class C_Hatchback_01_F {
-        vItemSpace = 40;
+        vItemSpace = 25;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 12500;
         textures[] = {
@@ -783,8 +818,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
+// SUV
     class C_SUV_01_F {
-        vItemSpace = 50;
+        vItemSpace = 25;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 25000;
         textures[] = {
@@ -803,35 +839,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class C_Van_01_transport_F {
-        vItemSpace = 100;
-        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 85000;
-        textures[] = {
-            { "White", "civ", {
-                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
-            }, "" },
-            { "Red", "civ", {
-                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            }, "" }
-        };
-    };
-
-// Small Truck Boxer
-    class C_Van_01_box_F {
-        vItemSpace = 150;
-        conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 120000;
-        textures[] = {
-            { "White", "civ", {
-                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
-            }, "" },
-            { "Red", "civ", {
-                "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            }, "" }
-        };
-    };
-
+// Hunter
     class B_MRAP_01_F {
         vItemSpace = 65;
         conditions = "";
