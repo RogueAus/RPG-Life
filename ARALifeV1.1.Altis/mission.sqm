@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14586.317,534.79718,16903.643};
-		dir[]={-0.53966731,-0.18693748,-0.82102102};
-		up[]={-0.10277571,0.98234636,-0.15635863};
-		aside[]={-0.83574224,-2.2919849e-006,0.5493471};
+		pos[]={14568.333,617.99945,16784.955};
+		dir[]={-0.530141,-0.73045939,-0.43085957};
+		up[]={-0.56689382,0.68291748,-0.46073025};
+		aside[]={-0.63077313,-1.8556602e-007,0.77612585};
 	};
 };
 binarizationWanted=0;
@@ -315,6 +315,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -329,24 +347,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1234,7 +1234,7 @@ class Mission
 			position[]={3194.885,2.1650548,12913.654};
 			name="cop_air_1";
 			type="Empty";
-			angle=91.794914;
+			angle=91.794907;
 			id=103;
 		};
 		class Item82
@@ -34925,7 +34925,7 @@ class Mission
 			};
 			id=6710;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.32086754;
+			atlOffset=0.32099915;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46787,7 +46787,7 @@ class Mission
 			dataType="Marker";
 			position[]={8561.627,0,18170.629};
 			name="coal_process";
-			text="@STR_MAR_Coal_Processing";
+			text="@STR_MAR_Process_Coal";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=7590;
@@ -46817,7 +46817,7 @@ class Mission
 			dataType="Marker";
 			position[]={8999.9658,0,11691.55};
 			name="steel_process";
-			text="@STR_MAR_Steel_Processing";
+			text="@STR_MAR_Process_Steel";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=7592;
