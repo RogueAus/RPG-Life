@@ -10,9 +10,9 @@ class Maverick_ConvoySidemission
 	{
 		ConfigPool[] 							= {"GoldBarTransport","WeaponTransport"};
 		ForceConfigAtIndex 						= -1;
-		SleepTime								= 30;
+		SleepTime								= 1800;
 		MakePlayersHostileFor					= 60;
-		TimeoutBetweenMarkers					= 450;
+		TimeoutBetweenMarkers					= 600;
 		SidesNotAttackable[]					= {"WEST"};
 		AIDifficulty[] = {
 												{"aimingAccuracy", 0.8},
