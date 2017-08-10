@@ -118,6 +118,14 @@ Example 2:
             zoneSize = 30;
         };
 
+        class coal {
+            amount = 2;
+            zones[] = { "coal_mine" };
+            item = "pickaxe";
+            mined[] = { "coal" };
+            zoneSize = 30;
+        };
+
         class oil_unprocessed {
             amount = 2;
             zones[] = { "oil_field_1", "oil_field_2" };
