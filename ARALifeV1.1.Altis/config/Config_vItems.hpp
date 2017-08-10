@@ -65,6 +65,27 @@ class VirtualShops {
         items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
     };
 
+	class coal {
+		name = "STR_Shops_Coal";
+		side = "civ";
+		conditions = "";
+		items[] = { "pureCoal" };
+	};
+	
+	class wood {
+		name = "STR_Shops_Wood";
+		side = "civ";
+		conditions = "";
+		items[] = { "wood_plank" };
+	};
+	
+	class steel {
+		name = "STR_Shops_Steel";
+		side = "civ";
+		conditions = "";
+		items[] = { "steelIngot" };
+	};
+	
     class oil {
         name = "STR_Shops_Oil";
         side = "civ";
@@ -269,14 +290,34 @@ class VirtualItems {
     };
 
      class pureCoal {
-            variable = "pureCoal";
-            displayName = "STR_Item_pureCoal";
-            weight = 4;
-            buyPrice = -1;
-            sellPrice = 1200;
-            edible = -1;
-            icon = "";
-     };
+        variable = "pureCoal";
+        displayName = "STR_Item_pureCoal";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 1200;
+        edible = -1;
+        icon = "";
+    };
+	 
+	 class wood_log {
+		variable = "wood_log";
+		displayName = "STR_Item_Wood_Log";
+		weight = 5;
+		buyPrice = -1;
+		sellPrice = -1;
+		edible = -1;
+		icon = "";
+	};
+	
+	class wood_plank {
+		variable = "wood_plank";
+		displayName = "STR_Item_Wood_Plank";
+		weight = 3;
+		buyPrice = -1;
+		sellPrice = 1450;
+		edible = -1;
+		icon = "";
+	};
     /////// Custom End ///////
 
     class blindfold {

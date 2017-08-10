@@ -63,7 +63,7 @@ class Cation_Crafting {
             {"rifleStock","",{"steelIngot",5,"wood_plank",10},"","",1},
             {"rifleBarrel","",{"steelIngot",5},"","",1},
             {"LmgBody","",{"steelIngot",10,"copper_refined",5},"","",1},
-            {"LmgStock","",{"steelIngot",7,"copper_refined",5,"wood_plank",15},"","",10},
+            {"LmgStock","",{"steelIngot",7,"copper_refined",5,"wood_plank",15},"","",1},
             {"LmgBarrel","",{"steelIngot",10,"copper_refined",5},"","",1},
             {"sniperBody","",{"steelIngot",15,"copper_refined",10},"","",1},
             {"sniperStock","",{"steelIngot",10,"copper_refined",5,"wood_plank",15},"","",1},

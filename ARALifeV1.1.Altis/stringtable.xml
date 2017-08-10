@@ -215,6 +215,12 @@
             <Portuguese>Comprador de Petróleo</Portuguese>
             <Polish>Skup Ropy</Polish>
         </Key>
+		<Key ID="STR_Shops_Coal">
+		    <Original>Coal Trader</Original>
+		</Key>
+		<Key ID="STR_Shops_Steel">
+		    <Original>Steel Trader</Original>
+		</Key>
         <Key ID="STR_Shops_FishMarket">
             <Original>Local Fish Market</Original>
             <Czech>Místní Fish Market</Czech>
@@ -6248,6 +6254,12 @@
         <Key ID="STR_Item_pureCoal">
             <Original>Purified Coal</Original>
         </Key>
+		<Key ID="STR_Item_Wood_Log">
+		    <Original>Wood log</Original>
+		</Key>
+		<Key ID="STR_Item_Wood_Plank">
+		    <Original>Wood Plank</Original>
+		</Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>
@@ -7032,6 +7044,9 @@
 		<Key ID="STR_License_SERT">
 		    <Original>SERT Certified</Original>
 		</Key>
+		<Key ID="STR_License_Wood">
+		    <Original>Wood Processing License</Original>
+		</Key>
         <Key ID="STR_License_Pilot">
             <Original>Pilot License</Original>
             <Czech>pilotní licence</Czech>
@@ -7222,6 +7237,12 @@
             <Portuguese>Licença de Cimento</Portuguese>
             <Polish>Wytwórca cementu</Polish>
         </Key>
+		<Key ID="STR_License_Steel">
+		    <Original>Steel Smelting License</Original>
+		</Key>
+		<Key ID="STR_License_Coal">
+		    <Original>Coal Purifying License</Original>
+		</Key>
         <Key ID="STR_License_Medmarijuana">
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>
@@ -7793,6 +7814,9 @@
         <Key ID="STR_Process_Steel">
             <Original>Smelting Steel</Original>
         </Key>
+		<Key ID="STR_Process_Wood">
+		    <Original>Sawing Wood</Original>
+		</Key>
         <Key ID="STR_Process_Iron">
             <Original>Casting Iron Ingots</Original>
             <Czech>Litiny ingoty</Czech>

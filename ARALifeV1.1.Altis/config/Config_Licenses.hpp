@@ -136,6 +136,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class wood {
+		variable = "wood";
+		displayName = "STR_License_Wood";
+		price = 10000;
+		illegal = false;
+		side = "civ";
+	};
 
     class cement {
         variable = "cement";

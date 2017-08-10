@@ -109,6 +109,15 @@ class ProcessAction {
         //ScrollText = "Purify Coal";
         NoLicenseCost = 1000;
     };
+	
+	class wood {
+		MaterialsReq[] = {{"wood_log",1}};
+		MaterialsGive[] = {{"wood_plank",1}};
+		text = "STR_Process_Wood";
+		//ScrollText = "Saw Wood";
+		NoLicenseCost = 1350;
+	};
+		
 
 //// End Custom ////
     class oil {
