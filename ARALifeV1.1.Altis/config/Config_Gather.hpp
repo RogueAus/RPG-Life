@@ -34,6 +34,13 @@ class CfgGather {
             item = "";
             zoneSize = 30;
         };
+
+        class wood_log {
+        	amount = 2;
+        	zones[] = { "logging_area" };
+        	item = "";
+        	zone = 100;
+            };
 	};
 
 /*
@@ -132,14 +139,6 @@ Example 2:
             item = "pickaxe";
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
-        };
-		
-		class wood {
-			amount = 2;
-			zones[] = { "logging_area" };
-			item = "";
-			mined[] = { "wood_log" };
-			zone = 100;
         };
     };
 };

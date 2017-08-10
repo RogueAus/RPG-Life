@@ -200,7 +200,7 @@ class VirtualItems {
 
     class rifleBarrel {
         variable = "rifleBarrel";
-        displayName = "STR_Item_rifleBarrel";
+        displayName = "STR_Item_RifleBarrel";
         weight = 6;
         buyPrice = -1;
         sellPrice = 3500;
@@ -210,7 +210,7 @@ class VirtualItems {
 
     class LmgBody {
         variable = "LmgBody";
-        dispayName = "STR_Item_LmgBody";
+        displayName = "STR_Item_LmgBody";
         weight = 9;
         buyPrice = -1;
         sellPrice = 9000;
