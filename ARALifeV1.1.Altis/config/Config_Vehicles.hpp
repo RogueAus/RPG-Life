@@ -444,7 +444,8 @@ class LifeCfgVehicles {
         price = 75000;
         textures[] = { };
     };
-		
+	
+/*		
 // Armed Pawnee
 	class B_Heli_Light_01_armed_F {
 		vItemSpace = 65;
@@ -460,12 +461,13 @@ class LifeCfgVehicles {
 		price = 5000000;
 		textures[] = {};
 	};
+*/
 
 // Taru Crane	
 	    class O_Heli_Transport_04_F {
 		vItemSpace =  225;
 		conditions = "";
-		price = 1100000;
+		price = 5520000;
 		textures[] = {};
 	};
 
@@ -473,7 +475,7 @@ class LifeCfgVehicles {
         class B_Heli_Transport_03_unarmed_F {
         vItemSpace = 450;
         conditions = "license_civ_rebel, {!(playerSide isEqualTo civilian)}";
-        price = 2120000;
+        price = 6120000;
         textures[] = {};
         };
 	
@@ -481,7 +483,7 @@ class LifeCfgVehicles {
 	    class I_Heli_Transport_02_F {
 		vItemSpace =  355;
 		conditions = "license_civ_pilot, {!(playerSide isEqualTo civilian)}";
-		price = 1750000;
+		price = 4750000;
 		textures[] = {};
 	};
 	
@@ -503,7 +505,7 @@ class LifeCfgVehicles {
     class O_Truck_03_device_F {
         vItemSpace = 400;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1450000;
+        price = 3500000;
         textures[] = {};
     };
 
@@ -561,7 +563,7 @@ class LifeCfgVehicles {
     class B_Truck_01_box_F {
         vItemSpace = 911;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1350000;
+        price = 3250000;
         textures[] = {};
     };
 
@@ -569,15 +571,15 @@ class LifeCfgVehicles {
     class B_Truck_01_transport_F {
         vItemSpace = 325;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 350000;
+        price = 850000;
         textures[] = {};
     };
 
 // HEMTT Transport(Covered)
     class B_Truck_01_covered_F {
-        vItemSpace = 420;
+        vItemSpace = 520;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 450000;
+        price = 1350000;
         textures[] = {};
     };
 

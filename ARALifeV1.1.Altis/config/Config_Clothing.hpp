@@ -93,7 +93,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "U_C_Man_casual_1_F", "", 12500, "" }
+            { "V_Press_F", "", 12500, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -172,9 +172,7 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
-            { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" }, //Apex DLC
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_TacVest_blk_POLICE", "", 1000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
