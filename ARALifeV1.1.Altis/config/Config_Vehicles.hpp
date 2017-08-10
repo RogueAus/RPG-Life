@@ -751,28 +751,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 12500;
         textures[] = {
-            { "Beige", "civ", "reb", {
+            { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
             }, "" },
-            { "Green", "civ", "reb", {
+            { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base02_co.paa"
             }, "" },
-            { "Blue", "civ", "reb", {
+            { "Blue", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base03_co.paa"
             }, "" },
-            { "Dark Blue", "civ", "reb", {
+            { "Dark Blue", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base04_co.paa"
             }, "" },
-            { "Yellow", "civ", "reb", {
+            { "Yellow", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa"
             }, "" },
-            { "White", "civ", "reb", {
+            { "White", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa"
             }, "" },
-            { "Grey", "civ", "reb", {
+            { "Grey", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa"
             }, "" },
-            { "Black", "civ", "reb", {
+            { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             }, "" },
             { "Police", "cop", {
@@ -786,13 +786,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 25000;
         textures[] = {
-            { "Dark Red", "civ", "reb", {
+            { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             }, "" },
-            { "Silver", "civ", "reb", {
+            { "Silver", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
             }, "" },
-            { "Orange", "civ", "reb", {
+            { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Police", "cop", {

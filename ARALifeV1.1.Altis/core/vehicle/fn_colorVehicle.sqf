@@ -39,4 +39,4 @@ if (isNil "_textures" || {count _textures isEqualTo 0}) exitWith {};
 
 _vehicle setVariable ["Life_VEH_color",_index,true];
 
-{_vehicle setObjectTextureGlobal [_forEachIndex,_x];} forEach _textures;
+{_vehicle setObjectTextureGlobal [_forEachIndex,_x];}forEach _textures;
