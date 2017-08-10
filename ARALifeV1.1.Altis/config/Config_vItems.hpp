@@ -343,6 +343,18 @@ class VirtualItems {
     };
 
     //Misc
+	
+	class axe {
+		variable = "axe";
+		displayName = "STR_Item_Axe";
+		weight = 2;
+		buyPrice = 800;
+		sellPrice = 400;
+		illegal = false;
+		edible = -1;
+		icon = "";
+	};
+		
     class pickaxe {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";

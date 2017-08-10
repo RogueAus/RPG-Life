@@ -34,7 +34,7 @@ class CfgGather {
             item = "";
             zoneSize = 30;
         };
-    };
+	};
 
 /*
 This block can be set using percent,if you want players to mine only one resource ,just leave it as it is.
@@ -132,6 +132,14 @@ Example 2:
             item = "pickaxe";
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
+        };
+		
+		class wood {
+			amount = 2;
+			zones[] = { "logging_area" };
+			item = "";
+			mined[] = { "wood_log" };
+			zone = 100;
         };
     };
 };

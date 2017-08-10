@@ -9522,6 +9522,21 @@
         </Key>
     </Package>
     <Package name="Markers_names">
+	    <Key ID="STR_MAR_Steel_Trader">
+		    <Original>Steel Trader</Original>
+		</Key>
+		<Key ID="STR_MAR_Coal_Trader">
+		    <Original>Coal Trader</Original>
+		</Key>
+		<Key ID="STR_MAR_Wood_Trader">
+		    <Original>Wood Planks Trader</Original>
+		</Key>
+		<Key ID="STR_MAR_Logging_Area">
+		    <Original>Logging Area</Original>
+		</Key>
+		<Key ID="STR_MAR_Process_Wood">
+		    <Original>Wood Processing</Original>
+		</Key>
         <Key ID="STR_MAR_Fish_Market">
             <Original>Fish Market</Original>
             <Czech>Rybí trh</Czech>

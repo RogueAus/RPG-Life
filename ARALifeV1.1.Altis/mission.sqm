@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=7596;
+		nextID=7610;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14568.333,617.99945,16784.955};
-		dir[]={-0.530141,-0.73045939,-0.43085957};
-		up[]={-0.56689382,0.68291748,-0.46073025};
-		aside[]={-0.63077313,-1.8556602e-007,0.77612585};
+		pos[]={10070.969,685.77545,19238.736};
+		dir[]={-0.28849268,-0.70567816,0.64714646};
+		up[]={-0.28732851,0.708529,0.64453524};
+		aside[]={0.91335791,4.8959919e-008,0.40716749};
 	};
 };
 binarizationWanted=0;
@@ -315,24 +315,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -347,6 +329,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -404,7 +404,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1411;
+		items=1423;
 		class Item0
 		{
 			dataType="Marker";
@@ -1445,14 +1445,15 @@ class Mission
 		class Item102
 		{
 			dataType="Marker";
-			position[]={5187.9771,217.27846,20871.367};
+			position[]={5187.9771,0,20871.367};
 			name="coke_area";
 			markerType="ELLIPSE";
 			type="Empty";
-			colorName="ColorWhite";
+			colorName="ColorRed";
 			a=30;
 			b=30;
 			id=126;
+			atlOffset=-217.27846;
 		};
 		class Item103
 		{
@@ -2062,12 +2063,12 @@ class Mission
 		class Item162
 		{
 			dataType="Marker";
-			position[]={6185.6621,26.661465,15077.207};
+			position[]={6183.6665,0,15084.536};
 			name="atm_marker_2_9";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=131.43578;
 			id=193;
+			atlOffset=-26.837112;
 		};
 		class Item163
 		{
@@ -4620,6 +4621,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9209.3027,122.68666,15836.507};
+				angles[]={0,5.9167361,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4743,8 +4745,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6185.8218,27.943752,15076.95};
-				angles[]={6.251195,5.4219708,0.021328852};
+				position[]={6183.6558,28.123035,15084.536};
+				angles[]={0,0.96157348,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4755,7 +4757,6 @@ class Mission
 			};
 			id=561;
 			type="Land_Atm_02_F";
-			atlOffset=0.00096511841;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16387,8 +16388,8 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorRed";
-			a=250;
-			b=250;
+			a=100;
+			b=100;
 			id=1424;
 			atlOffset=-51.297256;
 		};
@@ -16400,8 +16401,8 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorRed";
-			a=250;
-			b=250;
+			a=100;
+			b=100;
 			id=1425;
 			atlOffset=-2.7185035;
 		};
@@ -16421,15 +16422,15 @@ class Mission
 		class Item518
 		{
 			dataType="Marker";
-			position[]={8440.1152,-167.65277,12758.791};
+			position[]={8440.1152,0,12758.79};
 			name="KOS_4";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorRed";
-			a=250;
-			b=250;
+			a=100;
+			b=100;
 			id=1433;
-			atlOffset=-217.14484;
+			atlOffset=-49.492054;
 		};
 		class Item519
 		{
@@ -16812,15 +16813,15 @@ class Mission
 		class Item552
 		{
 			dataType="Marker";
-			position[]={4342.2007,-162.71812,14538.893};
+			position[]={4342.2012,0,14538.893};
 			name="KOS_8";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorRed";
-			a=250;
-			b=250;
+			a=100;
+			b=100;
 			id=1482;
-			atlOffset=-217.13617;
+			atlOffset=-54.41803;
 		};
 		class Item553
 		{
@@ -46838,6 +46839,172 @@ class Mission
 			id=7595;
 			type="Sign_Arrow_Blue_F";
 			atlOffset=0.63828421;
+		};
+		class Item1411
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9764.043,232.52557,19410.549};
+				angles[]={0,3.6936924,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Steel"",life_fnc_virt_menu,""steel""];";
+				name="steel_trader";
+			};
+			id=7596;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.32099915;
+		};
+		class Item1412
+		{
+			dataType="Marker";
+			position[]={9764.0508,0,19410.549};
+			name="steel_trader";
+			text="@STR_MAR_Steel_Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
+			id=7597;
+			atlOffset=-231.62404;
+		};
+		class Item1413
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6905.3052,12.50187,11096.513};
+				angles[]={0,1.1198229,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Coal"",life_fnc_virt_menu,""coal""];";
+				name="coal_trader";
+			};
+			id=7600;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item1414
+		{
+			dataType="Marker";
+			position[]={6905.2881,0,11096.305};
+			name="coal_trader";
+			text="@STR_MAR_Coal_Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
+			id=7601;
+			atlOffset=-11.370236;
+		};
+		class Item1415
+		{
+			dataType="Marker";
+			position[]={10382.786,0,13199.74};
+			name="KOS_9";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			a=100;
+			b=100;
+			id=7602;
+			atlOffset=-27.724903;
+		};
+		class Item1416
+		{
+			dataType="Marker";
+			position[]={14330.259,18.195885,17436.982};
+			name="KOS_10";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			a=100;
+			b=100;
+			id=7603;
+		};
+		class Item1417
+		{
+			dataType="Marker";
+			position[]={13052.42,0,21661.244};
+			name="wood_zone";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=100;
+			b=100;
+			id=7604;
+			atlOffset=-66.28624;
+		};
+		class Item1418
+		{
+			dataType="Marker";
+			position[]={13050.38,0,21658.557};
+			name="logging_area";
+			text="@STR_MAR_Logging_Area";
+			type="mil_triangle";
+			colorName="ColorBrown";
+			id=7605;
+			atlOffset=-66.489174;
+		};
+		class Item1419
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12159.281,10.341833,14374.058};
+				angles[]={0,4.8511429,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Wood"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
+				name="wood_process";
+			};
+			id=7606;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.00037479401;
+		};
+		class Item1420
+		{
+			dataType="Marker";
+			position[]={12159.28,0,14374.063};
+			name="wood_processing";
+			text="@STR_MAR_Process_Wood";
+			type="mil_box";
+			colorName="ColorBrown";
+			id=7607;
+			atlOffset=-9.6976252;
+		};
+		class Item1421
+		{
+			dataType="Marker";
+			position[]={16951.451,0,15008.417};
+			name="wood_trader";
+			text="@STR_MAR_Wood_Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
+			id=7608;
+			atlOffset=-15.945269;
+		};
+		class Item1422
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16951.48,16.849829,15008.409};
+				angles[]={0,2.5358589,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Wood"",life_fnc_virt_menu,""wood""];";
+				name="wood_trader";
+			};
+			id=7609;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.32500076;
 		};
 	};
 };
