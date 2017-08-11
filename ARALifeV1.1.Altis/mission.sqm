@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=7619;
+		nextID=7620;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12227.355,107.19917,14391};
-		dir[]={0.88481909,-0.33827913,0.32041696};
-		up[]={0.31806704,0.94104552,0.11518055};
-		aside[]={0.34048992,-4.0745363e-008,-0.94025034};
+		pos[]={12165.271,13.624699,14374.201};
+		dir[]={-0.929281,-0.368664,0.024760542};
+		up[]={-0.36856887,0.92954189,0.0098217661};
+		aside[]={0.026640428,-3.7212158e-007,0.99968487};
 	};
 };
 binarizationWanted=0;
@@ -4827,7 +4827,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15591.025,19.846148,17184.08};
-				angles[]={-0,2.2926414,0};
+				angles[]={0,2.2926414,0};
 			};
 			side="Empty";
 			flags=4;
@@ -36307,7 +36307,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15595.847,19.117956,17188.986};
-				angles[]={-0,2.3039773,6.276526};
+				angles[]={0,2.3039773,6.276526};
 			};
 			side="Empty";
 			flags=4;
@@ -46011,25 +46011,6 @@ class Mission
 		};
 		class Item1367
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11412.547,52.812794,15696.412};
-				angles[]={0.16903779,5.1950769,6.2818484};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_wood"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_woodLog > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
-				name="wood_process";
-			};
-			id=7606;
-			type="Land_InfoStand_V2_F";
-			atlOffset=0.063999176;
-		};
-		class Item1368
-		{
 			dataType="Marker";
 			position[]={12159.28,0,14374.063};
 			name="wood_processing";
@@ -46039,7 +46020,7 @@ class Mission
 			id=7607;
 			atlOffset=-9.6976252;
 		};
-		class Item1369
+		class Item1368
 		{
 			dataType="Marker";
 			position[]={16951.451,0,15008.417};
@@ -46050,7 +46031,7 @@ class Mission
 			id=7608;
 			atlOffset=-15.945269;
 		};
-		class Item1370
+		class Item1369
 		{
 			dataType="Object";
 			class PositionInfo
@@ -46068,7 +46049,7 @@ class Mission
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.32549667;
 		};
-		class Item1371
+		class Item1370
 		{
 			dataType="Object";
 			class PositionInfo
@@ -46086,7 +46067,7 @@ class Mission
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.00030899048;
 		};
-		class Item1372
+		class Item1371
 		{
 			dataType="Marker";
 			position[]={20229.914,0,8850.3271};
@@ -46096,6 +46077,25 @@ class Mission
 			colorName="ColorRed";
 			id=7618;
 			atlOffset=-43.951275;
+		};
+		class Item1372
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12159.328,10.340771,14374.051};
+				angles[]={6.2800961,4.7478013,6.2693272};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Wood"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_woodLog > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_wood && playerSide isEqualTo civilian '];";
+				name="wood_process";
+			};
+			id=7619;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.062999725;
 		};
 	};
 };

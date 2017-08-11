@@ -113,7 +113,7 @@ class ProcessAction {
 	class wood {
 		MaterialsReq[] = {{"wood_log",1}};
 		MaterialsGive[] = {{"wood_plank",1}};
-		text = "STR_Process_Wood";
+		Text = "STR_Process_Wood";
 		//ScrollText = "Saw Wood";
 		NoLicenseCost = 1350;
 	};
