@@ -95,7 +95,7 @@ class ProcessAction {
 
     class steel {
         MaterialsReq[] = {{"iron_refined",1},{"copper_refined",1}};
-        MaterialsGive[] = {{"steelIngot"}};
+        MaterialsGive[] = {{"steelIngot",1}};
         Text = "STR_Process_Steel";
         //ScrollText = "Smelt Steel";
         NoLicenseCost = 2100;

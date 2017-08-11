@@ -185,7 +185,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 7000;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_rifleBody.paa";
     };
 
     class rifleStock {
@@ -195,7 +195,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 10000;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_rifleStock.paa";
     };
 
     class rifleBarrel {
@@ -205,7 +205,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 3500;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_gunBarrel.paa";
     };
 
     class LmgBody {
@@ -215,7 +215,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 9000;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_LmgBody.paa";
     };
 
     class LmgStock {
@@ -225,7 +225,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 13500;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_LmgStock.paa";
     };
 
     class LmgBarrel {
@@ -235,7 +235,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 5000;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_gunBarrel.paa";
     };
 
     class sniperBody {
@@ -245,7 +245,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 8000;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_sniperBody.paa";
     };
 
     class sniperStock {
@@ -255,7 +255,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 12500;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_sniperStock.paa";
     };
 
     class sniperBarrel {
@@ -265,7 +265,7 @@ class VirtualItems {
          buyPrice = -1;
          sellPrice = 4500;
          edible = -1;
-         icon = "";
+         icon = "icons\ico_gunBarrel.paa";
     };
 
     class steelIngot {
@@ -306,7 +306,7 @@ class VirtualItems {
 		buyPrice = -1;
 		sellPrice = -1;
 		edible = -1;
-		icon = "";
+		icon = "icons\ico_woodLog.paa";
 	};
 	
 	class wood_plank {
@@ -316,7 +316,7 @@ class VirtualItems {
 		buyPrice = -1;
 		sellPrice = 1450;
 		edible = -1;
-		icon = "";
+		icon = "icons\ico_woodPlank.paa";
 	};
     /////// Custom End ///////
 
