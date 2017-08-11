@@ -97,7 +97,7 @@ class ProcessAction {
         MaterialsReq[] = {{"iron_refined",1},{"copper_refined",1}};
         MaterialsGive[] = {{"steelIngot",1}};
         Text = "STR_Process_Steel";
-        ScrollText = "Smelt Steel";
+        //ScrollText = "Smelt Steel";
         NoLicenseCost = 2100;
     };
 
@@ -106,7 +106,7 @@ class ProcessAction {
         MaterialsReq[] = {{"coal",1}};
         MaterialsGive[] = {{"pureCoal",1}};
         Text = "STR_Process_Coal";
-        ScrollText = "Purify Coal";
+        //ScrollText = "Purify Coal";
         NoLicenseCost = 1000;
     };
 	
@@ -114,7 +114,7 @@ class ProcessAction {
 		MaterialsReq[] = {{"wood_log",1}};
 		MaterialsGive[] = {{"wood_plank",1}};
 		text = "STR_Process_Wood";
-		ScrollText = "Saw Wood";
+		//ScrollText = "Saw Wood";
 		NoLicenseCost = 1350;
 	};
 		

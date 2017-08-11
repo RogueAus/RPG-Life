@@ -98,9 +98,7 @@ class CarShops {
 			{ "B_G_Offroad_01_armed_F", "" },
 			{ "B_Heli_Light_01_stripped_F", "" },
 			{ "O_Heli_Transport_04_F", "" },
-			{ "B_Heli_Transport_03_unarmed_F", "" },
-			{ "B_Heli_Light_01_armed_F", "" },
-			{ "I_Heli_light_03_F", "" }
+			{ "B_Heli_Transport_03_unarmed_F", "" }
         };
     };
 	
@@ -445,7 +443,7 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 	
-/*		
+
 // Armed Pawnee
 	class B_Heli_Light_01_armed_F {
 		vItemSpace = 65;
@@ -461,7 +459,7 @@ class LifeCfgVehicles {
 		price = 5000000;
 		textures[] = {};
 	};
-*/
+
 
 // Taru Crane	
 	    class O_Heli_Transport_04_F {
