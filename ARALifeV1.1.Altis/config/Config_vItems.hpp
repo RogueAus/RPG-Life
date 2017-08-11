@@ -275,7 +275,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 2350;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_steel.paa";
     };
 
     // Mined Items
@@ -286,7 +286,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_pureCoal.paa";
     };
 
      class pureCoal {
@@ -296,7 +296,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 1200;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_coalOre.paa";
     };
 	 
 	 class wood_log {

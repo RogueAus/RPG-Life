@@ -98,7 +98,7 @@ class ProcessAction {
         MaterialsGive[] = {{"steelIngot"}};
         Text = "STR_Process_Steel";
         //ScrollText = "Smelt Steel";
-        NoLicenseCost = -1;
+        NoLicenseCost = 2100;
     };
 
     //// Mined ////

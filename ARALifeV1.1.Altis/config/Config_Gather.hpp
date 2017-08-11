@@ -40,7 +40,7 @@ class CfgGather {
         	zones[] = { "logging_area" };
         	item = "";
         	zone = 100;
-            };
+        };
 	};
 
 /*
