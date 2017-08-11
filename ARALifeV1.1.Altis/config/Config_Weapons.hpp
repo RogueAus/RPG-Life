@@ -206,7 +206,7 @@ class WeaponShops {
             { "ItemGPS", "", 100, 50, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "NVGoggles", "", 2000, 1000, "" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "" },
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "call life_coplevel >= 3" },
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
             { "hgun_P07_F", "", 7500, 3750, "" },
             { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
@@ -215,9 +215,9 @@ class WeaponShops {
 	        { "arifle_Mk20_plain_F", "", 5000, 5000, "call life_coplevel >= 2"},
 	        { "arifle_CTAR_blk_F", "", 5000,5000, "call life_coplevel >= 2"},
             { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 3" },
+            { "arifle_MXC_Black_F", "", 35000, 17500, "call life_coplevel >= 3" },
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
+            { "arifle_MX_Black_F", "", 30000, 15000, "call life_coplevel >= 3" },
             { "arifle_MXM_Black_F", "", 30000, 15000, "call life_coplevel >= 4" },
 	        { "arifle_ARX_blk_F", "", 25000, 12500, "call life_coplevel >= 4" },
             { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 4" }, //Apex DLC Sniper
@@ -227,7 +227,7 @@ class WeaponShops {
 	        { "launch_B_Titan_F", "", 50000, 25000, "call life_coplevel >= 7" },
 	        { "srifle_EBR_F", "", 25000, 12500, "call life_coplevel >= 7" },
 	        { "arifle_SPAR_03_blk_F", "", 25000, 12500, "call life_coplevel >= 7" },
-	        { "LMG_Mk200_pointer_F", "", 300000, 15000, "call life_coplevel >= 7" }
+	        { "LMG_Mk200_pointer_F", "", 50000, 15000, "call life_coplevel >= 7" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -269,7 +269,19 @@ class WeaponShops {
 	side = "cop";
 	conditions = "license_cop_SERT";
 	items[] = {
-	       { "hgun_P07_F", "", 7500, 3750, "" }
+	      { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" }, // Taser Pistol
+	      { "hgun_P07_F", "", 7500, 3750, "" },// P07 Pistol - 9mm
+	      { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "" },// 4-Five Pistol - 45. ACP
+	      { "arifle_SPAR_03_blk_F", "", 11000, 4700, "" },// SPAR-16 - 5.56
+	      { "arifle_CTARS_blk_F", "", 12500, 4700, "" },// CAR-95 - 5.8mm
+	      { "arifle_MX_Black_F", "", 14500, 5000, "" },// MX(Black) - 6.5mm
+	      { "arifle_MXM_Black_F", "", 22500, 9500, "" },// MXM(Black) - 6.5mm
+	      { "arifle_MX_SW_Black_F", "", 30000, 19500, "" },// MX-SW - 6.5mm
+	      { "arifle_SPAR_02_blk_F", "", 31000, 20000, "" },// SPAR-16s - 5.56mm
+	      { "arifle_AK12_F", "", 31500, 21500, "" },// AK-12 - 7.62mm
+	      { "srifle_DMR_03_F", "", 32000, 22250, "" },// Mk-1 EMR - 7.62mm
+	      { "srifle_EBR_F", "", 35200, 23000, "" },// Mk-18 ABR - 7.62mm
+	      { "srifle_DMR_02_F", "", 40500, 27500, "" }// MAR-10 - 9.3mm
 	};
 	mags[] = {};
 	accs[] = {};
