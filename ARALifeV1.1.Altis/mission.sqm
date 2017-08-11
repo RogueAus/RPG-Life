@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=7613;
+		nextID=7619;
 	};
 	class MarkerIDProvider
 	{
-		nextID=243;
+		nextID=244;
 	};
 	class Camera
 	{
-		pos[]={9084.6494,311.6297,12061.406};
-		dir[]={0.25463152,-0.61791348,0.7439478};
-		up[]={0.20011085,0.78620791,0.5846529};
-		aside[]={0.9461658,-3.3756078e-007,-0.32384697};
+		pos[]={12227.355,107.19917,14391};
+		dir[]={0.88481909,-0.33827913,0.32041696};
+		up[]={0.31806704,0.94104552,0.11518055};
+		aside[]={0.34048992,-4.0745363e-008,-0.94025034};
 	};
 };
 binarizationWanted=0;
@@ -314,24 +314,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -346,6 +328,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -403,7 +403,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1371;
+		items=1373;
 		class Item0
 		{
 			dataType="Marker";
@@ -2178,11 +2178,10 @@ class Mission
 		class Item174
 		{
 			dataType="Marker";
-			position[]={15590.591,18.56068,17184.236};
+			position[]={15591.014,18.559999,17184.074};
 			name="atm_marker_1_2";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=138.34398;
 			id=205;
 		};
 		class Item175
@@ -2262,12 +2261,13 @@ class Mission
 		class Item182
 		{
 			dataType="Marker";
-			position[]={7604.667,128.90898,19991.012};
+			position[]={7604.667,0,19991.012};
 			name="hunting_marker";
 			text="@STR_MAR_Hunting_Grounds";
 			type="mil_join";
-			colorName="ColorRed";
+			colorName="ColorBrown";
 			id=216;
+			atlOffset=-128.90898;
 		};
 		class Item183
 		{
@@ -4826,8 +4826,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15591.755,19.846148,17183.453};
-				angles[]={0,1.9487073,0};
+				position[]={15591.025,19.846148,17184.08};
+				angles[]={-0,2.2926414,0};
 			};
 			side="Empty";
 			flags=4;
@@ -36306,8 +36306,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15594.64,19.125999,17189.697};
-				angles[]={0,1.9600432,0};
+				position[]={15595.847,19.117956,17188.986};
+				angles[]={-0,2.3039773,6.276526};
 			};
 			side="Empty";
 			flags=4;
@@ -45947,7 +45947,7 @@ class Mission
 			};
 			id=7600;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.55069637;
+			atlOffset=0.55022335;
 		};
 		class Item1362
 		{
@@ -45993,40 +45993,40 @@ class Mission
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorWhite";
-			a=30;
-			b=30;
+			a=100;
+			b=100;
 			id=7604;
 			atlOffset=-66.28624;
 		};
 		class Item1366
 		{
 			dataType="Marker";
-			position[]={13052.395,0,21661.492};
+			position[]={13052.42,0,21661.244};
 			name="logging_area";
 			text="@STR_MAR_Logging_Area";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			id=7605;
-			atlOffset=-66.282906;
+			atlOffset=-66.28624;
 		};
 		class Item1367
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12159.281,10.341833,14374.058};
-				angles[]={0,4.8511429,0};
+				position[]={11412.547,52.812794,15696.412};
+				angles[]={0.16903779,5.1950769,6.2818484};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Wood"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_woodLog > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_wood"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_woodLog > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""wood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
 				name="wood_process";
 			};
 			id=7606;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.00037479401;
+			atlOffset=0.063999176;
 		};
 		class Item1368
 		{
@@ -46067,6 +46067,35 @@ class Mission
 			id=7609;
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.32549667;
+		};
+		class Item1371
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20229.932,44.864979,8850.334};
+				angles[]={0.013020156,3.3440509,6.2815623};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Weapon Component Factory"",{[""craftingItems""] spawn cat_crafting_fnc_craft}];";
+			};
+			id=7617;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.00030899048;
+		};
+		class Item1372
+		{
+			dataType="Marker";
+			position[]={20229.914,0,8850.3271};
+			name="weapon_craft";
+			text="@STR_MAR_Craft_Weapon";
+			type="loc_Power";
+			colorName="ColorRed";
+			id=7618;
+			atlOffset=-43.951275;
 		};
 	};
 };
