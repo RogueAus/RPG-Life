@@ -286,7 +286,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = "icons\ico_pureCoal.paa";
+        icon = "icons\ico_coalOre.paa";
     };
 
      class pureCoal {
@@ -296,11 +296,11 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 1200;
         edible = -1;
-        icon = "icons\ico_coalOre.paa";
+        icon = "icons\ico_pureCoal.paa";
     };
 	 
 	 class wood_log {
-		variable = "wood_log";
+		variable = "woodLog";
 		displayName = "STR_Item_Wood_Log";
 		weight = 5;
 		buyPrice = -1;
@@ -310,7 +310,7 @@ class VirtualItems {
 	};
 	
 	class wood_plank {
-		variable = "wood_plank";
+		variable = "woodPlank";
 		displayName = "STR_Item_Wood_Plank";
 		weight = 3;
 		buyPrice = -1;
