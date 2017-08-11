@@ -52,12 +52,12 @@ class CarShops {
             { "C_Van_01_box_F", "" },
             { "I_Truck_02_transport_F", "" },
             { "I_Truck_02_covered_F", "" },
-            { "B_Truck_01_transport_F", "" },
             { "O_Truck_03_transport_F", "" },
             { "O_Truck_03_covered_F", "" },
+            { "B_Truck_01_transport_F", "" },
             { "B_Truck_01_covered_F", "" },
-            { "O_Truck_03_device_F", "" },
-            { "B_Truck_01_box_F", "" }
+            { "B_Truck_01_box_F", "" },
+            { "O_Truck_03_device_F", "" }
         };
     };
 
