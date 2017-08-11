@@ -9,6 +9,7 @@ class AusRebelArmy {
     class functions {
         file = "ara\functions";
 		class autoSaveInv {};
+		class time {};
     };
 
     class actions {

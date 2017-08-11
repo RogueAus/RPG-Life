@@ -126,7 +126,8 @@ master_group attachTo[bank_obj,[0,0,0]];
     };
 } forEach allUnits;
 
-[8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
+//[8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
+[] spawn ara_fnc_time; //New time script
 
 life_adminLevel = 0;
 life_medicLevel = 0;
