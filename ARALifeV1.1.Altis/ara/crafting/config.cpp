@@ -35,30 +35,34 @@ class Cation_Crafting {
         {
             "weapon", //Variable
             "Weapon", //Text
-            {"hgun_P07_F","",{"diamond_cut",2,"copper_refined",1},"","",0}, // {Item 1, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Skinname, Skin Page only | 1 for all other items)},
-            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0}, // {Item 2, Condition (default: ""), {Required Item1, Required Number of Item1, Required Item2, Required Number of Item2}, Texture Name, Texture Location, 1 for vItems|0 for all other items)} No comma at last!
-            {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1},"","",0}
+            {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",9},"","",0},
+            {"MMG_02_sand_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",12},"","",0},
+            {"MMG_01_tan_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",14},"","",0},
+            {"srifle_DMR_02_sniper_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",6},"","",0},
+            {"srifle_DMR_05_tan_f","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",8},"","",0},
+            {"srifle_LRR_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",13},"","",0},
+            {"srifle_GM6_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",16},"","",0}
+
+
         }, //Komma
         {
             "uniform",
             "Uniform",
-            {"U_IG_Guerilla1_1","",{"copper_refined",1},"","",0}
+            //{"U_IG_Guerilla1_1","",{"copper_refined",1},"","",0}
         },
         {
             "backpack",
             "Backpack",
-            {"B_Carryall_oli","",{"diamond_cut",1},"","",0}
+            //{"B_Carryall_oli","",{"diamond_cut",1},"","",0}
         },
         {
             "vest",
             "Vest",
-            {"V_Press_F","",{"copper_refined",1},"","",0}
+            //{"V_Press_F","",{"copper_refined",1},"","",0}
         },
         {
             "item",
             "Items",
-            {"iron_refined","",{"copper_refined",2},"","",1},
-            {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1},
             {"rifleBody","",{"steelIngot",10},"","",1},
             {"rifleStock","",{"steelIngot",5,"wood_plank",10},"","",1},
             {"rifleBarrel","",{"steelIngot",5},"","",1},
@@ -80,7 +84,7 @@ class Cation_Crafting {
         {
             "craftingItems", //Variable name
             "craftingItemsMarker", // name of the spawn marker on the map (must exist in the mission.sqm)
-            {"item","weapon"} //Variables of available categories
+            {"item", "weapon"} //Variables of available categories
         }, //Comma
         {
             "craftingClothes", //Variablenname

@@ -36,10 +36,10 @@ class CfgGather {
         };
 
         class wood_log {
-        	amount = 2;
-        	zones[] = { "logging_area" };
-        	item = "";
-        	zone = 100;
+            amount = 2;
+            zones[] = { "logging_area" };
+            item = "";
+            zoneSize = 100;
         };
 	};
 

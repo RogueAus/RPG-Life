@@ -9537,6 +9537,9 @@
 		<Key ID="STR_MAR_Process_Wood">
 		    <Original>Wood Processing</Original>
 		</Key>
+        <Key ID="STR_MAR_Craft_Weapon">
+            <Original>Weapon Crafting</Original>
+        </Key>
         <Key ID="STR_MAR_Fish_Market">
             <Original>Fish Market</Original>
             <Czech>Rybí trh</Czech>
