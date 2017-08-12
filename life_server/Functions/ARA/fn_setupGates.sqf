@@ -21,7 +21,7 @@ private _policeArray = ["Land_ConcreteWall_01_l_gate_F"];//Array of locked objec
 } forEach _policePos;
 
 //Jail Gates & Doors
-private _jailPos = [[15938.8,20815.7,0],[15960.6,20837.8,0],[15956,20815.1,0],[15945.4,20788.8,0],[3191.94,12866.9,0]];
+private _jailPos = [[15938.8,20815.7,0],[15960.6,20837.8,0],[15956,20815.1,0],[15945.4,20788.8,0],[3191.94,12866.9,0],[3274.48,12929.4,0]];
 private _jailArray = ["Land_ConcreteWall_01_l_gate_F","Land_BackAlley_01_l_gate_F"];
 {
     _pos = _x;

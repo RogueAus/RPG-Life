@@ -358,7 +358,7 @@ class LifeCfgVehicles {
 	class I_MRAP_03_F {
 		vItemSpace = 100;
 		conditions = "";
-		price = 650000;
+		price = 1200000;
 		textures[] = {};
 	};
 
@@ -366,7 +366,7 @@ class LifeCfgVehicles {
     class O_T_LSV_02_unarmed_F {
         vItemSpace = 100;
         conditions = "";
-        price = 250000;
+        price = 550000;
         textures[] = {
             { "Arid", "civ", "reb", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
@@ -523,7 +523,7 @@ class LifeCfgVehicles {
     class B_G_Offroad_01_armed_F {
         vItemSpace = 65;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
-        price = 750000;
+        price = 1300000;
         textures[] = { };
     };
 
@@ -655,7 +655,7 @@ class LifeCfgVehicles {
     class O_MRAP_02_F {
         vItemSpace = 30;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 425000;
+        price = 900000;
         textures[] = { };
     };
 
