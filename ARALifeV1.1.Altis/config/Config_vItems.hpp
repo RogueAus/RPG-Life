@@ -670,7 +670,7 @@ class VirtualItems {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
         weight = 6;
-        buyPrice = 5500;
+        buyPrice = -1;
         sellPrice = 5000;
         illegal = true;
         edible = -1;
@@ -693,7 +693,7 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 4;
-        buyPrice = 5750;
+        buyPrice = -1;
         sellPrice = 5250;
         illegal = true;
         edible = -1;
@@ -728,7 +728,7 @@ class VirtualItems {
         variable = "redgull";
         displayName = "STR_Item_RedGull";
         weight = 1;
-        buyPrice = 1500;
+        buyPrice = 1200;
         sellPrice = 200;
         illegal = false;
         edible = 100;

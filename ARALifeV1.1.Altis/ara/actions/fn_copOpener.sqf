@@ -14,9 +14,17 @@
     } else {
         _x animate ["Door_1_rot",0];
     };
-} forEach nearestObjects [player,["Land_BarGate_F"],30];//TODO Remove BackAlley gate from here
+} forEach nearestObjects [player,["Land_BarGate_F"],30];
 
-
+{
+    if (!(playerSide isEqualTo west)) exitWith {};
+    _phase = _x animationPhase "Door_1_rot";
+    if (_phase == 0) then {
+        _x animate ["Door_1_rot",1];
+    } else {
+        _x animate ["Door_1_rot",0];
+    };
+} forEach nearestObjects [player,["Land_BackAlley_01_l_gate_F"],5];
 
 {
     if (life_inv_copRemote < 1) then {
