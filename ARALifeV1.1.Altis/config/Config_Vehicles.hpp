@@ -368,17 +368,17 @@ class LifeCfgVehicles {
         conditions = "";
         price = 550000;
         textures[] = {
-            { "Arid", "civ", "reb", {
+            { "Arid", "reb", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_arid_CO.paa"
             }, "" },
-            { "Black", "civ", "reb", {
+            { "Black", "reb", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
             }, "" },
-            { "Green Hex", "civ", "reb", {
+            { "Green Hex", "reb", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa"
@@ -853,7 +853,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
      class B_Heli_Light_01_stripped_F {
         vItemSpace = 90;
         conditions = "";
-        price = 275000;
+        price = 775000;
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
@@ -864,7 +864,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_Heli_Light_01_F {
         vItemSpace = 125;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 325000;
+        price = 1425000;
         textures[] = {
             { "Police", "cop", {
                 "textures\Police_Hummingbird.jpg"
@@ -916,14 +916,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
 // M-900
     class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
-        vItemSpace = 45;
-        price = 245000;
+        vItemSpace = 25;
+        price = 805000;
     };
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
-        price = 750000;
+        price = 3750000;
         textures[] = {
             { "Black", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"

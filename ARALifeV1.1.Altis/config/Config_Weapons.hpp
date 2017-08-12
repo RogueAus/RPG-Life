@@ -67,6 +67,7 @@ class WeaponShops {
 			{ "hgun_ACPC2_F", "", 6500, 3000, "" }, // ACP-C2 45.
 			{ "hgun_Pistol_heavy_01_F", "", 7000, 3500, "" }, // 4-Five
 			{ "hgun_Pistol_heavy_02_F", "", 9000, 4500, "" }, // Zubr
+			{ "arifle_SDAR_F", "", 22000, 9000, ""}, //SDAR
             { "arifle_TRG20_F", "", 30000, 12500, "" }, // TRG-20
 			{ "arifle_MK20_plain_F", "", 40000, 14000, "" }, // Mk20
 			{ "arifle_CTAR_blk_F", "", 55000, 22500, "" }, // Car-95 // APEX DLC
@@ -85,6 +86,7 @@ class WeaponShops {
         mags[] = {
 			{"30Rnd_9x21_Mag", "", 500, 150, "" }, // Rook-40/PDW Ammo - 9mm
 			{"30Rnd_556x45_Stanag", "", 350, 150, "" }, // TRG/Mk20 Ammo - 5.56
+			{"20Rnd_556x45_UW_mag", "", 400, 200, "" }, // SDAR UW Ammo - 5.56
 			{"30Rnd_65x39_caseless_mag", "", 450, 200, "" }, // Type-115/Katiba Ammo - 6.5mm
 			{"30Rnd_580x42_Mag_F", "", 400, 150, "" }, // Car-95 Ammo - 5.8mm
 			{"30Rnd_762x39_Mag_F", "", 500, 250, "" }, // AK-12 Ammo - 7.62
@@ -133,9 +135,11 @@ class WeaponShops {
             { "hgun_Pistol_heavy_02_F", "", 12500, 7500, "" }, // Zubr .45
             { "hgun_PDW2000_F", "", 19500, 14750, "" }, // PDW2000 9mm
 			{ "SMG_01_F", "", 25250, 16000, ""}, // Vermin .45
+			{ "arifle_SDAR_F", "", 32000, 19000, ""}, //SDAR
 			{ "arifle_TRG20_F", "", 55000, 22500, "" } // TRG-20 5.56
         };
         mags[] = {
+            {"20Rnd_556x45_UW_mag", "", 400, 200, "" }, // SDAR UW Ammo - 5.56
 			{ "11Rnd_45ACP_Mag", "", 200, 100, "" }, // 4-Five Ammo - 45. ACP
 			{ "30Rnd_556x45_Stanag", "", 550, 150, "" }, // TRG-20 Ammo - 5.56
 			{ "30Rnd_45ACP_Mag_SMG_01", "", 400, 150, "" }, // Vermin SMG Ammo - .45
