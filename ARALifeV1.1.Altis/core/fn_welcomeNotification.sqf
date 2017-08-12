@@ -25,11 +25,10 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
+_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\aralife.jpg' /></t><br /><br />";
 _message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/sEcQdPn' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+_message = _message + " <a href='http://ausrebelarmy.com' color='#56BDD6'>AusRebelArmy.com</a> -- Our Forums.<br /><br />";
+_message = _message + "TeamSpeak 3 address: ARA.streamlinegames.com  <br /><br />";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
