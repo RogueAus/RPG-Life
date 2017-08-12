@@ -23,7 +23,7 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! 
 if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
 
 _rip = true;
-_kassa = 120000 + round(random 60000);
+_kassa = 40000 + round(random 60000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
@@ -43,7 +43,7 @@ _cP = 0.0001;
 
 if(_rip) then {
 	while{true} do {
-		sleep 1.5;
+		sleep 2;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
