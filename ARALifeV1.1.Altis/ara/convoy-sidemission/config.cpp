@@ -92,7 +92,7 @@ class Maverick_ConvoySidemission
 				type 							= "virtual";
 				container						= "Land_CargoBox_V1_F";
 				data[] = {
-												{"goldbar", 10}
+												{"goldbar", 20}
 				};
 			};
 		};
@@ -162,8 +162,17 @@ class Maverick_ConvoySidemission
 				container						= "B_CargoNet_01_ammo_F";
 				data[] = {
 												{"srifle_DMR_01_F", 1, "WEAPON"},
+												{"10Rnd_762x54_Mag", 3, "MAGAZINE"},
+												{"arifle_Katiba_F", 1, "WEAPON"},
+												{"30Rnd_65x39_caseless_green", 3, "MAGAZINE"},
+												{"srifle_EBR_F", 1, "WEAPON"},
+												{"20Rnd_762x51_Mag", 3, "MAGAZINE"},
+												{"SMG_01_F", 1, "WEAPON"},
+												{"30Rnd_45ACP_Mag_SMG_01", 3, "MAGAZINE"},
 												{"optic_SOS", 1, "ITEM"},
-												{"10Rnd_762x54_Mag", 1, "MAGAZINE"},
+												{"optic_Aco", 1, "ITEM"},
+												{"optic_Arco", 1, "ITEM"},
+												{"optic_MRCO", 1, "ITEM"},
 												{"B_Kitbag_mcamo", 1, "BACKPACK"}
 				};
 			};
