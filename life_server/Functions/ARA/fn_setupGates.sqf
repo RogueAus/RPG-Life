@@ -8,7 +8,7 @@
 */
 //Single Doors and Gates
 //Police Gates
-private _policePos = [[3357.32,12965.7,0],[3221.68,12935.1,0],[14354.9,18066.4,0],[14389,18078.7,0],[14391.8,18062,0]];//Array of locked object positions
+private _policePos = [[3357.32,12965.7,0],[3221.68,12935.1,0],[14354.9,18066.4,0],[14389,18078.7,0],[14391.8,18062,0],[23432.2,19830.9,0],[23400.3,19876.6,0]];//Array of locked object positions
 private _policeArray = ["Land_ConcreteWall_01_l_gate_F"];//Array of locked object Class Names
 {
     _pos = _x;
