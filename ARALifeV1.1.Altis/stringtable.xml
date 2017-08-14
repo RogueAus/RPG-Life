@@ -2176,6 +2176,9 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+        <Key ID="STR_Garage_Air_Title">
+            <Original>Air Vehicle Garage</Original>
+        </Key>
         <Key ID="STR_Garage_Title">
             <Original>Vehicle Garage</Original>
             <Czech>Garáž Vehicle</Czech>
@@ -10164,6 +10167,9 @@
             <German>Heroin Verarbeitung</German>
             <Portuguese>Processador de Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
+        </Key>
+        <Key ID="STR_MAR_Air_Garage">
+            <Original>Air Garage</Original>
         </Key>
         <Key ID="STR_MAR_Garage">
             <Original>Garage</Original>
