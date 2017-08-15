@@ -6267,7 +6267,7 @@
             <Original>Charcoal</Original>
         </Key>
         <Key ID="STR_Item_gunPowder">
-            <Original>Gun Powder</Original>
+            <Original>Gunpowder</Original>
         </Key>
         <Key ID="STR_Item_brass">
             <Original>Brass</Original>
@@ -7068,6 +7068,15 @@
 		<Key ID="STR_License_Wood">
 		    <Original>Wood Processing License</Original>
 		</Key>
+        <Key ID="STR_License_cCoal">
+            <Original>Charcoal Processing License</Original>
+        </Key>
+        <Key ID="STR_License_gunPowder">
+            <Original>Gunpowder Processing License</Original>
+        </Key>
+        <Key ID="STR_License_brass">
+            <Original>Brass Processing License</Original>
+        </Key>
         <Key ID="STR_License_Pilot">
             <Original>Pilot License</Original>
             <Czech>pilotní licence</Czech>
@@ -7788,10 +7797,10 @@
         <Key ID="STR_Process_cCoal">
             <Original>Burning Wood</Original>
         </Key>
-        <Key ID="STR_Item_gunPowder">
+        <Key ID="STR_Process_gunPowder">
             <Original>Mixing Ingredients</Original>
         </Key>
-        <Key ID="STR_Process_brass">
+        <Key ID="STR_Process_Brass">
             <Original>Smelting Brass</Original>
         </Key>
         <Key ID="STR_Process_Oil">
@@ -9552,6 +9561,24 @@
         </Key>
     </Package>
     <Package name="Markers_names">
+        <Key ID="STR_MAR_Process_gunPowder">
+            <Original>Gunpowder Processing</Original>
+        </Key>
+        <Key ID="STR_MAR_Process_Brass">
+            <Original>Brass Processing</Original>
+        </Key>
+        <Key ID="STR_MAR_Process_cCoal">
+            <Original>Charcoal Processing</Original>
+        </Key>
+        <Key ID="STR_MAR_Zinc_Mine">
+            <Original>Zinc Mine</Original>
+        </Key>
+        <Key ID="STR_MAR_Sulfur_Mine">
+            <Original>Sulfur Mine</Original>
+        </Key>
+        <Key ID="STR_MAR_pNitrate_Mine">
+            <Original>Potassium Nitrate Mine</Original>
+        </Key>
 	    <Key ID="STR_MAR_Steel_Trader">
 		    <Original>Steel Trader</Original>
 		</Key>
