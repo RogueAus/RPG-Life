@@ -147,7 +147,7 @@ class Licenses {
 
 	class cCoal {
 	    variable = "cCoal";
-	    displayName = "STR_License_cCoal"; // Todo: Localize
+	    displayName = "STR_License_cCoal";
 	    price = 13000;
 	    illegal = false;
 	    side = "civ";
@@ -155,7 +155,7 @@ class Licenses {
 
 	class gunPowder {
 	    variable = "gunPowder";
-	    displayName = "STR_License_gunPowder"; // Todo: Localize
+	    displayName = "STR_License_gunPowder";
 	    price = 12500;
 	    illegal = false;
 	    side = "civ";
@@ -163,7 +163,7 @@ class Licenses {
 
 	class brass {
 	    variable = "brass";
-	    displayName = "STR_License_brass"; // Todo: Localize
+	    displayName = "STR_License_brass";
 	    price = 13500;
 	    illegal = false;
 	    side = "civ";
