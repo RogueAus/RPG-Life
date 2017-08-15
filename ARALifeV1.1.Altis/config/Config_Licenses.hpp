@@ -153,6 +153,14 @@ class Licenses {
 	    side = "civ";
 	};
 
+	class caliche {
+	   variable = "caliche";
+	   displayName = "STR_License_Caliche";
+	   price = 12000;
+	   illegal = false;
+	   side = "civ";
+	};
+
 	class gunPowder {
 	    variable = "gunPowder";
 	    displayName = "STR_License_gunPowder";

@@ -140,5 +140,29 @@ Example 2:
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
         };
+
+        class zinc {
+            amount = 2;
+            zones[] = { "zinc_mine" };
+            item = "pickaxe";
+            mined[] = { "zinc" };
+            zoneSize = 30;
+        };
+
+        class calicheOre {
+            amount = 2;
+            zones[] = { "calicheOre_mine" };
+            item = "pickaxe";
+            mined[] = { "calicheOre" };
+            zoneSize = 30;
+        };
+
+        class sulfur {
+            amount = 2;
+            zones[] = { "sulfur_mine" };
+            item = "pickaxe";
+            mined[] = { "sulfur" };
+            zoneSize = 30;
+        };
     };
 };

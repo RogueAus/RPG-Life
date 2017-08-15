@@ -34,7 +34,7 @@ DYNMARKET_Items_Groups =
 	["Legal",
 		[
 			["apple",-1,10,50],
-			["peach",-1,30,100],
+			["peach",-1,30,65],
 			["oil_processed",-1,3500,4500],
 			["copper_refined",-1,1200,2200],
 			["iron_refined",-1,1150,2150],

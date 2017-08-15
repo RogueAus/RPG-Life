@@ -286,7 +286,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_cCoal.paa";
     };
 
     class gunPowder {
@@ -296,7 +296,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_gunPowder.paa";
     };
 
     class brass {
@@ -306,7 +306,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_brass.paa";
     };
 
     // Mined Items
@@ -317,9 +317,18 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_zinc.paa";
     };
 
+    class calicheOre {
+        variable = "calicheOre";
+        displayName = "STR_Item_calicheOre";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = "icons\ico_caliche.paa";
+    };
     class pNitrate {
         variable = "pNitrate";
         displayName = "STR_Item_pNitrate";
@@ -327,7 +336,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         eible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_pNitrate.paa";
     };
 
     class sulfur {
@@ -337,7 +346,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = -1;
         edible = -1;
-        icon = ""; // Todo: Find Icon
+        icon = "icons\ico_sulfur.paa";
     };
 
     class coal {

@@ -6281,6 +6281,9 @@
         <Key ID="STR_Item_zinc">
             <Original>Zinc</Original>
         </Key>
+        <Key ID="STR_Item_calicheOre">
+            <Original>Caliche Ore</Original>
+        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>
@@ -7071,6 +7074,9 @@
         <Key ID="STR_License_cCoal">
             <Original>Charcoal Processing License</Original>
         </Key>
+        <Key ID="STR_License_Caliche">
+            <Original>Caliche Processing License</Original>
+        </Key>
         <Key ID="STR_License_gunPowder">
             <Original>Gunpowder Processing License</Original>
         </Key>
@@ -7796,6 +7802,9 @@
     <Package name="Process_Action">
         <Key ID="STR_Process_cCoal">
             <Original>Burning Wood</Original>
+        </Key>
+        <Key ID="STR_Process_Caliche">
+            <Original>Extracting Potassium</Original>
         </Key>
         <Key ID="STR_Process_gunPowder">
             <Original>Mixing Ingredients</Original>
@@ -9570,14 +9579,17 @@
         <Key ID="STR_MAR_Process_cCoal">
             <Original>Charcoal Processing</Original>
         </Key>
+        <Key ID="STR_MAR_Process_Caliche">
+            <Original>Caliche Processing</Original>
+        </Key>
         <Key ID="STR_MAR_Zinc_Mine">
             <Original>Zinc Mine</Original>
         </Key>
         <Key ID="STR_MAR_Sulfur_Mine">
             <Original>Sulfur Mine</Original>
         </Key>
-        <Key ID="STR_MAR_pNitrate_Mine">
-            <Original>Potassium Nitrate Mine</Original>
+        <Key ID="STR_MAR_Caliche_Mine">
+            <Original>Caliche Mine</Original>
         </Key>
 	    <Key ID="STR_MAR_Steel_Trader">
 		    <Original>Steel Trader</Original>
