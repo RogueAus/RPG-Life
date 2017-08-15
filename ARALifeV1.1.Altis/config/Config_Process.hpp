@@ -52,11 +52,19 @@ class ProcessAction {
 	    NoLicenseCost = 1200;
 	};
 
+    class caliche {
+       MaterialsReq[] = {{"calicheOre",1}};
+       MaterialsGive[] = {{"pNitrate",1}};
+       Text = "STR_Process_Caliche";
+       //ScrollText = "Extract Potassium";
+       NoLicenseCost = 2000;
+    };
+
 	class gunPowder {
 	    MaterialsReq[] = {{"pNitrate",1},{"cCoal",1},{"sulfur",1}};
 	    MaterialsGive[] = {{"gunPowder",1}};
 	    Text = "STR_Process_gunPowder";
-	    //ScrollText = "Create Gun Powder";
+	    //ScrollText = "Mix Ingredients";
 	    NoLicenseCost = 2000;
 	};
 
@@ -137,7 +145,7 @@ class ProcessAction {
         MaterialsReq[] = {{"cannabis",1}};
         MaterialsGive[] = {{"marijuana",1}};
         Text = "STR_Process_Marijuana";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Pocess Cannabis";
         NoLicenseCost = 500;
     };
 
