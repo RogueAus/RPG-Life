@@ -268,6 +268,7 @@ class VirtualItems {
          icon = "icons\ico_gunBarrel.paa";
     };
 
+    // Processed Items
     class steelIngot {
         variable = "SteelIngot";
         displayName = "STR_Item_SteelIngot";
@@ -278,7 +279,67 @@ class VirtualItems {
         icon = "icons\ico_steel.paa";
     };
 
+    class cCoal {
+        variable = "cCoal";
+        displayName = "STR_Item_cCoal";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
+    class gunPowder {
+        variable = "gunPowder";
+        displayName = "STR_Item_gunPowder";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
+    class brass {
+        variable = "brass";
+        displayName = "STR_Item_brass";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
     // Mined Items
+    class zinc {
+        variable = "zinc";
+        displayName = "STR_Item_zinc";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
+    class pNitrate {
+        variable = "pNitrate";
+        displayName = "STR_Item_pNitrate";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        eible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
+    class sulfur {
+        variable = "sulfur";
+        displayName = "STR_Item_sulfur";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        edible = -1;
+        icon = ""; // Todo: Find Icon
+    };
+
     class coal {
         variable = "coal";
         displayName = "STR_Item_Coal";
@@ -302,7 +363,7 @@ class VirtualItems {
 	 class wood_log {
 		variable = "woodLog";
 		displayName = "STR_Item_Wood_Log";
-		weight = 5;
+		weight = 4;
 		buyPrice = -1;
 		sellPrice = -1;
 		edible = -1;
@@ -312,7 +373,7 @@ class VirtualItems {
 	class wood_plank {
 		variable = "woodPlank";
 		displayName = "STR_Item_Wood_Plank";
-		weight = 3;
+		weight = 4;
 		buyPrice = -1;
 		sellPrice = 1450;
 		edible = -1;

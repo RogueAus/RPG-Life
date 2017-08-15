@@ -6263,6 +6263,24 @@
 		<Key ID="STR_Item_Wood_Plank">
 		    <Original>Wood Plank</Original>
 		</Key>
+        <Key ID="STR_Item_cCoal">
+            <Original>Charcoal</Original>
+        </Key>
+        <Key ID="STR_Item_gunPowder">
+            <Original>Gun Powder</Original>
+        </Key>
+        <Key ID="STR_Item_brass">
+            <Original>Brass</Original>
+        </Key>
+        <Key ID="STR_Item_pNitrate">
+            <Original>Potassium Nitrate</Original>
+        </Key>
+        <Key ID="STR_Item_sulfur">
+            <Original>Sulfur</Original>
+        </Key>
+        <Key ID="STR_Item_zinc">
+            <Original>Zinc</Original>
+        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>
@@ -7767,6 +7785,15 @@
         </Key>
     </Package>
     <Package name="Process_Action">
+        <Key ID="STR_Process_cCoal">
+            <Original>Burning Wood</Original>
+        </Key>
+        <Key ID="STR_Item_gunPowder">
+            <Original>Mixing Ingredients</Original>
+        </Key>
+        <Key ID="STR_Process_brass">
+            <Original>Smelting Brass</Original>
+        </Key>
         <Key ID="STR_Process_Oil">
             <Original>Processing Oil</Original>
             <Czech>zpracování ropy</Czech>

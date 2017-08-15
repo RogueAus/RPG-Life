@@ -117,7 +117,30 @@ class ProcessAction {
 		//ScrollText = "Saw Wood";
 		NoLicenseCost = 1350;
 	};
-		
+
+	class cCoal {
+	    MaterialsReq[] = {{"wood_log",1}};
+	    MaterialsGive[] = {{"cCoal",2}};
+	    Text = "STR_Process_cCoal";
+	    //ScrollText = "Burn Wood";
+	    NoLicenseCost = 1200;
+	};
+
+	class gunPowder {
+	    MaterialsReq[] = {{"pNitrate",1},{"cCoal",1},{"sulfur",1}};
+	    MaterialsGive[] = {{"gunPowder",1}};
+	    Text = "STR_Process_gunPowder";
+	    //ScrollText = "Create Gun Powder";
+	    NoLicenseCost = 2000;
+	};
+
+	class brass {
+	    MaterialsReq[] = {{"zinc",1},{"copper_refined",1}};
+	    MaterialsGive[] = {{"brass",1}};
+	    Text = "STR_Process_brass";
+	    //ScrollText = "Smelt Brass";
+	    NoLicenseCost = 2100;
+	};
 
 //// End Custom ////
     class oil {
