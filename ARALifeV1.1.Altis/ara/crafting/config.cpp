@@ -33,8 +33,8 @@ class Cation_Crafting {
 
     category[] = { //Category TODO Put together crafting system configs for various activities
         {
-            "weapon", //Variable
-            "Weapon", //Text
+            "weapons", //Variable
+            "Weapons", //Text
             {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",9},"","",0},
             {"MMG_02_sand_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",12},"","",0},
             {"MMG_01_tan_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",14},"","",0},
@@ -44,7 +44,19 @@ class Cation_Crafting {
             {"srifle_GM6_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",16},"","",0}
 
 
-        }, //Komma
+        },
+        {
+            "ammo",
+            "Ammo",
+            {"150Rnd_762x54_Box","",{"gunPowder",3,"brass",2},"","",0},
+            {"130Rnd_338_Mag","",{"gunPowder",5,"brass",3},"","",0},
+            {"150Rnd_93x64_Mag","",{"gunPowder",7,"brass",5},"","",0},
+            {"10Rnd_338_Mag","",{"gunPowder",2,"brass",1},"","",0},
+            {"10Rnd_93x64_DMR_05_Mag","",{"gunPowder",4,"brass",2},"","",0},
+            {"7Rnd_408_Mag","",{"gunPowder",6,"brass",4},"","",0},
+            {"5Rnd_127x108_Mag","",{"gunPowder",8,"brass",6},"","",0}
+
+        }
         {
             "uniform",
             "Uniform",
@@ -61,8 +73,8 @@ class Cation_Crafting {
             //{"V_Press_F","",{"copper_refined",1},"","",0}
         },
         {
-            "item",
-            "Items",
+            "weaponParts",
+            "Parts",
             {"rifleBody","",{"steelIngot",10},"","",1},
             {"rifleStock","",{"steelIngot",5,"wood_plank",10},"","",1},
             {"rifleBarrel","",{"steelIngot",5},"","",1},
@@ -72,7 +84,11 @@ class Cation_Crafting {
             {"sniperBody","",{"steelIngot",15,"copper_refined",10},"","",1},
             {"sniperStock","",{"steelIngot",10,"copper_refined",5,"wood_plank",15},"","",1},
             {"sniperBarrel","",{"steelIngot",15,"copper_refined",10},"","",1}
-        } //No Comma at Last
+        },
+        {
+            "item",
+            "Items",
+        } // No Comma
     };
 /*
     In order to create crafting stations the following must be added to the  desired objects init:
@@ -82,9 +98,14 @@ class Cation_Crafting {
 */
     craftingStations[] = { // available categories at different crafting stations
         {
+           "craftWeapons",
+           "craftWeaponsMarker",
+           {"weaponParts","weapons","ammo"}
+        },
+        {
             "craftingItems", //Variable name
             "craftingItemsMarker", // name of the spawn marker on the map (must exist in the mission.sqm)
-            {"item", "weapon"} //Variables of available categories
+            {"item"} //Variables of available categories
         }, //Comma
         {
             "craftingClothes", //Variablenname

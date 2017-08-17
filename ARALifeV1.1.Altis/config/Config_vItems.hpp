@@ -284,7 +284,7 @@ class VirtualItems {
         displayName = "STR_Item_cCoal";
         weight = 2;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 1100;
         edible = -1;
         icon = "icons\ico_cCoal.paa";
     };
@@ -294,7 +294,7 @@ class VirtualItems {
         displayName = "STR_Item_gunPowder";
         weight = 2;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 2100;
         edible = -1;
         icon = "icons\ico_gunPowder.paa";
     };
@@ -304,7 +304,7 @@ class VirtualItems {
         displayName = "STR_Item_brass";
         weight = 4;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 1750;
         edible = -1;
         icon = "icons\ico_brass.paa";
     };
@@ -315,7 +315,7 @@ class VirtualItems {
         displayName = "STR_Item_zinc";
         weight = 2;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 750;
         edible = -1;
         icon = "icons\ico_zinc.paa";
     };
@@ -334,7 +334,7 @@ class VirtualItems {
         displayName = "STR_Item_pNitrate";
         weight = 2;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 1100;
         eible = -1;
         icon = "icons\ico_pNitrate.paa";
     };
@@ -344,7 +344,7 @@ class VirtualItems {
         displayName = "STR_Item_sulfur";
         weight = 2;
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 750;
         edible = -1;
         icon = "icons\ico_sulfur.paa";
     };

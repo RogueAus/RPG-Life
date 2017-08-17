@@ -52,6 +52,14 @@ class ProcessAction {
 	    NoLicenseCost = 1200;
 	};
 
+	class caliche {
+	    MaterialsReq[] = {{"calicheOre",1}};
+	    MaterialsGive[] = {{"pNitrate",1}};
+	    Text = "STR_Process_Caliche";
+	    //ScrollText = "Extract Potassium";
+	    NoLicenseCost = 1650;
+	};
+
 	class gunPowder {
 	    MaterialsReq[] = {{"pNitrate",1},{"cCoal",1},{"sulfur",1}};
 	    MaterialsGive[] = {{"gunPowder",1}};

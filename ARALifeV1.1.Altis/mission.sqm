@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=8851;
+		nextID=8853;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={13545.591,30.969227,19939.041};
-		dir[]={0.83763468,-0.51644748,0.17799558};
-		up[]={0.50518692,0.85630333,0.1073506};
-		aside[]={0.20785929,5.3012627e-008,-0.97817075};
+		pos[]={20247.725,64.068436,8818.0117};
+		dir[]={-0.54258513,-0.39404678,0.74190521};
+		up[]={-0.2326525,0.91905653,0.31812158};
+		aside[]={0.80721575,-1.7454149e-006,0.59034628};
 	};
 };
 binarizationWanted=0;
@@ -16407,6 +16407,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 			id=1468;
+			atlOffset=0.1465168;
 		};
 		class Item530
 		{
@@ -36723,7 +36724,7 @@ class Mission
 			};
 			id=6857;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0004863739;
+			atlOffset=0.14699936;
 		};
 		class Item1074
 		{
@@ -36770,7 +36771,6 @@ class Mission
 				angles[]={0,2.337851,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""];";
@@ -36778,7 +36778,7 @@ class Mission
 			};
 			id=6862;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0034320354;
+			atlOffset=0.50393057;
 		};
 		class Item1077
 		{
@@ -44824,7 +44824,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction[""Weapon Component Factory"",{[""craftingItems""] spawn cat_crafting_fnc_craft}];";
+				init="this enableSimulation false; this allowDamage false; this addAction[""Weapon Component Factory"",{[""craftWeapons""] spawn cat_crafting_fnc_craft}];";
+				name="weapon_crafting";
 			};
 			id=7617;
 			type="Land_InfoStand_V2_F";
