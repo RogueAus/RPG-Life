@@ -55,8 +55,7 @@ class Cation_Crafting {
             {"10Rnd_93x64_DMR_05_Mag","",{"gunPowder",4,"brass",2},"","",0},
             {"7Rnd_408_Mag","",{"gunPowder",6,"brass",4},"","",0},
             {"5Rnd_127x108_Mag","",{"gunPowder",8,"brass",6},"","",0}
-
-        }
+        },
         {
             "uniform",
             "Uniform",
