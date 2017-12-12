@@ -14,7 +14,6 @@ switch (playerSide) do {
     case west: {
         ctrlShow[2011,false];//Disable Gang
         ctrlShow[7001,false];//Disable Crafting
-        ctrlShow[3025,false];//Disable Market
     };
 
     case civilian: {
@@ -25,7 +24,6 @@ switch (playerSide) do {
         ctrlShow[2012,false];//Disable Wanted List
         ctrlShow[2011,false];//Disable Gang
         ctrlShow[7001,false];//Disable Crafting
-        ctrlShow[3025,false];//Disable Market
     };
 };
 

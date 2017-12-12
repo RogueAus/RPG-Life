@@ -269,22 +269,11 @@ class playerSettings {
         class ButtonCrafting: Life_RscButtonMenu {
             idc = 7001;
             //shortcuts[] = {0x00050000 + 2};
-            text = "CRAFT";
+            text = "Craft";
             onButtonClick = "closeDialog 0; [""craftingItems""] spawn cat_crafting_fnc_craft;";
             x = 0.324717 * safezoneW + safezoneX;
             y = 0.708923 * safezoneH + safezoneY;
-            w = 0.0309323 * safezoneW;
-            h = 0.0219919 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-        };
-
-        class ButtonMarket : Life_RscButtonMenu {
-            idc = 3025;
-            text = "MARKET";
-            onButtonClick = "createDialog ""life_dynmarket_prices"";";
-            x = 0.36596 * safezoneW + safezoneX;
-            y = 0.708923 * safezoneH + safezoneY;
-            w = 0.0360877 * safezoneW;
+            w = 0.0644423 * safezoneW;
             h = 0.0219919 * safezoneH;
             colorBackground[] = {0,0,0,0};
         };
