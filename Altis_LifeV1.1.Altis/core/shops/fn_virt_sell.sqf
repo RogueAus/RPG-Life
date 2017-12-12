@@ -9,19 +9,9 @@
 private ["_type","_index","_price","_amount","_name"];
 if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_price = -2;
-_itemNameToSearchFor = _type;
-{
- _curItemName = _x select 0;
- _curItemPrice = _x select 1;
- if (_curItemName==_itemNameToSearchFor) then {_price=_curItemPrice};
-} forEach DYNMARKET_prices;
+_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
 if (_price isEqualTo -1) exitWith {};
 
-if (_price isEqualTo -2) then {
- _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
- if (_price isEqualTo -1) exitWith {};
-};
 _amount = ctrlText 2405;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _amount = parseNumber (_amount);
@@ -36,7 +26,6 @@ if ([false,_type,_amount] call life_fnc_handleInv) then {
     CASH = CASH + _price;
     [0] call SOCK_fnc_updatePartial;
     [] call life_fnc_virt_update;
-    DYNAMICMARKET_boughtItems pushBack [_type,_amount];
 };
 
 if (life_shop_type isEqualTo "drugdealer") then {
@@ -62,5 +51,4 @@ if (life_shop_type isEqualTo "gold" && (LIFE_SETTINGS(getNumber,"noatm_timer")) 
     };
 };
 
-[0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
