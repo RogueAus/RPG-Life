@@ -38,7 +38,7 @@ class CfgGather {
         class wood_log {
             amount = 2;
             zones[] = { "logging_area" };
-            item = "Logging Axe";
+            item = "loggingAxe";
             zoneSize = 100;
         };
 	};

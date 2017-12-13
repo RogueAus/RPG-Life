@@ -284,7 +284,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="Tonic";
+	author="Tonic | Customised by Aurora Gaming";
 	overViewPicture="textures\aralife.jpg";
 	overViewPictureLocked="textures\aralife.jpg";
 	loadScreen="textures\aralife.jpg";
@@ -295,7 +295,7 @@ class ScenarioData
 	respawnDelay=5;
 	class Header
 	{
-		gameType="RPG";
+		gameType="";
 		minPlayers=1;
 		maxPlayers=126;
 	};
@@ -379,7 +379,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Altis Life | TS: ARA.streamlinegames.com";
+		briefingName="Altis Life | Aurora Gaming";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;

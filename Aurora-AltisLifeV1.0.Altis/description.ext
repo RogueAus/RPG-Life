@@ -35,6 +35,14 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
+	//// Custom Aurora Start ////
+	class chopWood {
+	    name "chopWood";
+		sound[] = {"\sounds\chopWood.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	//// Custom Aurora End ////
     class sirenLong {
         name = "sirenLong";
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
