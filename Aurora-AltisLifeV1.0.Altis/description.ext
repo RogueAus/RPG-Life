@@ -37,7 +37,7 @@ class CfgSounds {
     sounds[] = {};
 	//// Custom Aurora Start ////
 	class chopWood {
-	    name "chopWood";
+	    name = "chopWood";
 		sound[] = {"\sounds\chopWood.ogg", 1.0, 1};
 		titles[] = {};
 	};

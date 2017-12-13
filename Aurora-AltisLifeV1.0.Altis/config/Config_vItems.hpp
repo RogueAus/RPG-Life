@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe","loggingAxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
@@ -178,7 +178,7 @@ class VirtualItems {
     };
 	
 
-	class logggingAxe {
+	class loggingAxe {
 		variable = "loggingAxe";
 		displayName = "STR_Item_loggingAxe";
 		weight = 2;
@@ -186,7 +186,7 @@ class VirtualItems {
 		sellPrice = -1;
 		illegal = false;
 		edible = -1;
-		icon = "icons\loggingAxe.paa";
+		icon = "icons\ico_loggingAxe.paa";
 	};
 
     //Crafting Components

@@ -58,7 +58,7 @@ if (_diff isEqualTo 0) exitWith {
 
 switch (_requiredItem) do {
     case "pickaxe": {player say3D "mining";};
-	cass "loggingAxe": {player say3D "chopWood";};
+	case "loggingAxe": {player say3D "chopWood";};
     default {player say3D "harvest";};
 };
 
