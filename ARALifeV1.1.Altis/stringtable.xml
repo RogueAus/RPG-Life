@@ -6284,6 +6284,9 @@
         <Key ID="STR_Item_calicheOre">
             <Original>Caliche Ore</Original>
         </Key>
+		<Key ID="STR_Item_loggingAxe">
+		    <Original>Logging Axe</Original>
+		</Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>

@@ -176,6 +176,18 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_ziptie.paa";
     };
+	
+
+	class logggingAxe {
+		variable = "loggingAxe";
+		displayName = "STR_Item_loggingAxe";
+		weight = 2;
+		buyPrice = 1250;
+		sellPrice = -1;
+		illegal = false;
+		edible = -1;
+		icon = "icons\loggingAxe.paa";
+	};
 
     //Crafting Components
     class rifleBody {
@@ -413,18 +425,6 @@ class VirtualItems {
     };
 
     //Misc
-	
-	class axe {
-		variable = "axe";
-		displayName = "STR_Item_Axe";
-		weight = 2;
-		buyPrice = 800;
-		sellPrice = 400;
-		illegal = false;
-		edible = -1;
-		icon = "";
-	};
-		
     class pickaxe {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
