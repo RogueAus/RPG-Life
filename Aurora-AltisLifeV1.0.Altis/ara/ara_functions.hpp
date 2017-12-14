@@ -10,6 +10,7 @@ class AusRebelArmy {
         file = "ara\functions";
 		class autoSaveInv {};
 		class time {};
+		class updateHideouts {};
     };
 
     class actions {
