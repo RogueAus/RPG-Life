@@ -143,7 +143,7 @@ class Life_RscListNBox
     colorSelectBackground2[] = {1,1,1,0.5};
     colorPicture[] = {1,1,1,1};
     colorPictureSelected[] = {1,1,1,1};
-        colorPictureDisabled[] = {1,1,1,1};
+    colorPictureDisabled[] = {1,1,1,1};
     soundSelect[] = {"",0.1,1};
     soundExpand[] = {"",0.1,1};
     soundCollapse[] = {"",0.1,1};

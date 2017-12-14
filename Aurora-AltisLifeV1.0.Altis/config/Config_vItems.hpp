@@ -183,7 +183,7 @@ class VirtualItems {
 		displayName = "STR_Item_loggingAxe";
 		weight = 2;
 		buyPrice = 1250;
-		sellPrice = -1;
+		sellPrice = 500;
 		illegal = false;
 		edible = -1;
 		icon = "icons\ico_loggingAxe.paa";

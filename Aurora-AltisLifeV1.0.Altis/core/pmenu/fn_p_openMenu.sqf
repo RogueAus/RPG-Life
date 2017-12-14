@@ -47,8 +47,4 @@ switch (playerSide) do {
 ctrlSetText [7006, format["Total Playtime: %1 Hours",_pTime]];
 //Playtime End//
 
-if (FETCH_CONST(life_adminlevel) < 1) then {
-    ctrlShow[2021,false];//Disable Admin
-};
-
 [] call life_fnc_p_updateMenu;

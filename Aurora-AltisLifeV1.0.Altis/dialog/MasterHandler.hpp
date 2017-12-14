@@ -30,3 +30,5 @@
 #include "newsStation.hpp"
 #include "dynmarket_changeprice.hpp"
 #include "dynmarket_prices.hpp"
+#include "moreAppsAdmin.hpp"
+#include "moreApps.hpp"

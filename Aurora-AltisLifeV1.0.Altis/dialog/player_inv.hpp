@@ -1,3 +1,4 @@
+#include "..\script_macros.hpp"
 #include "player_sys.sqf"
 
 class playerSettings {
@@ -8,7 +9,7 @@ class playerSettings {
     class controlsBackground {
         class Life_RscTitleBackground: Life_RscPicture {
             idc = -1;
-            text = "textures\YMenu.paa";
+            text = "textures\ymenu1.paa";
             x = 0.293784 * safezoneW + safezoneX;
             y = 0.159126 * safezoneH + safezoneY;
             w = 0.412431 * safezoneW;
@@ -251,15 +252,15 @@ class playerSettings {
             tooltip = "$STR_PM_CellPhone";
         };
 
-        class ButtonAdminMenu: Life_RscPictureButtonMenu {
-            idc = 2021;
-            onButtonClick = "closeDialog 0; createDialog ""life_admin_menu"";";
+        class ButtonMoreApps: Life_RscPictureButtonMenu {
+            idc = 2025;
+		    onButtonClick = "closeDialog 0; [] call life_fnc_moreApps";
             x = 0.629916 * safezoneW + safezoneX;
             y = 0.626453 * safezoneH + safezoneY;
-            w = 0.0288702 * safezoneW;
-            h = 0.0494817 * safezoneH;
+            w = 0.0275702 * safezoneW;
+            h = 0.0480817 * safezoneH;
             colorBackground[] = {0,0,0,0};
-            tooltip = "$STR_PM_AdminMenu";
+            tooltip = "More Apps";
         };
 
         class ButtonSyncData: Life_RscPictureButtonMenu {
@@ -274,29 +275,6 @@ class playerSettings {
             tooltip = "$STR_PM_SyncData";
         };
 
-        class ButtonCrafting: Life_RscButtonMenu {
-            idc = 7001;
-            //shortcuts[] = {0x00050000 + 2};
-            text = "CRAFT";
-            onButtonClick = "closeDialog 0; [""craftingItems""] spawn cat_crafting_fnc_craft;";
-            x = 0.324717 * safezoneW + safezoneX;
-            y = 0.708923 * safezoneH + safezoneY;
-            w = 0.0309323 * safezoneW;
-            h = 0.0219919 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-        };
-
-        class ButtonMarket : Life_RscButtonMenu {
-            idc = 3025;
-            text = "MARKET";
-            onButtonClick = "createDialog ""life_dynmarket_prices"";";
-            x = 0.36596 * safezoneW + safezoneX;
-            y = 0.708923 * safezoneH + safezoneY;
-            w = 0.0360877 * safezoneW;
-            h = 0.0219919 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-        };
-
         class sideTime: Life_RscText {
             idc = 7005;
             text = "SIDE Playtime: 1234 Hours";
@@ -306,6 +284,7 @@ class playerSettings {
             h = 0.0219946 * safezoneH;
             colorBackground[] = {0,0,0,0};
         };
+		
         class totalTime: Life_RscText {
             idc = 7006;
             text = "Total Playtime: 1234 Hours";
