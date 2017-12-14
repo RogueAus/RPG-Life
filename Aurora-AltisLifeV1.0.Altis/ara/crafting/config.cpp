@@ -33,15 +33,15 @@ class Cation_Crafting {
 
     category[] = { //Category TODO Put together crafting system configs for various activities
         {
-            "weapons", //Variable
+            "weapon", //Variable
             "Weapons", //Text
-            {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",9},"","",0},
-            {"MMG_02_sand_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",12},"","",0},
-            {"MMG_01_tan_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",14},"","",0},
-            {"srifle_DMR_02_sniper_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",6},"","",0},
-            {"srifle_DMR_05_tan_f","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",8},"","",0},
-            {"srifle_LRR_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",13},"","",0},
-            {"srifle_GM6_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",16},"","",0}
+            {"LMG_Zafir_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",3},"","",0},
+            {"MMG_02_sand_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",4},"","",0},
+            {"MMG_01_tan_F","",{"LmgBody",1,"LmgStock",1,"LmgBarrel",1,"goldBar",5},"","",0},
+            {"srifle_DMR_02_sniper_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",2},"","",0},
+            {"srifle_DMR_05_tan_f","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",3},"","",0},
+            {"srifle_LRR_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",6},"","",0},
+            {"srifle_GM6_F","",{"sniperBody",1,"sniperStock",1,"sniperBarrel",1,"goldBar",7},"","",0}
 
 
         },
@@ -99,7 +99,7 @@ class Cation_Crafting {
         {
            "craftWeapons",
            "craftWeaponsMarker",
-           {"weaponParts","weapons","ammo"}
+           {"weaponParts","weapon","ammo"}
         },
         {
             "craftingItems", //Variable name
