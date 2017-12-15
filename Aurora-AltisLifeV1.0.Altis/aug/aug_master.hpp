@@ -1,7 +1,7 @@
 /*
-    File: ARA_master.cpp
+    File: aug_master.cpp
     Author: Rogue
-    Description: Master config for ARA Custom Content.
+    Description: Master config for Aurora Gaming Custom Content.
 */
 #define true 1
 #define false 0

@@ -13,7 +13,7 @@ class CfgRemoteExec {
         jip = 1;
 
 		#include "scripts\indicators\remoteExec.cpp"
-        #include "ara\ara_remoteExec.cpp"
+        #include "aug\aug_remoteExec.cpp"
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)

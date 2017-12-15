@@ -104,12 +104,12 @@ switch (playerSide) do {
     };
 };
 switch (true) do {
-    case (_playTime > 60000) : {life_perkLevel = 6};//1000 Hours
-    case (_playTime > 30000) : {life_perkLevel = 5};//500 Hours
-    case (_playTime > 12000) : {life_perkLevel = 4};//250 Hours
-    case (_playTime > 6000) : {life_perkLevel = 3};//100 Hours
-    case (_playTime > 3000) : {life_perkLevel = 2};//50 Hours
-    case (_playTime > 1200) : {life_perkLevel = 1};//20 Hours
+    case (_playTime > 60000) : {life_perkLevel = 6;};//1000 Hours
+    case (_playTime > 30000) : {life_perkLevel = 5;};//500 Hours
+    case (_playTime > 12000) : {life_perkLevel = 4;};//250 Hours
+    case (_playTime > 6000) : {life_perkLevel = 3;};//100 Hours
+    case (_playTime > 3000) : {life_perkLevel = 2;};//50 Hours
+    case (_playTime > 1200) : {life_perkLevel = 1;};//20 Hours
 };
 //Playtime End
 
@@ -197,7 +197,7 @@ life_hideoutBuildings = [];
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
 
-[] spawn ara_fnc_autoSaveInv;
+[] spawn aug_fnc_autoSaveInv;
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

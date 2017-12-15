@@ -7,7 +7,7 @@ enableDebugConsole = 1;
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "scripts\indicators\config.cpp"
-#include "ara\ara_master.hpp"
+#include "aug\aug_master.hpp"
 
 
 class CfgServer {
@@ -29,20 +29,12 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
-    #include "ara\ara_functions.hpp"
-    #include "ara\crafting\functions.cpp"
+    #include "aug\aug_functions.hpp"
+    #include "aug\crafting\functions.cpp"
 };
 
 class CfgSounds {
     sounds[] = {};
-	//// Custom Aurora Start ////
-	class chopWood {
-	    name = "chopWood";
-		sound[] = {"\sounds\chopWood.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	//// Custom Aurora End ////
     class sirenLong {
         name = "sirenLong";
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
@@ -91,6 +83,13 @@ class CfgSounds {
         titles[] = {};
     };
 
+	//// Custom Aurora Start ////
+	class chopWood {
+	    name = "chopWood";
+		sound[] = {"\sounds\chopWood.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
     class wasted {
         name = "wasted";
         sound[] = {"\sounds\wasted.ogg", 1.0, 1};
@@ -108,6 +107,7 @@ class CfgSounds {
         sound[] = {"\sounds\beltUnClick.ogg", 1.0, 1};
         titles[] = {};
     };
+	//// Custom Aurora End ////
 };
 
 class CfgDebriefing {

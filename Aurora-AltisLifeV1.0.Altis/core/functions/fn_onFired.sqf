@@ -37,14 +37,14 @@ if(playerSide isEqualTo west) then {
 if((!(playerSide isEqualTo west))&&(player inArea "safezone_kav"))then {
     deleteVehicle _projectile;
 
-    if(ARA_shot_safezone > 4)exitWith {
-        ARA_shot_safezone = 0;
+    if(aug_shot_safezone > 4)exitWith {
+        aug_shot_safezone = 0;
         removeAllWeapons player;
 
         titleText ["Your weapons have been removed for shooting in the safezone","PLAIN DOWN"];
         hint "Your weapons have been removed for shooting in the safezone";
     };
 
-    ARA_shot_safezone = ARA_shot_safezone + 1;
-    hint format ["Stop shooting in the safezone! \n(Warning %1 / 5)",ARA_shot_safezone];
+    aug_shot_safezone = aug_shot_safezone + 1;
+    hint format ["Stop shooting in the safezone! \n(Warning %1 / 5)",aug_shot_safezone];
 };

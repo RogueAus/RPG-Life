@@ -1,4 +1,4 @@
-# ARA RPG Life Changelog #
+# Aurora Gaming RPG Life Changelog #
 
 This is where I'm going to keep all changes we make to the mission so we can keep tabs on everything.
 

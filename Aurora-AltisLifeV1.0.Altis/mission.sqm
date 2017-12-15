@@ -11049,7 +11049,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pyrgos District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\ara_copOutfit.jpg""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pyrgos District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\aug_copOutfit.jpg""];";
 						disableSimulation=1;
 					};
 					id=1001;
@@ -11091,7 +11091,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this setObjectTextureGlobal [0,""textures\ara_copOutfit.jpg""];";
+						init="this enableSimulation false; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this setObjectTextureGlobal [0,""textures\aug_copOutfit.jpg""];";
 						name="h1_3_1";
 						disableSimulation=1;
 					};
@@ -24241,7 +24241,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={21570.805,0,7851.4326};
-			name="ara_convoy_spawn1";
+			name="aug_convoy_spawn1";
 			type="Empty";
 			angle=344.38065;
 			id=1886;
@@ -24251,7 +24251,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={21573.193,13.84668,7841.8174};
-			name="ara_convoy_spawn2";
+			name="aug_convoy_spawn2";
 			type="Empty";
 			angle=345.63879;
 			id=2070;
@@ -24261,7 +24261,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={21575.721,0,7833.1694};
-			name="ara_convoy_spawn3";
+			name="aug_convoy_spawn3";
 			type="Empty";
 			angle=344.75751;
 			id=2071;
@@ -24271,7 +24271,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={21578.236,0,7824.6396};
-			name="ara_convoy_spawn4";
+			name="aug_convoy_spawn4";
 			type="Empty";
 			angle=344.68579;
 			id=2073;
@@ -33839,7 +33839,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={20768.387,38.759644,8931.0771};
-			name="ara_convoy_waypoint1";
+			name="aug_convoy_waypoint1";
 			type="Empty";
 			angle=300.98187;
 			id=6661;
@@ -33849,7 +33849,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={20203.039,0,11166.728};
-			name="ara_convoy_waypoint2";
+			name="aug_convoy_waypoint2";
 			type="Empty";
 			angle=343.85382;
 			id=6662;
@@ -33859,7 +33859,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={19142.521,0,13059.213};
-			name="ara_convoy_waypoint3";
+			name="aug_convoy_waypoint3";
 			type="Empty";
 			angle=3.0479994;
 			id=6663;
@@ -33869,7 +33869,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={17301.479,0,13511.576};
-			name="ara_convoy_waypoint4";
+			name="aug_convoy_waypoint4";
 			type="Empty";
 			angle=18.721991;
 			id=6664;
@@ -33879,7 +33879,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={16952.469,0,15279.55};
-			name="ara_convoy_waypoint5";
+			name="aug_convoy_waypoint5";
 			type="Empty";
 			angle=346.19379;
 			id=6665;
@@ -33889,7 +33889,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={15940.71,0,16939.52};
-			name="ara_convoy_waypoint6";
+			name="aug_convoy_waypoint6";
 			type="Empty";
 			angle=3.0479994;
 			id=6666;
@@ -33899,7 +33899,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={15680.077,0,17471.086};
-			name="ara_convoy_waypoint7";
+			name="aug_convoy_waypoint7";
 			type="Empty";
 			angle=278.59;
 			id=6667;
@@ -33909,7 +33909,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={14636.147,0,17039.43};
-			name="ara_convoy_waypoint8";
+			name="aug_convoy_waypoint8";
 			type="Empty";
 			angle=223.88182;
 			id=6668;
@@ -33919,7 +33919,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={13235.804,0,15968.772};
-			name="ara_convoy_waypoint9";
+			name="aug_convoy_waypoint9";
 			type="Empty";
 			angle=263.81299;
 			id=6669;
@@ -33929,7 +33929,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={9681.752,0,15919.826};
-			name="ara_convoy_waypoint10";
+			name="aug_convoy_waypoint10";
 			type="Empty";
 			angle=270.94492;
 			id=6670;
@@ -33939,7 +33939,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8103.2041,0,15924.569};
-			name="ara_convoy_waypoint11";
+			name="aug_convoy_waypoint11";
 			type="Empty";
 			angle=298.5;
 			id=6671;
@@ -33949,7 +33949,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5630.8921,0,14730.207};
-			name="ara_convoy_waypoint12";
+			name="aug_convoy_waypoint12";
 			type="Empty";
 			angle=234.63997;
 			id=6672;
@@ -33959,7 +33959,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5243.2139,0,14174.903};
-			name="ara_convoy_waypoint13";
+			name="aug_convoy_waypoint13";
 			type="Empty";
 			angle=3.0479994;
 			id=6673;
@@ -33995,7 +33995,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""ara\billboards\Kav_Market.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Kav_Market.jpg""];";
 			};
 			id=6680;
 			type="Land_Billboard_03_blank_F";
@@ -34013,7 +34013,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""ara\billboards\Kav_Market.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Kav_Market.jpg""];";
 			};
 			id=6682;
 			type="Land_Billboard_03_blank_F";
@@ -44587,7 +44587,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""ara\billboards\Donor_Cake_1.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Donor_Cake_1.jpg""];";
 			};
 			id=7518;
 			type="Land_Billboard_03_blank_F";
@@ -50442,7 +50442,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""ara\billboards\Donor_Cake_1.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Donor_Cake_1.jpg""];";
 			};
 			id=8057;
 			type="Land_Billboard_03_blank_F";

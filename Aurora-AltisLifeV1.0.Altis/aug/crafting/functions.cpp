@@ -1,7 +1,7 @@
 class Cation_Crafting {
     tag = "cat_crafting";
     class functions {
-        file = "ara\crafting";
+        file = "aug\crafting";
         class craftAction {};
         class craft {};
         class craft_update {};

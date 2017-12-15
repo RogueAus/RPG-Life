@@ -73,7 +73,7 @@ class Maverick_ConvoySidemission
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3"};
+				vehiclesSpawnMarkersInOrder[]	= {"aug_convoy_spawn1","aug_convoy_spawn2","aug_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
 				maxSpeed						= 60;
@@ -84,7 +84,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint9","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
+				markers[] 						= {"aug_convoy_waypoint1","aug_convoy_waypoint2","aug_convoy_waypoint3","aug_convoy_waypoint4","aug_convoy_waypoint5","aug_convoy_waypoint6","aug_convoy_waypoint7","aug_convoy_waypoint8","aug_convoy_waypoint9","aug_convoy_waypoint10","aug_convoy_waypoint11","aug_convoy_waypoint12","aug_convoy_waypoint13"};
 			};
 
 			class Loot
@@ -142,7 +142,7 @@ class Maverick_ConvoySidemission
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"ara_convoy_spawn1","ara_convoy_spawn2","ara_convoy_spawn3"};
+				vehiclesSpawnMarkersInOrder[]	= {"aug_convoy_spawn1","aug_convoy_spawn2","aug_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
 				maxSpeed						= 60;
@@ -153,7 +153,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"ara_convoy_waypoint1","ara_convoy_waypoint2","ara_convoy_waypoint3","ara_convoy_waypoint4","ara_convoy_waypoint5","ara_convoy_waypoint6","ara_convoy_waypoint7","ara_convoy_waypoint8","ara_convoy_waypoint9","ara_convoy_waypoint10","ara_convoy_waypoint11","ara_convoy_waypoint12","ara_convoy_waypoint13"};
+				markers[] 						= {"aug_convoy_waypoint1","aug_convoy_waypoint2","aug_convoy_waypoint3","aug_convoy_waypoint4","aug_convoy_waypoint5","aug_convoy_waypoint6","aug_convoy_waypoint7","aug_convoy_waypoint8","aug_convoy_waypoint9","aug_convoy_waypoint10","aug_convoy_waypoint11","aug_convoy_waypoint12","aug_convoy_waypoint13"};
 			};
 
 			class Loot

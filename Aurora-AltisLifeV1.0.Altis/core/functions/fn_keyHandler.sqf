@@ -229,7 +229,7 @@ switch (_code) do {
     //O Key
     case 24: {
         if (!_shift && !_alt && !_ctrlKey) then {
-            [] call ara_fnc_copOpener;
+            [] call aug_fnc_copOpener;
         };
     };
 

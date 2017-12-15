@@ -1,20 +1,20 @@
 /*
-    File: ARA_master.cpp
+    File: aug_master.cpp
     Author: Rogue
-    Description: Functions for ARA Custom Content.
+    Description: Functions for Aurora Gaming Custom Content.
 */
 
-class AusRebelArmy {
-    tag = "ara";
+class AuroraGaming {
+    tag = "aug";
     class functions {
-        file = "ara\functions";
+        file = "aug\functions";
 		class autoSaveInv {};
 		class time {};
 		class updateHideouts {};
     };
 
     class actions {
-        file = "ara\actions";
+        file = "aug\actions";
 		class copOpener {};
 		class remoteHack {};
     };

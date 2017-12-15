@@ -1,7 +1,7 @@
 class Maverick_Convoy {
 	tag = "mav_convoy";
 	class functions {
-		file = "ara\convoy-sidemission";
+		file = "aug\convoy-sidemission";
 		class init {postInit = 1;};
 		class attackMe {};
 		class startConvoy {};
