@@ -12,7 +12,7 @@ class CfgRemoteExec {
         mode = 1;
         jip = 1;
 
-		#include "scripts\indicators\remoteExec.cpp"
+		#include "aurora\indicators\remoteExec.cpp"
         #include "aurora\aug_remoteExec.cpp"
 
         /* Client only functions */

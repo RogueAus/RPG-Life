@@ -6,7 +6,7 @@ enableDebugConsole = 1;
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
-#include "scripts\indicators\config.cpp"
+#include "aurora\indicators\config.cpp"
 #include "aurora\aug_master.hpp"
 
 
@@ -28,7 +28,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
-    #include "scripts\indicators\functions.cpp"
+    #include "aurora\indicators\functions.cpp"
     #include "aurora\aug_functions.hpp"
     #include "aurora\crafting\functions.cpp"
 };
