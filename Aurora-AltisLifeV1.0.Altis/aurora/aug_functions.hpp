@@ -7,14 +7,14 @@
 class AuroraGaming {
     tag = "aug";
     class functions {
-        file = "aug\functions";
+        file = "aurora\functions";
 		class autoSaveInv {};
 		class time {};
 		class updateHideouts {};
     };
 
     class actions {
-        file = "aug\actions";
+        file = "aurora\actions";
 		class copOpener {};
 		class remoteHack {};
     };

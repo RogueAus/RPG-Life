@@ -33995,7 +33995,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Kav_Market.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aurora\billboards\Kav_Market.jpg""];";
 			};
 			id=6680;
 			type="Land_Billboard_03_blank_F";
@@ -34013,7 +34013,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Kav_Market.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aurora\billboards\Kav_Market.jpg""];";
 			};
 			id=6682;
 			type="Land_Billboard_03_blank_F";
@@ -44587,7 +44587,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Donor_Cake_1.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aurora\billboards\Donor_Cake_1.jpg""];";
 			};
 			id=7518;
 			type="Land_Billboard_03_blank_F";
@@ -50442,7 +50442,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aug\billboards\Donor_Cake_1.jpg""];";
+				init="this enableSimulation false; this allowDamage false; this setObjectTextureGlobal [0, ""aurora\billboards\Donor_Cake_1.jpg""];";
 			};
 			id=8057;
 			type="Land_Billboard_03_blank_F";

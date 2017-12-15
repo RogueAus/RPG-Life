@@ -7,7 +7,7 @@ enableDebugConsole = 1;
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "scripts\indicators\config.cpp"
-#include "aug\aug_master.hpp"
+#include "aurora\aug_master.hpp"
 
 
 class CfgServer {
@@ -29,8 +29,8 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
     #include "scripts\indicators\functions.cpp"
-    #include "aug\aug_functions.hpp"
-    #include "aug\crafting\functions.cpp"
+    #include "aurora\aug_functions.hpp"
+    #include "aurora\crafting\functions.cpp"
 };
 
 class CfgSounds {
