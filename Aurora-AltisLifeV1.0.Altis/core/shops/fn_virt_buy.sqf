@@ -16,11 +16,8 @@ _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_f
 _amount = parseNumber(_amount);
 if (_diff <= 0) exitWith {hint localize "STR_NOTF_NoSpace"};
 _amount = _diff;
-private _altisArray = ["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"];
-private _tanoaArray = ["Land_School_01_F","Land_Warehouse_03_F","Land_House_Small_02_F"];
-private _hideoutObjs = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
-_hideout = (nearestObjects[getPosATL player,_hideoutObjs,25]) select 0;
-if ((_price * _amount) > CASH && {!isNil "_hideout" && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+_hideout = (nearestObjects[getPosATL player,["FlagPole_F"],35]) select 0;
+if ((_price * _amount) > CASH && {!isNil "_hideout" && {{_hideout getVariable "gangOwner"} == group player} && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 if ((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDelay";};
 life_action_delay = time;
 

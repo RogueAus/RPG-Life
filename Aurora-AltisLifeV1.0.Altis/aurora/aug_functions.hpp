@@ -10,6 +10,7 @@ class AuroraGaming {
         file = "aurora\functions";
 		class autoSaveInv {};
 		class time {};
+		class updateHideouts {};
     };
 
     class actions {
