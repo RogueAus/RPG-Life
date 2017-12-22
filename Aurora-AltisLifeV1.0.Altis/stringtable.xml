@@ -9468,6 +9468,9 @@
             <Portuguese>Você recebeu seu pagamento de R$%1.</Portuguese>
             <Polish>Otrzymałeś wypłatę w kwocie $%1.</Polish>
         </Key>
+        <Key ID="STR_FSM_GangReceivedPay">
+            <Original>You have received a paycheck of $%1. With a hideout bonus of $%2.</Original>
+        </Key>
     </Package>
     <Package name="Fuel_Pump">
         <Key ID="STR_Action_PumpJerry">

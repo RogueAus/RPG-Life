@@ -11,6 +11,7 @@ class AuroraGaming {
 		class autoSaveInv {};
 		class time {};
 		class updateHideouts {};
+		class gangPaychecks {};
     };
 
     class actions {

@@ -64,9 +64,14 @@ class FSM
            "        systemChat format [localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 1500] call life_fnc_numberText];" \n
            "        life_atmbank = life_atmbank + (call life_paycheck) + 1500;" \n
            "    } else {" \n
+           "     if ((group player getVariable ""gang_name"") in (call aug_fnc_updateHideouts)) then {" \n
+           "        life_atmbank = life_atmbank + ((call life_paycheck) + (call aug_fnc_gangPaychecks));" \n
+           "        systemChat format [localize ""STR_FSM_GangReceivedPay"",[(call life_paycheck)] call life_fnc_numberText,[(call aug_fnc_gangPaychecks)] call life_fnc_numberText];"\n
+           "    } else {" \n
            "        life_atmbank = life_atmbank + (call life_paycheck);" \n
            "        systemChat format [localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
            "    };" \n
+           "  };" \n
            "};" \n
            "" \n
            "_lastcheck = time;" \n
