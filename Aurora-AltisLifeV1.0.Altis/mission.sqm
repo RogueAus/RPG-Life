@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6210.1992,68,16182.979};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={20247.725,64.068436,8818.0117};
+		dir[]={-0.54258513,-0.39404678,0.74190521};
+		up[]={-0.2326525,0.91905653,0.31812158};
+		aside[]={0.80721575,-1.7454149e-006,0.59034628};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"A3_Structures_F_Walls",
 	"A3_Structures_F_Ind_Cargo",
 	"A3_Structures_F_EPC_Civ_Accessories",
+	"A3_Structures_F_Argo",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Structures_F_EPA_Civ_Camping",
 	"A3_Structures_F_Civ_Accessories",
@@ -154,43 +155,43 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="A3_Structures_F_Argo";
+			name="Arma 3 Malden - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item11
-		{
-			className="A3_Structures_F_Argo";
-			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -5353,18 +5354,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12650.821,38.154533,16411.322};
-				angles[]={0,3.6366205,0};
+				position[]={12650.821,38.154888,16411.322};
+				angles[]={0,3.6366234,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=637;
 			type="Land_Pallet_MilBoxes_F";
-			atlOffset=3.264637;
+			atlOffset=3.2649918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5435,19 +5436,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12651.895,38.23484,16403.256};
-				angles[]={0,3.6363587,0};
+				position[]={12651.895,38.234917,16403.256};
+				angles[]={0,3.6363556,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;  life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
 				name="mari_processor";
 			};
 			id=639;
 			type="Land_Sink_F";
-			atlOffset=3.1774139;
+			atlOffset=3.1774902;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6510,19 +6511,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12635.652,35.021824,16410.424};
-				angles[]={0,3.6356256,0};
+				position[]={12635.652,35.022202,16410.424};
+				angles[]={0,3.6356308,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=665;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.0066719055;
+			atlOffset=0.0070495605;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6594,18 +6595,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6201.6108,47.548107,16222.427};
-				angles[]={0,6.2710376,6.2823472};
+				position[]={6201.6108,47.548214,16222.427};
+				angles[]={0,6.2710319,6.2823396};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=667;
 			type="Land_Pallet_MilBoxes_F";
-			atlOffset=3.2998848;
+			atlOffset=3.2999916;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6676,19 +6677,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6196.7485,47.624638,16228.952};
-				angles[]={0,6.2707758,0};
+				position[]={6196.7485,47.624435,16228.952};
+				angles[]={0,6.2707701,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
 				name="coke_processor";
 			};
 			id=669;
 			type="Land_Sink_F";
-			atlOffset=3.2044449;
+			atlOffset=3.2042427;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7752,18 +7753,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6214.4316,44.330364,16230.574};
-				angles[]={0,6.2700601,6.2823472};
+				position[]={6214.4312,44.330254,16230.574};
+				angles[]={0,6.2700543,6.2823396};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=695;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.75500107;
+			atlOffset=0.75489044;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7834,19 +7835,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18393.748,31.43421,15252.272};
-				angles[]={0,2.9769382,6.282208};
+				position[]={18393.748,31.434256,15252.272};
+				angles[]={0,2.9769382,6.2822089};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""FlagPole_F""],50]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=697;
 			type="Land_Pallet_MilBoxes_F";
-			atlOffset=0.033042908;
+			atlOffset=0.033088684;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7924,7 +7925,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",'_b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0;life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
 				name="heroin_processor";
 			};
 			id=699;
@@ -8990,18 +8991,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18382.311,28.164434,15242.26};
-				angles[]={0,2.9759436,6.282208};
+				position[]={18382.309,28.164822,15242.259};
+				angles[]={0,2.9759431,6.2822089};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""", '_b = (nearestObjects[getPosATL player,[""FlagPole_F""],30]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=725;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.5340004;
+			atlOffset=0.53439522;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16406,6 +16407,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 			id=1468;
+			atlOffset=0.1465168;
 		};
 		class Item530
 		{
@@ -36722,7 +36724,7 @@ class Mission
 			};
 			id=6857;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0004863739;
+			atlOffset=0.14699936;
 		};
 		class Item1074
 		{
@@ -36769,7 +36771,6 @@ class Mission
 				angles[]={0,2.337851,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""];";
@@ -36777,7 +36778,7 @@ class Mission
 			};
 			id=6862;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0034320354;
+			atlOffset=0.50393057;
 		};
 		class Item1077
 		{
@@ -44709,7 +44710,7 @@ class Mission
 			};
 			id=7600;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.55022335;
+			atlOffset=0.55069637;
 		};
 		class Item1321
 		{
@@ -44809,7 +44810,7 @@ class Mission
 			};
 			id=7609;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.32495594;
+			atlOffset=0.32549667;
 		};
 		class Item1329
 		{

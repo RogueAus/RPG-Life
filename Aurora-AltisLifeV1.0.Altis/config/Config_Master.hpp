@@ -77,7 +77,6 @@ class Life_Settings {
     gang_price = 80000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
     gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
-	hideout_bonus = 10000; // Extra money for owning a gang hideout. Value is divided between gang members
 
     /* Housing System Configurations */
     house_limit = 5; //Maximum number of houses a player can own.
