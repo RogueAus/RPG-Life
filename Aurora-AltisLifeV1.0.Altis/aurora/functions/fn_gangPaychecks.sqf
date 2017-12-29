@@ -10,6 +10,8 @@
 	Gang bonus
 
 */
+private ["_hideoutOwners","_gangName","_groupMembers","_extraMoney","_ownedHideouts","_gangBonus"];
+
 _hideoutOwners = call aug_fnc_updateHideouts;
 _gangName = group player getVariable "gang_name";
 _groupMembers = count units group player;
