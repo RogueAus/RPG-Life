@@ -13,7 +13,7 @@ class Maverick_ConvoySidemission
 		SleepTime								= 1800;
 		MakePlayersHostileFor					= 60;
 		TimeoutBetweenMarkers					= 600;
-		SidesNotAttackable[]					= {"WEST"};
+		SidesNotAttackable[]					= {"WEST","Independent"};
 		AIDifficulty[] = {
 												{"aimingAccuracy", 0.8},
 												{"aimingShake", 0.9},
