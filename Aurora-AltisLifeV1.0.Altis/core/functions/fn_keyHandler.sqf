@@ -202,7 +202,7 @@ switch (_code) do {
 
     //F Key
     case 33: {
-        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+        if (playerSide in [west,independent]&& !_ctrlKey && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
             [] spawn {
                 life_siren_active = true;
                 sleep 4.7;
@@ -218,11 +218,18 @@ switch (_code) do {
                 titleText [localize "STR_MISC_SirensON","PLAIN"];
                 _veh setVariable ["siren",true,true];
                 if (playerSide isEqualTo west) then {
-                    [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
+                    _siren = "long";
+                    [_veh,_siren] remoteExec ["life_fnc_copSiren",RCLIENT];
                 } else {
                     [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
                 };
             };
+        };
+
+        if (playerSide == west && _ctrlKey && (vehicle player != player) && !life_siren_active && ((driver vehicle player) == player)) then {
+            _veh = vehicle player;
+            _siren = "short";
+            [_veh,_siren] remoteExec ["life_fnc_copSiren",RCLIENT];
         };
     };
 

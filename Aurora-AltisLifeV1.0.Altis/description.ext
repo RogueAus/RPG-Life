@@ -107,6 +107,12 @@ class CfgSounds {
         sound[] = {"\sounds\beltUnClick.ogg", 1.0, 1};
         titles[] = {};
     };
+
+    class pullOver {
+        name = "pullOver";
+        sound[] = {"\sounds\pullOver.ogg", 1.0, 1};
+        titles[] = {};
+    };
 	//// Custom Aurora End ////
 };
 
