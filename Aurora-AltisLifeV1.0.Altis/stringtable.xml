@@ -9469,7 +9469,7 @@
             <Polish>Otrzymałeś wypłatę w kwocie $%1.</Polish>
         </Key>
         <Key ID="STR_FSM_GangReceivedPay">
-            <Original>You have received a paycheck of $%1. With a hideout bonus of $%2.</Original>
+            <Original>You have received a paycheck of $%1. With a Gang bonus of $%2.</Original>
         </Key>
     </Package>
     <Package name="Fuel_Pump">
